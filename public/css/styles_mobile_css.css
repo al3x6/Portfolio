@@ -1,0 +1,49 @@
+/* ///////////////////////////// MOBILE ///////////////////////////// */
+
+@media only screen and (max-width: 600px) {
+    /* Conteneur principal */
+    body {
+        display: block; /* Change le display pour empêcher le contenu de s'empiler verticalement */
+    }
+
+    /* Header */
+    header nav {
+        flex-direction: row; /* Change la direction de la flexbox pour empiler les éléments verticalement */
+    }
+    header nav ul ul {
+        position: relative; /* Supprime la position absolue pour empêcher le menu de sortir du conteneur */
+        display: none; /* Cache le sous-menu */
+    }
+    header nav li, ul {
+        display: block; /* Change la disposition en bloc pour empiler les éléments verticalement */
+        padding: 8px;
+    }
+    header nav a, a{
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 10px;
+    }
+
+    /* Main */
+    main {
+        padding: 20px; /* Réduit l'espacement du contenu principal */
+    }
+
+    .hero {
+        padding: 100px; /* Réduit la taille du héros */
+    }
+
+    .titre h1 {
+        font-size: 30px; /* Réduit la taille du titre */
+    }
+
+    .services, .portfolio, .contact {
+        padding: 30px; /* Réduit l'espacement des sections */
+    }
+
+    .portfolio li {
+        display: block; /* Change la disposition en bloc pour empiler les projets verticalement */
+        margin: 10px 0; /* Ajuste la marge entre les projets */
+    }
+}

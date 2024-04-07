@@ -1,0 +1,36 @@
+/config : page de configuration    _conf
+/includes : fichier réutilisable   .php
+/privates : fichier upload
+
+/public : Vue des utilisateurs
+/public/ajax : donnée pour une page _ajax
+/public/css : style des pages      _css
+/public/image : dossier d'image
+/public/js : script javascript     _js
+/public/page : Page utilisateur    .php, .html, _lst, _appel, _scr
+
+
+- faire le css mobile
+- faire les conditions mobile
+
+
+Accueil :
+ - google map
+ - ajouter les liens redirection bouton
+ - intégrer base de données le formulaire contact
+
+
+
+
+
+
+
+connexion :
+ - 2 pages : inscription et connexion
+
+Paramètres :
+ - Traduction : change de langue
+ - Accessibilité : Change de couleur, agrandir le texte
+
+Dans le footer :
+ - Page Confidentialité

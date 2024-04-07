@@ -66,12 +66,24 @@ $page = 'Bienvenue sur mon Portfolio'
         <div class="services_right">
             <div>
                 <h2>About me</h2>
-                <p>Mon expertise est diverse, passant par la création de site Web, d'application mobile, de logiciel à
-                    la conception graphique, mais aussi à la configuration de serveur et bien plus
-                    encore.</p>
-                <p>Je connais différent langage de programmation.</p>
-                <p>J'ai des connaissances théoriques comme le droit numérique ou le management d'équipe, ou à la gestion
-                    de projet.</p>
+                <p>Je suis un étudiant passionné par le monde numérique, doté d'une expertise diversifiée dans plusieurs
+                    domaines. De la création de sites web à la conception graphique, en passant par le développement
+                    d'applications mobiles et la configuration de serveurs, je possède une palette de compétences
+                    polyvalente et adaptable.
+                </p>
+                <p>Ma maîtrise de différents langages de programmation me permet de mener à bien une variété de projets,
+                    tandis que mes connaissances théoriques en droit numérique, en management d'équipe et en gestion de
+                    projet enrichissent ma compréhension globale du domaine.
+                </p>
+                <p>En explorant mon portfolio, vous découvrirez non seulement mes réalisations concrètes, mais aussi ma
+                    capacité à relever de nouveaux défis avec créativité et détermination. Je suis constamment à la
+                    recherche de nouvelles opportunités pour mettre mes compétences à profit et contribuer à des projets
+                    innovants.
+                </p>
+                <p>
+                    N'hésitez pas à me contacter pour discuter de collaborations potentielles ou pour en savoir plus sur
+                    mon parcours et mes compétences, voir le bouton en dessous. Ensemble, nous pouvons créer quelque chose d'exceptionnel !
+                </p>
             </div>
             <div class="div_button">
                 <a href="#" class="button">En savoir +</a>
@@ -90,7 +102,7 @@ $page = 'Bienvenue sur mon Portfolio'
                         <img src="public/image/simfast_accueil.png" alt="Projet SimFast">
                     </a>
                     <h3>Projet SimFast</h3>
-                    <p>Description du projet 1</p>
+                    <p>Création d'un site web avec des modules de calcul (Probabilité, chiffrement RC4)</p>
                 </div>
                 <div class="swiper-slide projet">
                     <a href=""><img src="image2.jpg" alt="Projet 2"></a>

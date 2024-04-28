@@ -15,8 +15,10 @@ projet:
 - Machine Learning : Reconnaissance d'image et régression linéaire, polynomiale
 - Mini programme python : Implémentation graphique processing
 - maintenance : interface graphique en java qui permet de dessiner des formes. obj : prendre le code en c et le modifier pour java
+- Controle web : Site web en NodeJs
 - Architecture logicielle : site web en python
 - Controle complément web (JEE) : site de vin
+- Projet pokémon chemin (Java)
 
 - faire le css mobile
 - faire les conditions mobile

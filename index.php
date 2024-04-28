@@ -7,16 +7,16 @@ $page = 'Bienvenue sur mon Portfolio'
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenue sur mon portfolio ! Je suis Alexis Araujo, étudiant passionné en informatique. Avec une expertise diversifiée dans plusieurs domaines, notamment le développement web, la conception graphique et la configuration de serveurs, je suis prêt à relever de nouveaux défis avec créativité et détermination. Explorez mes réalisations concrètes et découvrez comment je peux contribuer à des projets innovants en tant que développeur web passionné.">
     <title>Titre de la page</title>
     <!-- Inclure des feuilles de style CSS ici -->
     <link rel="stylesheet" href="public/css/styles_css.css">
     <link rel="stylesheet" href="public/css/styles_mobile_css.css">
 
     <!-- API -->
-    <script src="https://kit.fontawesome.com/c6abb0645d.js" crossorigin="anonymous"></script> <!-- Emoticone -->
-    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>  <!-- Sphere -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!-- Swiper -->
-
+    <script rel="preconnect" src="https://kit.fontawesome.com/c6abb0645d.js" crossorigin="anonymous"></script> <!-- Emoticone -->
+    <script rel="preconnect" src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>  <!-- Sphere -->
+    <script rel="preconnect" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!-- Swiper -->
 </head>
 
 <body>
@@ -34,7 +34,7 @@ $page = 'Bienvenue sur mon Portfolio'
         <div class="hero_left">
             <div>
                 <h2>Alexis Araujo</h2>
-                <p>Je suis un jeune étudiant en 3ème année d'un BUT informatique (licence) passionné par
+                <p>Je suis un jeune étudiant en 3ème année d'un BUT informatique (Niveau Licence) passionné par
                     l’informatique.</p>
             </div>
             <div class="div_button">
@@ -42,8 +42,8 @@ $page = 'Bienvenue sur mon Portfolio'
             </div>
         </div>
         <div class="hero_right">
-            <img src="public/image/accueil.jpg" height="800" alt="Photo de profil">
-            <? /*__DIR__*/ ?>
+            <img src="public/image/moi.webp" width="800" height="800" alt="Photo de profil">
+            <?php /*__DIR__*/ ?>
         </div>
     </section>
 
@@ -213,6 +213,10 @@ $page = 'Bienvenue sur mon Portfolio'
             navigation: {
                 nextEl: '.next-btn', // Sélecteur du bouton suivant
                 prevEl: '.prec-btn', // Sélecteur du bouton précédent
+            },
+            autoplay: {
+                delay: 800, // Délai entre chaque diapositive en millisecondes
+                disableOnInteraction: true, // ne pas désactiver l'autoplay lorsque l'utilisateur interagit avec le diaporama
             },
             slidesPerView: 6, // Nombre de diapositives à afficher
             spaceBetween: 80, // Espacement entre les diapositives en pixels

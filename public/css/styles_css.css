@@ -205,10 +205,12 @@ section{
 
 /* carrousel */
 .portfolio .carrousel-container {
+    /*
     max-width: 100%;
     min-width: 0;
     margin-left: auto;
     margin-right: auto;
+    */
     position: relative;
     overflow: hidden;
 }

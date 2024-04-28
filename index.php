@@ -7,20 +7,23 @@ $page = 'Bienvenue sur mon Portfolio'
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bienvenue sur mon portfolio ! Je suis Alexis Araujo, étudiant passionné en informatique. Avec une expertise diversifiée dans plusieurs domaines, notamment le développement web, la conception graphique et la configuration de serveurs, je suis prêt à relever de nouveaux défis avec créativité et détermination. Explorez mes réalisations concrètes et découvrez comment je peux contribuer à des projets innovants en tant que développeur web passionné.">
+    <meta name="description"
+          content="Bienvenue sur mon portfolio ! Je suis Alexis Araujo, étudiant passionné en informatique. Avec une expertise diversifiée dans plusieurs domaines, notamment le développement web, la conception graphique et la configuration de serveurs, je suis prêt à relever de nouveaux défis avec créativité et détermination. Explorez mes réalisations concrètes et découvrez comment je peux contribuer à des projets innovants en tant que développeur web passionné.">
     <title>Titre de la page</title>
     <!-- Inclure des feuilles de style CSS ici -->
     <link rel="stylesheet" href="public/css/styles_css.css">
     <link rel="stylesheet" href="public/css/styles_mobile_css.css">
 
     <!-- API -->
-    <script rel="preconnect" src="https://kit.fontawesome.com/c6abb0645d.js" crossorigin="anonymous"></script> <!-- Emoticone -->
-    <script rel="preconnect" src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>  <!-- Sphere -->
+    <script rel="preconnect" src="https://kit.fontawesome.com/c6abb0645d.js" crossorigin="anonymous"></script>
+    <!-- Emoticone -->
+    <script rel="preconnect" src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+    <!-- Sphere -->
     <script rel="preconnect" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!-- Swiper -->
 </head>
 
-<body>
 <!-- Contenu de la page -->
+<body>
 
 <!-- Header -->
 <?php include("includes/header.php"); ?>
@@ -82,7 +85,8 @@ $page = 'Bienvenue sur mon Portfolio'
                 </p>
                 <p>
                     N'hésitez pas à me contacter pour discuter de collaborations potentielles ou pour en savoir plus sur
-                    mon parcours et mes compétences, voir le bouton en dessous. Ensemble, nous pouvons créer quelque chose d'exceptionnel !
+                    mon parcours et mes compétences, voir le bouton en dessous. Ensemble, nous pouvons créer quelque
+                    chose d'exceptionnel !
                 </p>
             </div>
             <div class="div_button">
@@ -167,7 +171,6 @@ $page = 'Bienvenue sur mon Portfolio'
         <button onclick="RetourHaut()" id="retour_haut_btn" title="Retour en haut de la page">↑</button>
     </section>
 
-
 </main>
 
 
@@ -180,21 +183,16 @@ $page = 'Bienvenue sur mon Portfolio'
     const myTags = ['PHP', 'Laravel', 'HTML', 'CSS', 'Bootstrap', 'JavaScript', 'TypeScript', 'MySQL', 'SQL', 'PL/SQL', 'Oracle Database', 'Phpmyadmin', 'JSON', 'XML', 'FIGMA', 'WordPress', 'Node.js', 'Express.js', 'Machine Learning', 'Python', 'C', 'Java', 'Jakarta EE', 'GIT', 'GitHub', 'GitLab', 'IntelliJ', 'ANGULAR', 'REACT', 'Apache', 'Bash', 'Droit informatique', 'Gestion de projet'];
     var tagCloud = TagCloud('.content', myTags, {
 
-        // radius in px
-        radius: 300,
-
-        // animation speed
-        // slow, normal, fast
-        maxSpeed: 'fast',
-        initSpeed: 'fast',
+        radius: 300, // radius in px
+        maxSpeed: 'fast', // animation speed
+        initSpeed: 'fast', // slow, normal, fast
 
         // 0 = top
         // 90 = left
         // 135 = right-bottom
         direction: 135,
 
-        // interact with cursor move on mouse out
-        keep: true
+        keep: true // interact with cursor move on mouse out
 
     });
     // var colors = ['#34A853', '#FBBC05', '#4285F4', '#7FBC00', 'FFBA01', '01A6F0'];
@@ -219,8 +217,7 @@ $page = 'Bienvenue sur mon Portfolio'
                 disableOnInteraction: true, // ne pas désactiver l'autoplay lorsque l'utilisateur interagit avec le diaporama
             },
             slidesPerView: 6, // Nombre de diapositives à afficher
-            spaceBetween: 80, // Espacement entre les diapositives en pixels
-            // Ajoutez d'autres options
+            spaceBetween: 80 // Espacement entre les diapositives en pixels
         });
     });
 
@@ -268,6 +265,7 @@ $page = 'Bienvenue sur mon Portfolio'
         });
     });*/
 </script>
+
 <script>
     /* Fenêtre image */
     function openPopup(imageURL, windowName, width, height) {
@@ -300,11 +298,16 @@ $page = 'Bienvenue sur mon Portfolio'
 
 <script>
     /* A faire */
-    window.addEventListener('scroll', function () {
+    /*window.addEventListener('scroll', function () {
         const parallax = document.querySelector('.parallax');
         let scrollPosition = window.pageYOffset;
         parallax.style.backgroundPositionY = scrollPosition * 0.7 + 'px';
-    });
+    });*/
 </script>
+
+<script>
+    // Menu Burger
+</script>
+
 </body>
 </html>

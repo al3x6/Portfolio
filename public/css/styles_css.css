@@ -24,30 +24,30 @@ header {
     display: flex;
     flex-direction: column;
 }
-header nav{
+header nav {
     display: flex;
-    margin : 0;
+    margin: 0;
     padding: 0;
     justify-content: space-between;
     width: 100%;
 }
-header nav ul ul{
+header nav ul ul {
     position: absolute;
     right: 0;
 }
-header nav li, ul{
-     display: inline-block;
-     padding: 8px;
- }
-header nav a, a{
+header nav li, ul {
+    display: inline-block;
+    padding: 8px;
+}
+header nav a, a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     font-size: 20px;
 }
 header nav a:hover {
-     color: #ccc;
- }
+    color: #ccc;
+}
 
 
 /* ///////////////////////////// main ///////////////////////////// */
@@ -58,13 +58,12 @@ main {
     overflow-y: auto;
 }
 
-section{
-
-}
+/*section {}*/
 
 /* ///////////////////////////// Titre ///////////////////////////// */
 .titre {
     text-align: center;
+    padding: 20px;
 }
 .titre h1 {
     font-size: 50px;
@@ -72,9 +71,9 @@ section{
 
 /* ///////////////////////////// Section hero ///////////////////////////// */
 .hero {
+    display: flex;
     background-color: #f2f2f2;
     padding: 100px;
-    display: flex;
 }
 
 /* /// Left /// */
@@ -96,7 +95,7 @@ section{
 }
 
 /* button */
-.hero .hero_left .div_button{
+.hero .hero_left .div_button {
     text-align: center;
     padding: 50px;
 }
@@ -131,16 +130,14 @@ section{
 }
 
 /* /// Left /// */
-.services .services_left{
+.services .services_left {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex: 1;
 }
-.services .services_left .sphère{
-
-}
+/*.services .services_left .sphère {}*/
 
 /* sphère */
 .tagcloud {
@@ -153,7 +150,7 @@ section{
 }
 
 /* /// Right /// */
-.services .services_right{
+.services .services_right {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,7 +167,7 @@ section{
 }
 
 /* button */
-.services .services_right .div_button{
+.services .services_right .div_button {
     text-align: center;
     padding: 50px;
 }
@@ -252,9 +249,9 @@ section{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Ombre douce */
     cursor: pointer;
 
-    transition: transform 0.3s ease;  /* Effet de transition pour un agrandissement fluide */
+    transition: transform 0.3s ease; /* Effet de transition pour un agrandissement fluide */
 }
-.portfolio .carrousel-container .carrousel-wrapper .projet:hover{
+.portfolio .carrousel-container .carrousel-wrapper .projet:hover {
     /* Agrandit l'image lorsqu'elle est survolée */
     transform: scale(1.1);
     box-shadow: none;
@@ -274,7 +271,6 @@ section{
     margin-top: 5px; /* Marge en haut du paragraphe */
     font-size: 1em; /* Taille du texte */
 }
-
 
 
 /* ///////////////////////////// Section contact ///////////////////////////// */
@@ -362,8 +358,7 @@ section{
 
 /* ///////////////////////////// Footer ///////////////////////////// */
 footer {
-    /* Le footer est aligné en bas de la page */
-    margin-top: auto;
+    margin-top: auto; /* Le footer est aligné en bas de la page */
     background-color: #333; /* Couleur de fond du footer */
     color: #fff; /* Couleur du texte */
     text-align: center; /* Centrage du contenu */

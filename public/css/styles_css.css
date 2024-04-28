@@ -16,7 +16,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-
 /* ///////////////////////////// Header ///////////////////////////// */
 header {
     background-color: #333;
@@ -240,7 +239,7 @@ main {
     transition: transform 0.5s ease-in-out; /* Durée et type de transition */
 }
 .portfolio .carrousel-container .carrousel-wrapper .projet {
-    flex: 0 0 auto;
+    flex: 0 0 300px;
     /*margin-right: 80px;*/ /* Espacement entre les projets */
     padding: 40px; /* Espace à l'intérieur de chaque projet */
     background-color: #f9f9f9; /* Couleur de fond */

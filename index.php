@@ -215,8 +215,10 @@ $page = 'Bienvenue sur mon Portfolio'
 </script>
 
 <script>
+    //let nombreparview = isMobileDevice() ? 1 : 6;
     //API Swipper
     document.addEventListener('DOMContentLoaded', function () {
+
         // Initialise Swiper
         var mySwiper = new Swiper('.carrousel-container', {
             // Paramètres optionnels
@@ -229,7 +231,7 @@ $page = 'Bienvenue sur mon Portfolio'
                 delay: 800, // Délai entre chaque diapositive en millisecondes
                 disableOnInteraction: true, // ne pas désactiver l'autoplay lorsque l'utilisateur interagit avec le diaporama
             },
-            slidesPerView: 6, // Nombre de diapositives à afficher
+            slidesPerView: 'auto', // Nombre de diapositives à afficher
             spaceBetween: 80, // Espacement entre les diapositives en pixels
         });
     });

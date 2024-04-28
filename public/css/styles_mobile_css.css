@@ -93,7 +93,7 @@ main {
 
 /* image */
 .hero .hero_right img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
 }
 
@@ -209,8 +209,7 @@ main {
     transition: transform 0.5s ease-in-out; /* Durée et type de transition */
 }
 .portfolio .carrousel-container .carrousel-wrapper .projet {
-    width: 100%; /* Changer la largeur à 80% de la largeur de son conteneur */
-    margin: 0 auto; /* Centrer le bloc projet horizontalement */
+    flex: 0 0 200px;
     /*margin-right: 80px;*/ /* Espacement entre les projets */
     padding: 40px; /* Espace à l'intérieur de chaque projet */
     background-color: #f9f9f9; /* Couleur de fond */

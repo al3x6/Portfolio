@@ -1,16 +1,17 @@
 <?php
-$page = 'Bienvenue sur mon Portfolio'
+$page = 'Bienvenue sur mon Portfolio';
+$titre='Accueil';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=6, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6, user-scalable=0">-->
     <meta name="description"
           content="Bienvenue sur mon portfolio ! Je suis Alexis Araujo, étudiant passionné en informatique. Avec une expertise diversifiée dans plusieurs domaines, notamment le développement web, la conception graphique et la configuration de serveurs, je suis prêt à relever de nouveaux défis avec créativité et détermination. Explorez mes réalisations concrètes et découvrez comment je peux contribuer à des projets innovants en tant que développeur web passionné.">
-    <title>Titre de la page</title>
+    <title><?=$titre?></title>
     <!-- Inclure des feuilles de style CSS ici -->
     <link rel="stylesheet" href="public/css/styles_css.css" media="only screen and (min-width: 941px)">
     <link rel="stylesheet" href="public/css/styles_mobile_css.css" media="only screen and (max-width: 940px)">
@@ -228,7 +229,7 @@ $page = 'Bienvenue sur mon Portfolio'
                 prevEl: '.prec-btn', // Sélecteur du bouton précédent
             },
             autoplay: {
-                delay: 800, // Délai entre chaque diapositive en millisecondes
+                delay: 1000, // Délai entre chaque diapositive en millisecondes
                 disableOnInteraction: true, // ne pas désactiver l'autoplay lorsque l'utilisateur interagit avec le diaporama
             },
             slidesPerView: 'auto', // Nombre de diapositives à afficher
@@ -306,9 +307,14 @@ $page = 'Bienvenue sur mon Portfolio'
 
     // Scroll to the top of the page
     function RetourHaut() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        //document.body.scrollTop = 0; // For Safari
+        //document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' //transition douce
+        })
     }
+
 </script>
 
 <script>

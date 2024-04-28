@@ -20,18 +20,15 @@ projet:
 - Controle complément web (JEE) : site de vin
 - Projet pokémon chemin (Java)
 
-- faire le css mobile
+- faire le css mobile                 FAIT
 - faire les conditions mobile
+- Menu Burger
 
 
 Accueil :
  - google map
  - ajouter les liens redirection bouton
  - intégrer base de données le formulaire contact
-
-
-
-
 
 
 

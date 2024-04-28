@@ -6,13 +6,14 @@ $page = 'Bienvenue sur mon Portfolio'
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=6, user-scalable=0">
     <meta name="description"
           content="Bienvenue sur mon portfolio ! Je suis Alexis Araujo, étudiant passionné en informatique. Avec une expertise diversifiée dans plusieurs domaines, notamment le développement web, la conception graphique et la configuration de serveurs, je suis prêt à relever de nouveaux défis avec créativité et détermination. Explorez mes réalisations concrètes et découvrez comment je peux contribuer à des projets innovants en tant que développeur web passionné.">
     <title>Titre de la page</title>
     <!-- Inclure des feuilles de style CSS ici -->
-    <link rel="stylesheet" href="public/css/styles_css.css">
-    <link rel="stylesheet" href="public/css/styles_mobile_css.css">
+    <link rel="stylesheet" href="public/css/styles_css.css" media="only screen and (min-width: 941px)">
+    <link rel="stylesheet" href="public/css/styles_mobile_css.css" media="only screen and (max-width: 940px)">
 
     <!-- API -->
     <script rel="preconnect" src="https://kit.fontawesome.com/c6abb0645d.js" crossorigin="anonymous"></script>
@@ -179,11 +180,23 @@ $page = 'Bienvenue sur mon Portfolio'
 
 <!-- Inclure des scripts JavaScript ici -->
 <script>
+    // Fonction pour détecter si l'écran est un appareil mobile
+    function isMobileDevice() {
+        return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+    }
+</script>
+
+
+<script>
     //API Sphère de compétences
     const myTags = ['PHP', 'Laravel', 'HTML', 'CSS', 'Bootstrap', 'JavaScript', 'TypeScript', 'MySQL', 'SQL', 'PL/SQL', 'Oracle Database', 'Phpmyadmin', 'JSON', 'XML', 'FIGMA', 'WordPress', 'Node.js', 'Express.js', 'Machine Learning', 'Python', 'C', 'Java', 'Jakarta EE', 'GIT', 'GitHub', 'GitLab', 'IntelliJ', 'ANGULAR', 'REACT', 'Apache', 'Bash', 'Droit informatique', 'Gestion de projet'];
+
+    // Définition du rayon en fonction du type d'appareil
+    let radius = isMobileDevice() ? 160 : 300;
+
     var tagCloud = TagCloud('.content', myTags, {
 
-        radius: 300, // radius in px
+        radius: radius, // radius in px
         maxSpeed: 'fast', // animation speed
         initSpeed: 'fast', // slow, normal, fast
 
@@ -217,7 +230,7 @@ $page = 'Bienvenue sur mon Portfolio'
                 disableOnInteraction: true, // ne pas désactiver l'autoplay lorsque l'utilisateur interagit avec le diaporama
             },
             slidesPerView: 6, // Nombre de diapositives à afficher
-            spaceBetween: 80 // Espacement entre les diapositives en pixels
+            spaceBetween: 80, // Espacement entre les diapositives en pixels
         });
     });
 
@@ -267,7 +280,7 @@ $page = 'Bienvenue sur mon Portfolio'
 </script>
 
 <script>
-    /* Fenêtre image */
+    /* Fenêtre clique image projet */
     function openPopup(imageURL, windowName, width, height) {
         // Calculer les coordonnées du centre de l'écran
         const left = (screen.width - width) / 2;
@@ -279,7 +292,7 @@ $page = 'Bienvenue sur mon Portfolio'
 </script>
 
 <script>
-    // Button retour en haut
+    /* Button retour en haut */
     window.addEventListener('scroll', function () {
         let retour_haut_btn = document.getElementById("retour_haut_btn");
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -294,15 +307,6 @@ $page = 'Bienvenue sur mon Portfolio'
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
-</script>
-
-<script>
-    /* A faire */
-    /*window.addEventListener('scroll', function () {
-        const parallax = document.querySelector('.parallax');
-        let scrollPosition = window.pageYOffset;
-        parallax.style.backgroundPositionY = scrollPosition * 0.7 + 'px';
-    });*/
 </script>
 
 <script>

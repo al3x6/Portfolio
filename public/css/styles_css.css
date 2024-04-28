@@ -49,7 +49,6 @@ header nav a:hover {
     color: #ccc;
 }
 
-
 /* ///////////////////////////// main ///////////////////////////// */
 main {
     /* Fait en sorte que le contenu principal (élément <main>) s'étende pour remplir tout l'espace vertical disponible dans le conteneur Flex du corps de la page, poussant ainsi le footer en bas de la page, même si le contenu est limité */
@@ -271,7 +270,6 @@ main {
     margin-top: 5px; /* Marge en haut du paragraphe */
     font-size: 1em; /* Taille du texte */
 }
-
 
 /* ///////////////////////////// Section contact ///////////////////////////// */
 .contact {

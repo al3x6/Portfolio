@@ -10,9 +10,9 @@
         </ul>
         <ul>
             <li><a href="#">Accueil</a></li>
-            <li><a href="#">À propos</a></li>
+            <li><a href="public/pages/cv.php">CV</a></li>
+            <li><a href="#">Projets</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">CV</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Paramètres</a></li>
             <li><a href="#">Connexion</a></li>

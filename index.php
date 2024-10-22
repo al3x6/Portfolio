@@ -16,9 +16,9 @@ $titre='Accueil';
     <link rel="stylesheet" href="public/css/styles_css.css" media="only screen and (min-width: 941px)">
     <link rel="stylesheet" href="public/css/styles_mobile_css.css" media="only screen and (max-width: 940px)">
 
-    <!-- API -->
-    <script rel="preconnect" src="https://kit.fontawesome.com/c6abb0645d.js" crossorigin="anonymous"></script>
     <!-- Emoticone -->
+    <script rel="preconnect" src="https://kit.fontawesome.com/c6abb0645d.js" crossorigin="anonymous"></script>
+    <!-- API -->
     <script rel="preconnect" src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
     <!-- Sphere -->
     <script rel="preconnect" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!-- Swiper -->
@@ -42,7 +42,7 @@ $titre='Accueil';
                     l’informatique et surtout la Cybersécurité.</p>
             </div>
             <div class="div_button">
-                <a href="#" class="button">Voir mon travail</a>
+                <a href="/public/pages/projets.php" class="button">Voir mon travail</a>
             </div>
         </div>
         <div class="hero_right">
@@ -88,7 +88,7 @@ $titre='Accueil';
                 </p>
             </div>
             <div class="div_button">
-                <a href="#" class="button">En savoir +</a>
+                <a href="/public/pages/cv.php" class="button">En savoir +</a>
             </div>
         </div>
     </section>

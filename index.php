@@ -34,13 +34,12 @@ $titre='Accueil';
     <!-- titre -->
     <?php include("includes/titre.php"); ?>
 
-
     <section class="hero">
         <div class="hero_left">
             <div>
                 <h2>Alexis Araujo</h2>
-                <p>Je suis un jeune étudiant en 3ème année d'un BUT informatique (Niveau Licence) passionné par
-                    l’informatique.</p>
+                <p>Je suis un jeune étudiant en 3ème à Oteria Cyber School après avoir eu mon BUT Informatique (Niveau Licence).<br>Je passionné par
+                    l’informatique et surtout la Cybersécurité.</p>
             </div>
             <div class="div_button">
                 <a href="#" class="button">Voir mon travail</a>
@@ -66,19 +65,16 @@ $titre='Accueil';
             <div class="sphère">
                 <span class="content"></span> <!-- API Sphere -->
             </div>
-
         </div>
+
         <div class="services_right">
             <div>
                 <h2>About me</h2>
-                <p>Je suis un étudiant passionné par le monde numérique, doté d'une expertise diversifiée dans plusieurs
-                    domaines. De la création de sites web à la conception graphique, en passant par le développement
-                    d'applications mobiles et la configuration de serveurs, je possède une palette de compétences
-                    polyvalente et adaptable.
+                <p>Je suis un étudiant passionné par le monde numérique et les nouvelles technologies. Je possède une expertise diversifiée dans plusieurs domaines, allant de la création de sites web à la conception graphique, en passant par le développement d'applications mobiles, la configuration de serveurs, l'administration des réseaux, la virtualisation, l'architecture des réseaux et l'administration bas niveau. Cette palette de compétences me rend à la fois polyvalent et adaptable.
                 </p>
-                <p>Ma maîtrise de différents langages de programmation me permet de mener à bien une variété de projets,
-                    tandis que mes connaissances théoriques en droit numérique, en management d'équipe et en gestion de
-                    projet enrichissent ma compréhension globale du domaine.
+                <p>
+                    Récemment, j'ai rejoint Oteria Cyber School pour obtenir un titre RNCP de niveau +7 et devenir un <b>Expert en Cybersécurité</b>.<br> Cette formation combinée à la précédente et la maitrise des différents langages de programmation, me permet de mener à bien une variété de projets.
+                    Mes connaissances théoriques en droit numérique, en management d'équipe et en gestion de projet enrichissent également ma compréhension globale du domaine.
                 </p>
                 <p>En explorant mon portfolio, vous découvrirez non seulement mes réalisations concrètes, mais aussi ma
                     capacité à relever de nouveaux défis avec créativité et détermination. Je suis constamment à la
@@ -87,7 +83,7 @@ $titre='Accueil';
                 </p>
                 <p>
                     N'hésitez pas à me contacter pour discuter de collaborations potentielles ou pour en savoir plus sur
-                    mon parcours et mes compétences, voir le bouton en dessous. Ensemble, nous pouvons créer quelque
+                    mon parcours et mes compétences, voir le bouton en dessous. <br>Ensemble, nous pouvons créer quelque
                     chose d'exceptionnel !
                 </p>
             </div>
@@ -105,7 +101,7 @@ $titre='Accueil';
                 <div onclick="window.location.href='test.php';" class="swiper-slide projet">
                     <a href="#"
                        onclick="openPopup('public/image/simfast_accueil.png', 'Projet Simfast', 1000, 880); return false;">
-                        <img src="public/image/simfast_accueil.png" alt="Projet SimFast">
+                        <img src="public/image/Projet/p1/simfast_accueil.png" alt="Projet SimFast">
                     </a>
                     <h3>Projet SimFast</h3>
                     <p>Création d'un site web avec des modules de calcul (Probabilité, chiffrement RC4)</p>
@@ -187,10 +183,9 @@ $titre='Accueil';
     }
 </script>
 
-
+<!-- API Sphère de compétences -->
 <script>
-    //API Sphère de compétences
-    const myTags = ['PHP', 'Laravel', 'HTML', 'CSS', 'Bootstrap', 'JavaScript', 'TypeScript', 'MySQL', 'SQL', 'PL/SQL', 'Oracle Database', 'Phpmyadmin', 'JSON', 'XML', 'FIGMA', 'WordPress', 'Node.js', 'Express.js', 'Machine Learning', 'Python', 'C', 'Java', 'Jakarta EE', 'GIT', 'GitHub', 'GitLab', 'IntelliJ', 'ANGULAR', 'REACT', 'Apache', 'Bash', 'Droit informatique', 'Gestion de projet'];
+    const myTags = ['Administration Réseaux', 'Administration bas niveau', 'Architecture Réseaux', 'Virtualisation', 'PHP', 'Laravel', 'HTML', 'CSS', 'Bootstrap', 'JavaScript', 'TypeScript', 'MySQL', 'SQL', 'PL/SQL', 'Oracle Database', 'Phpmyadmin', 'JSON', 'XML', 'FIGMA', 'WordPress', 'Node.js', 'Express.js', 'Machine Learning', 'Python', 'C', 'Java', 'Jakarta EE', 'GIT', 'GitHub', 'GitLab', 'IntelliJ', 'ANGULAR', 'REACT', 'Apache', 'Bash', 'Droit informatique', 'Gestion de projet'];
 
     // Définition du rayon en fonction du type d'appareil
     let radius = isMobileDevice() ? 160 : 300;
@@ -215,9 +210,9 @@ $titre='Accueil';
     document.querySelector('.content').style.color = "#333";
 </script>
 
+<!-- API Swipper Projet -->
 <script>
     //let nombreparview = isMobileDevice() ? 1 : 6;
-    //API Swipper
     document.addEventListener('DOMContentLoaded', function () {
 
         // Initialise Swiper
@@ -282,6 +277,7 @@ $titre='Accueil';
     });*/
 </script>
 
+<!-- Image Projet -->
 <script>
     /* Fenêtre clique image projet */
     function openPopup(imageURL, windowName, width, height) {
@@ -294,8 +290,8 @@ $titre='Accueil';
     }
 </script>
 
+<!-- Bouton Retour haut -->
 <script>
-    /* Button retour en haut */
     window.addEventListener('scroll', function () {
         let retour_haut_btn = document.getElementById("retour_haut_btn");
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -314,12 +310,13 @@ $titre='Accueil';
             behavior: 'smooth' //transition douce
         })
     }
-
 </script>
 
 <script>
     // Menu Burger
 </script>
+
+
 
 </body>
 </html>

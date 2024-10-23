@@ -58,20 +58,30 @@ $titre = 'CV';
 
     <section class="formations">
         <h2>Formations</h2>
-        <div class="formations_conteneur">
-            <div class="formations_left">
-                <img src="../image/cv/oteria_logo.webp" width="600" height="273" alt="Logo Oteria Cyber School">
-                <img src="../image/cv/velizy_logo.webp" width="600" height="110" alt="Logo Iut de Vélizy">
-            </div>
-
-            <div class="formations_right">
-                <h3>2024-2027 Oteria Cyber School</h3>
-                <p>Et oui ! Depuis septembre 2024, j'ai rejoint l'Oteria Cyber School pour me former en cybersécurité, un domaine qui me passionne depuis longtemps. Je me plonge actuellement dans l'apprentissage des fondamentaux.</p>
-                <p>Ce que je fais à l'école me plaît énormément, l'ambiance est excellente ce qui me permet chaque jour d'approfondir mes compétences.</p>
-                <p>Mon objectif est de devenir un expert capable de prévenir et contrer les cyberattaques, en m'investissant à fond dans cette discipline en constante évolution.</p>
-            </div>
-        </div>
+        <table class="formations_table">
+            <tr>
+                <td class="logo_cell">
+                    <img src="../image/cv/oteria_logo.webp" alt="Logo Oteria Cyber School">
+                </td>
+                <td class="text_cell">
+                    <h3>2024-2027 Oteria Cyber School</h3>
+                    <p>Et oui ! Depuis septembre 2024, j'ai rejoint l'Oteria Cyber School pour me former en cybersécurité, un domaine qui me passionne depuis longtemps. Je me plonge actuellement dans l'apprentissage des fondamentaux.</p>
+                    <p>Ce que je fais à l'école me plaît énormément, l'ambiance est excellente ce qui me permet chaque jour d'approfondir mes compétences.</p>
+                    <p>Mon objectif est de devenir un expert capable de prévenir et contrer les cyberattaques, en m'investissant à fond dans cette discipline en constante évolution.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="logo_cell">
+                    <img src="../image/cv/velizy_logo.webp" alt="Logo Iut de Vélizy">
+                </td>
+                <td class="text_cell">
+                    <h3>2021-2024 But Informatique</h3>
+                    <p>Campus de Vélizy-Villacoublay <br> Campus de Rambouillet</p>
+                </td>
+            </tr>
+        </table>
     </section>
+
 
     <section class="contact">
         <h2>Contactez-moi</h2>

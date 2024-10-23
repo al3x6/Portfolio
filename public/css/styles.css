@@ -273,8 +273,6 @@ main {
 /* ///////////////////////////// Section formations ///////////////////////////// */
 .formations {
     padding: 50px;
-    max-height: 700px; /* Hauteur maximale de la section */
-    overflow-y: auto; /* Activation du défilement vertical si nécessaire */
     background-color: #6e6c6c;
 }
 
@@ -284,32 +282,43 @@ main {
     margin-bottom: 30px;
 }
 
-/* Conteneur pour division droite et gauche */
-.formations .formations_conteneur {
-    display: flex;
-    flex-direction: row; /* Disposition horizontale */
-    justify-content: space-between; /* Espace entre l'image et le texte */
-    align-items: flex-start; /* Alignement vertical en haut */
+/* Styles du tableau pour la section des formations */
+.formations .formations_table {
+    width: 100%; /* Occupe toute la largeur disponible */
+    border-collapse: collapse; /* Supprime les espaces entre les cellules */
 }
 
-/* /// Left (Logo à gauche) /// */
-.formations .formations_left {
-    flex: 0.5; /* Ajuster la largeur de la partie gauche (image) */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.formations .formations_table td {
+    vertical-align: top; /* Aligne le texte et les images en haut */
+    padding: 20px; /* Ajoute un peu d'espace autour du contenu */
 }
 
-/* /// Right (Texte à droite) /// */
-.formations .formations_right {
-    flex: 0.5; /* Ajuster la largeur de la partie droite (texte) */
-    justify-content: flex-start; /* Aligner le texte à gauche */ /*center*/
-    align-items: center;
+/* Colonne pour les logos */
+.formations .formations_table .logo_cell {
+    width: 30%; /* La colonne des logos occupe 30% de la largeur totale */
+    text-align: center; /* Centrer les images dans la colonne */
 }
 
-.formations .formations_right p {
+.formations .formations_table .logo_cell img {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px; /* Limiter la hauteur des images */
+}
+
+/* Colonne pour le texte */
+.formations .formations_table .text_cell {
+    width: 70%; /* La colonne du texte occupe 70% de la largeur */
+}
+
+.formations .formations_table .text_cell h3 {
+    font-size: 22px;
     margin-bottom: 10px;
+}
+
+.formations .formations_table .text_cell p {
+    margin-bottom: 15px;
     font-size: 18px;
+    line-height: 1.6;
 }
 
 /* button */
@@ -317,6 +326,7 @@ main {
     text-align: center;
     padding: 50px;
 }
+
 .formations .formations_right .div_button .button {
     background-color: #333; /* Couleur de fond du bouton */
     color: #fff; /* Couleur du texte du bouton */
@@ -327,6 +337,7 @@ main {
     cursor: pointer; /* Change le curseur lorsqu'on survole le bouton */
     text-decoration: none; /* Supprime les soulignements */
 }
+
 .formations .formations_right .div_button .button:hover {
     background-color: #555; /* Couleur de fond du bouton au survol */
 }

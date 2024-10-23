@@ -12,7 +12,7 @@ $titre = 'CV';
     <meta name="description" content="Je présente sur cette page mon Cv au complet. Il est possible d'être téléchargé">
     <title><?= $titre ?></title>
     <!-- Inclure des feuilles de style CSS ici -->
-    <link rel="stylesheet" href="../css/styles_css.css" media="only screen and (min-width: 941px)">
+    <link rel="stylesheet" href="../css/styles.css" media="only screen and (min-width: 941px)">
     <link rel="stylesheet" href="../css/styles_mobile_css.css" media="only screen and (max-width: 940px)">
 
     <!-- Emeticones -->
@@ -46,6 +46,7 @@ $titre = 'CV';
     </section>
 
 
+
     <section class="services">
         <div class="services_left">
 
@@ -55,10 +56,20 @@ $titre = 'CV';
         </div>
     </section>
 
+    <section class="formations">
+        <h2>Formations</h2>
+        <div class="formations_conteneur">
+            <div class="formations_left">
+                <img src="../image/cv/oteria_logo.webp" width="600" height="273" alt="Logo Oteria Cyber School">
+                <img src="../image/cv/velizy_logo.webp" width="600" height="110" alt="Logo Iut de Vélizy">
+            </div>
 
-    <section class="portfolio">
-        <h2>Portfolio</h2>
-
+            <div class="formations_right">
+                <h3>2024-2027 Oteria Cyber School</h3>
+                <p>Et oui ! Depuis septembre 2024, j'ai rejoint l'Oteria Cyber School pour me former en cybersécurité, un domaine qui me passionne depuis longtemps. Je me plonge actuellement dans l'apprentissage des fondamentaux.</p>
+                <p>Ce que je fais à l'école me plaît énormément, l'ambiance est excellente ce qui me permet chaque jour d'approfondir mes compétences.</p>
+                <p>Mon objectif est de devenir un expert capable de prévenir et contrer les cyberattaques, en m'investissant à fond dans cette discipline en constante évolution.</p>
+            </div>
         </div>
     </section>
 

@@ -284,6 +284,53 @@ main {
     margin-bottom: 30px;
 }
 
+/* Conteneur pour division droite et gauche */
+.formations .formations_conteneur {
+    display: flex;
+    flex-direction: row; /* Disposition horizontale */
+    justify-content: space-between; /* Espace entre l'image et le texte */
+    align-items: flex-start; /* Alignement vertical en haut */
+}
+
+/* /// Left (Logo à gauche) /// */
+.formations .formations_left {
+    flex: 0.5; /* Ajuster la largeur de la partie gauche (image) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* /// Right (Texte à droite) /// */
+.formations .formations_right {
+    flex: 0.5; /* Ajuster la largeur de la partie droite (texte) */
+    justify-content: flex-start; /* Aligner le texte à gauche */ /*center*/
+    align-items: center;
+}
+
+.formations .formations_right p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* button */
+.formations .formations_right .div_button {
+    text-align: center;
+    padding: 50px;
+}
+.formations .formations_right .div_button .button {
+    background-color: #333; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    border: none; /* Supprime les bordures du bouton */
+    padding: 10px 20px; /* Ajoute un espace intérieur au bouton */
+    font-size: 16px; /* Taille de la police du texte */
+    border-radius: 5px; /* Ajoute des coins arrondis au bouton */
+    cursor: pointer; /* Change le curseur lorsqu'on survole le bouton */
+    text-decoration: none; /* Supprime les soulignements */
+}
+.formations .formations_right .div_button .button:hover {
+    background-color: #555; /* Couleur de fond du bouton au survol */
+}
+
 /* ///////////////////////////// Section contact ///////////////////////////// */
 .contact {
     background-color: #333; /* Couleur de fond de la section */

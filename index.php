@@ -13,7 +13,7 @@ $titre='Accueil';
           content="Bienvenue sur mon portfolio ! Je suis Alexis Araujo, étudiant passionné en informatique. Avec une expertise diversifiée dans plusieurs domaines, notamment le développement web, la conception graphique et la configuration de serveurs, je suis prêt à relever de nouveaux défis avec créativité et détermination. Explorez mes réalisations concrètes et découvrez comment je peux contribuer à des projets innovants en tant que développeur web passionné.">
     <title><?=$titre?></title>
     <!-- Inclure des feuilles de style CSS ici -->
-    <link rel="stylesheet" href="public/css/styles_css.css" media="only screen and (min-width: 941px)">
+    <link rel="stylesheet" href="public/css/styles.css" media="only screen and (min-width: 941px)">
     <link rel="stylesheet" href="public/css/styles_mobile_css.css" media="only screen and (max-width: 940px)">
 
     <!-- Emoticone -->
@@ -95,7 +95,7 @@ $titre='Accueil';
 
 
     <section class="portfolio">
-        <h2>Portfolio</h2>
+        <h2>Projets</h2>
         <div class="swiper carrousel-container">
             <div class="swiper-wrapper carrousel-wrapper">
                 <div onclick="window.location.href='test.php';" class="swiper-slide projet">

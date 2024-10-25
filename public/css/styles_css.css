@@ -320,6 +320,9 @@ main {
     font-size: 18px;
     line-height: 1.6;
 }
+.formations .formations_table .text_cell p a {
+    color: black;
+}
 
 /* button */
 .formations .formations_right .div_button {

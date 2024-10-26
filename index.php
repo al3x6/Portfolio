@@ -98,29 +98,33 @@ $titre='Accueil';
         <h2>Projets</h2>
         <div class="swiper carrousel-container">
             <div class="swiper-wrapper carrousel-wrapper">
+                <div class="swiper-slide projet">
+                    <a href=""><img src="image1.jpg" alt="Projet Portfolio"></a>
+                    <h3>Projet Portfolio</h3>
+                    <p>Le voici !!! Le projet Portfolio constitue à la création d'un site web de A à Z où je me présente.</p>
+                </div>
+
+                <div class="swiper-slide projet">
+                    <a href=""><img src="image2.jpg" alt="Projet NIDS"></a>
+                    <h3>Projet NIDS</h3>
+                    <p>Description du projet NIDS</p>
+                </div>
+
                 <div onclick="window.location.href='test.php';" class="swiper-slide projet">
                     <a href="#"
                        onclick="openPopup('public/image/simfast_accueil.png', 'Projet Simfast', 1000, 880); return false;">
                         <img src="public/image/Projet/p1/simfast_accueil.png" alt="Projet SimFast">
                     </a>
                     <h3>Projet SimFast</h3>
-                    <p>Création d'un site web avec des modules de calcul (Probabilité, chiffrement RC4)</p>
+                    <p>Création d'un site web hebergé sur Raspberry Pi avec des modules de calcul (Probabilité, chiffrement RC4)</p>
                 </div>
+
                 <div class="swiper-slide projet">
-                    <a href=""><img src="image2.jpg" alt="Projet 2"></a>
-                    <h3>Projet 2</h3>
-                    <p>Description du projet 2</p>
+                    <img src="image4.jpg" alt="Projet Arduino Badgeuse">
+                    <h3>Projet Arduino Badgeuse</h3>
+                    <p>Description du projet Arduino Badgeuse</p>
                 </div>
-                <div class="swiper-slide projet">
-                    <img src="image3.jpg" alt="Projet 3">
-                    <h3>Projet 3</h3>
-                    <p>Description du projet 3</p>
-                </div>
-                <div class="swiper-slide projet">
-                    <img src="image4.jpg" alt="Projet 4">
-                    <h3>Projet 4</h3>
-                    <p>Description du projet 4</p>
-                </div>
+
                 <div class="swiper-slide projet">
                     <img src="image5.jpg" alt="Projet 5">
                     <h3>Projet 5</h3>

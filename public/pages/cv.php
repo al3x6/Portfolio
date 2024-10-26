@@ -44,19 +44,32 @@ $titre = 'CV';
             <?php /*__DIR__*/ ?>
         </div>
     </section>
+    <section class="mini_menu">
+        <h2>Sommaire</h2>
+        <!-- Mini Menu -->
+        <nav class="mini-menu">
+            <ul>
+                <li><a href="#profil" class="button">Profil</a></li>
+                <li><a href="#formations" class="button">Formations</a></li>
+                <li><a href="#competences" class="button">Compétences</a></li>
+            </ul>
+        </nav>
+    </section>
 
+    <section id="profil" class="profil">
+        <h2><i class="fas fa-user"></i> Profil</h2>
+        <div class="profil_container">
+            <div class="profil_left">
+                <p><b>"Enthousiaste, curieux et doté d'un fort esprit d'équipe,<br> je combine autonomie et joie de vivre pour apporter des solutions <br>innovantes et efficaces qui répondent aux exigences de votre entreprise."</b></p>
+            </div>
 
-
-    <section class="services">
-        <div class="services_left">
-
-        </div>
-
-        <div class="services_right">
+            <div class="profil_right">
+                <p>Bien sûr c'est ce qu'il a marqué sur mon CV. Mais je suis plus que ça. Plus qu'un étudiant en informatique, je suis une personne sociable et motivée par l'envie de toujours apprendre. Mon parcours m'a permis de forger une expertise technique tout en restant très accessible. J'aime échanger, j'inspire confiance et joie de vivre, une qualité qui me permet de bien m'intégrer dans une équipe et de favoriser un environnement de travail collaboratif.</p>
+            </div>
         </div>
     </section>
 
-    <section class="formations">
+    <section id="formations" class="formations">
         <h2><i class="fas fa-graduation-cap"></i> Formations</h2>
         <table class="formations_table">
             <tr>
@@ -114,6 +127,134 @@ $titre = 'CV';
         </table>
     </section>
 
+    <section id="competences" class="competences">
+        <h2><i class="fas fa-star"></i> Compétences</h2>
+
+        <!-- Mini Menu -->
+        <nav class="mini-menu">
+            <ul>
+                <li><a href="#systèmes-et-réseaux" class="button">Systèmes et Réseaux</a></li>
+                <li><a href="#web" class="button">Web</a></li>
+                <li><a href="#administration-bas-niveau" class="button">Administration Bas Niveau</a></li>
+                <li><a href="#virtualisation" class="button">Virtualisation</a></li>
+                <li><a href="#architecture-reseaux" class="button">Architecture Réseaux</a></li>
+            </ul>
+        </nav>
+
+        <!-- Conteneur d'images -->
+        <!--<div class="image_container">
+            <div class="image_item">
+                <img src="" alt="Routeur">
+                <p>Routeur</p>
+            </div>
+            <div class="image_item">
+                <img src="" alt="Globe Internet">
+                <p>Globe Internet</p>
+            </div>
+            <div class="image_item">
+                <img src="" alt="Serveur">
+                <p>Serveur</p>
+            </div>
+            <div class="image_item">
+                <img src="" alt="Câbles Réseau">
+                <p>Câbles Réseau</p>
+            </div>
+        </div>-->
+
+        <div class="competences_container">
+            <h3 id="systèmes-et-réseaux"><i class="fas fa-network-wired"></i> Systèmes et Réseaux</h3>
+            <p>Depuis plus de 3 ans, je travaille dans les systèmes et réseaux, ce qui m'a permis d'acquérir une expérience solide pour mener à bien des projets de grande envergure. Le réseau est essentiel pour la cybersécurité, et je suis passionné par l'optimisation des systèmes pour assurer leur sécurité et leur performance.</p>
+
+            <div class="sous_competences_container">
+                <h4>Administration Réseaux</h4>
+                <p>J'ai une forte expérience dans l'administration de réseaux, où j'assure la configuration, la gestion et la sécurité des réseaux. J'ai travaillé sur des projets de mise en place de réseaux locaux.</p>
+                <ul>
+                    <li>Linux (CentOS, Debian, Ubuntu, Kali Linux)</li>
+                    <li>Connexion SSH pour l'accès distant sécurisé</li>
+                    <li>Tunnel sécurisé pour la protection des données</li>
+                    <li>Installation et configuration de serveur Apache de type LAMP pour héberger des applications web</li>
+                </ul>
+            </div>
+
+            <div class="sous_competences_container">
+                <h4>Administration bas niveau</h4>
+                <p>Je suis compétent dans la gestion des composants matériels et des systèmes d'exploitation. Mon expérience inclut l'optimisation des performances du système et le dépannage des problèmes matériels.</p>
+                <ul>
+                    <li>Gestion du noyau Linux pour des performances optimisées</li>
+                    <li>Gestion de la mémoire et des partitions</li>
+                    <li>Création et gestion de modules pour l'extension des fonctionnalités</li>
+                    <li>Composants hardware (Ordinateur, Raspberry Pi, Arduino) pour des projets IoT</li>
+                    <li>Gestion des releases et versioning des projets pour assurer la traçabilité</li>
+                    <li>Configuration de Systemd pour la gestion des services et des processus</li>
+                </ul>
+            </div>
+
+            <div class="sous_competences_container">
+                <h4>Virtualisation</h4>
+                <p>Je maîtrise les technologies de virtualisation, qui sont essentielles pour le déploiement d'applications dans des environnements isolés. J'utilise ces technologies pour optimiser l'utilisation des ressources pour lancer des applications Web.</p>
+                <ul>
+                    <li>Docker pour la conteneurisation des applications</li>
+                    <li>Docker Swarm pour l'orchestration de conteneurs</li>
+                    <li>Création et gestion de Dockerfiles pour automatiser les déploiements</li>
+                </ul>
+            </div>
+
+            <div class="sous_competences_container">
+                <h4>Architecture Réseaux</h4>
+                <p>J'ai une compréhension approfondie des architectures réseau, y compris la conception et la mise en oeuvre de réseaux locaux et étendus. J'ai participé à la configuration de systèmes IP et à l'installation de systèmes dans des environnements.</p>
+                <ul>
+                    <li>LAN : conception et configuration de réseaux locaux</li>
+                    <li>WAN : interconnexion de réseaux sur de grandes distances</li>
+                    <li>Paramétrage IP pour assurer une communication efficace</li>
+                    <li>Installations système et déploiement dans des environnements divers</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="competences_container">
+            <h3 id="web"><i class="fas fa-globe"></i> Web</h3>
+            <p>Depuis également plus de 3 ans, je travaille dans la réalisation, la correctivité et l'évolutivité d'applications et d'outils Web et mobiles, ce qui m'a permis d'acquérir une expérience solide pour mener à bien des projets de grande envergure que par ailleurs j'ai fait partie durant mes stages. Le Web représente la principalité des causes d'attaques en cybersécurité, et je suis passionné par l'optimisation des systèmes pour assurer leur sécurité et leur performance.</p>
+
+            <div class="sous_competences_container">
+                <h4>Langages</h4>
+                <p>Je connais une variété de langage pour la programmation et protection de site Web et d'applications mobiles</p>
+
+                <div class="languages">
+                    <img src="../image/cv/python_logo.webp" alt="Python" title="Python">
+                    <img src="path/to/html-icon.png" alt="HTML" title="HTML">
+                    <img src="path/to/css-icon.png" alt="CSS" title="CSS">
+                    <img src="path/to/js-icon.png" alt="JavaScript" title="JavaScript">
+                    <img src="path/to/php-icon.png" alt="PHP" title="PHP">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="outils">
+
+    </section>
+
+    <section class="experiences">
+
+    </section>
+
+    <section class="suivi">
+
+    </section>
+
+    <section class="langues">
+
+    </section>
+
+    <section class="centres_interets">
+
+    </section>
+
+    <section class="projets_cv">
+
+    </section>
 
     <section class="contact">
         <h2>Contactez-moi</h2>
@@ -130,9 +271,25 @@ $titre = 'CV';
 
 </main>
 
-
 <!-- Footer -->
 <?php include("../../includes/footer.php"); ?>
+
+<!-- Bouton mini menu défilement fluide -->
+<script>
+    document.querySelectorAll('.mini-menu a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 100, // Ajustez le décalage si nécessaire
+                    behavior: 'smooth' // Défilement fluide
+                });
+            }
+        });
+    });
+</script>
 
 <!-- Bouton Retour haut -->
 <script>

@@ -270,10 +270,69 @@ main {
     font-size: 1em; /* Taille du texte */
 }
 
+/* ///////////////////////////// Section mini_menu ///////////////////////////// */
+.mini_menu {
+    background-color: #f2f2f2;
+    padding: 1px;
+    padding-bottom: 50px;
+}
+
+.mini_menu h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* ///////////////////////////// Section profil ///////////////////////////// */
+.profil {
+    padding: 100px;
+    /*background-color: #c2c2c2;*/
+    background-color: #dfdfdf;
+}
+
+.profil h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.profil .profil_container {
+    display: flex;
+}
+
+/* /// Left /// */
+.profil .profil_container .profil_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.profil .profil_container .profil_left p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* /// Right /// */
+.profil .profil_container .profil_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.profil .profil_container .profil_right p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
 /* ///////////////////////////// Section formations ///////////////////////////// */
 .formations {
     padding: 50px;
-    background-color: #6e6c6c;
+    /*background-color: #6e6c6c;*/
+    background-color: #cccccc;
 }
 
 .formations h2 {
@@ -343,6 +402,156 @@ main {
 
 .formations .formations_right .div_button .button:hover {
     background-color: #555; /* Couleur de fond du bouton au survol */
+}
+
+/* ///////////////////////////// Section compétences (langages) ///////////////////////////// */
+.competences {
+    padding: 50px;
+    background-color: #b9b9b9;
+}
+
+.competences h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* mini menu */
+.mini-menu {
+    text-align: center; /* Centrer le menu */
+    margin-bottom: 20px; /* Espacement sous le menu */
+}
+
+.mini-menu ul {
+    list-style: none; /* Supprime les puces de la liste */
+    padding: 0; /* Enlève le padding par défaut */
+    display: flex; /* Utilise flexbox pour aligner les éléments en ligne */
+    justify-content: center; /* Centre les éléments du menu */
+}
+
+.mini-menu ul li {
+    margin: 0 10px; /* Espace entre les éléments */
+}
+
+.mini-menu .button {
+    display: inline-block; /* Rend le lien comme un bloc en ligne */
+    padding: 10px 20px; /* Ajout de padding pour le style du bouton */
+    background-color: #333; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border-radius: 5px; /* Coins arrondis */
+    text-decoration: none; /* Supprime le soulignement */
+    transition: background-color 0.3s; /* Animation lors du survol */
+}
+
+.mini-menu .button:hover {
+    background-color: #555; /* Couleur de fond au survol */
+}
+
+/* Image Container */
+.competences .image_container {
+    display: flex; /* Utilise flexbox pour aligner les éléments */
+    flex-wrap: wrap; /* Permet à l'image de passer à la ligne si l'espace est insuffisant */
+    justify-content: center; /* Centre les éléments horizontalement */
+    margin-top: 20px; /* Espacement au-dessus du conteneur d'images */
+}
+
+.competences .image_container .image-item {
+    margin: 10px; /* Espace entre les images */
+    text-align: center; /* Centre le texte sous chaque image */
+    width: 200px; /* Largeur fixe pour les images */
+}
+
+.competences .image_container .image-item img {
+    width: 100%; /* Les images s'adaptent à la largeur de leur conteneur */
+    border-radius: 5px; /* Arrondir les bords des images */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre pour un effet de profondeur */
+}
+
+.competences .image_container .image-item p {
+    margin-top: 5px; /* Espace au-dessus du texte */
+    font-weight: bold; /* Met en gras le texte sous l'image */
+}
+
+/* Container */
+.competences .competences_container {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.competences .competences_container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 50px; /* Ajustement des marges */
+}
+
+.competences .competences_container .sous_competences_container {
+    margin-left: 50px;
+}
+
+.competences .competences_container .sous_competences_container ul {
+    margin-left: 70px;
+    margin-top: 0;
+    padding: 10px; /* Ajout de padding pour un espacement intérieur */
+}
+
+.competences .competences_container .sous_competences_container li {
+    margin-bottom: 5px; /* Espacement entre les éléments de liste */
+}
+
+.competences .competences_container .sous_competences_container .languages {
+    margin-left: 50px;
+    display: flex;
+    gap: 15px; /* Espace entre les images */
+    align-items: center;
+    margin-top: 10px;
+}
+
+.competences .competences_container .sous_competences_container .languages img {
+    width: 40px; /* Taille de chaque icône */
+    height: auto;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.competences .competences_container .sous_competences_container .languages img:hover {
+    transform: scale(1.1); /* Agrandissement au survol */
+}
+
+/* ///////////////////////////// Section outils ///////////////////////////// */
+.outils {
+    padding: 50px;
+    background-color: #a6a6a6;
+}
+
+/* ///////////////////////////// Section experiences ///////////////////////////// */
+.experiences {
+    padding: 50px;
+    background-color: #929292;
+}
+
+/* ///////////////////////////// Section suivi ///////////////////////////// */
+.suivi {
+    padding: 50px;
+    background-color: #7f7f7f;
+}
+
+/* ///////////////////////////// Section langues ///////////////////////////// */
+.langues {
+    padding: 50px;
+    background-color: #6c6c6c;
+}
+
+/* ///////////////////////////// Section centres interets ///////////////////////////// */
+.centres_interets {
+    padding: 50px;
+    background-color: #595959;
+}
+
+/* ///////////////////////////// Section projets_cv ///////////////////////////// */
+.projets_cv {
+    padding: 50px;
+    background-color: #464646;
 }
 
 /* ///////////////////////////// Section contact ///////////////////////////// */

@@ -12,7 +12,7 @@ $titre = 'CV';
     <meta name="description" content="Je présente sur cette page mon Cv au complet. Il est possible d'être téléchargé">
     <title><?= $titre ?></title>
     <!-- Inclure des feuilles de style CSS ici -->
-    <link rel="stylesheet" href="../css/styles_css.css" media="only screen and (min-width: 941px)">
+    <link rel="stylesheet" href="../css/styles.css" media="only screen and (min-width: 941px)">
     <link rel="stylesheet" href="../css/styles_mobile_css.css" media="only screen and (max-width: 940px)">
 
     <!-- Emeticones -->
@@ -52,6 +52,12 @@ $titre = 'CV';
                 <li><a href="#profil" class="button">Profil</a></li>
                 <li><a href="#formations" class="button">Formations</a></li>
                 <li><a href="#competences" class="button">Compétences</a></li>
+                <li><a href="#outils" class="button">Outils</a></li>
+                <li><a href="#experiences" class="button">Expériences</a></li>
+                <li><a href="#suivi" class="button">Suivi</a></li>
+                <li><a href="#langues" class="button">Langues</a></li>
+                <li><a href="#centres_interets" class="button">Centres d'intérêts</a></li>
+                <li><a href="#projets" class="button">Projets</a></li>
             </ul>
         </nav>
     </section>
@@ -213,18 +219,18 @@ $titre = 'CV';
 
         <div class="competences_container">
             <h3 id="web"><i class="fas fa-globe"></i> Web</h3>
-            <p>Depuis également plus de 3 ans, je travaille dans la réalisation, la correctivité et l'évolutivité d'applications et d'outils Web et mobiles, ce qui m'a permis d'acquérir une expérience solide pour mener à bien des projets de grande envergure que par ailleurs j'ai fait partie durant mes stages. Le Web représente la principalité des causes d'attaques en cybersécurité, et je suis passionné par l'optimisation des systèmes pour assurer leur sécurité et leur performance.</p>
+            <p>Depuis également plus de 3 ans, je travaille dans la réalisation, la correctivité et l'évolutivité d'applications et d'outils Web et mobiles, ce qui m'a permis d'acquérir une expérience solide pour mener à bien des projets de grande envergure que par ailleurs j'ai fait partie durant mes stages.<br> Le Web représente l'une des principales causes d'attaques en cybersécurité, et je suis passionné par l'optimisation des systèmes pour assurer leur sécurité et leur performance.<br> Avoir un passif web me permet d'avoir une importe connaissance sur les failles d'un site web, en connaissant toutes les petites subtilités de performance au network d'un site, ou encore le stockage local.</p>
 
             <div class="sous_competences_container">
                 <h4>Langages</h4>
                 <p>Je connais une variété de langage pour la programmation et protection de site Web et d'applications mobiles</p>
 
                 <div class="languages">
-                    <img src="../image/cv/python_logo.webp" alt="Python" title="Python">
-                    <img src="path/to/html-icon.png" alt="HTML" title="HTML">
-                    <img src="path/to/css-icon.png" alt="CSS" title="CSS">
-                    <img src="path/to/js-icon.png" alt="JavaScript" title="JavaScript">
-                    <img src="path/to/php-icon.png" alt="PHP" title="PHP">
+                    <img src="../image/cv/python_logo.webp" alt="Python" title="Python logo">
+                    <img src="../image/cv/html_logo.webp" alt="HTML" title="HTML logo">
+                    <img src="../image/cv/css_logo.webp" alt="CSS" title="CSS logo">
+                    <img src="../image/cv/js_logo.webp" alt="JavaScript" title="JavaScript logo">
+                    <img src="../image/cv/php_logo.webp" alt="PHP" title="PHP logo">
                 </div>
 
             </div>

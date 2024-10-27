@@ -13,7 +13,7 @@ $titre='Accueil';
           content="Bienvenue sur mon portfolio ! Je suis Alexis Araujo, étudiant passionné en informatique. Avec une expertise diversifiée dans plusieurs domaines, notamment le développement web, la conception graphique et la configuration de serveurs, je suis prêt à relever de nouveaux défis avec créativité et détermination. Explorez mes réalisations concrètes et découvrez comment je peux contribuer à des projets innovants en tant que développeur web passionné.">
     <title><?=$titre?></title>
     <!-- Inclure des feuilles de style CSS ici -->
-    <link rel="stylesheet" href="/public/css/styles_css.css" media="only screen and (min-width: 941px)">
+    <link rel="stylesheet" href="/public/css/styles.css" media="only screen and (min-width: 941px)">
     <link rel="stylesheet" href="/public/css/styles_mobile_css.css" media="only screen and (max-width: 940px)">
 
     <!-- Emoticone -->
@@ -38,8 +38,11 @@ $titre='Accueil';
         <div class="hero_left">
             <div>
                 <h2>Alexis Araujo</h2>
-                <p>Je suis un jeune étudiant en 3ème à Oteria Cyber School après avoir eu mon BUT Informatique (Niveau Licence).<br>Je passionné par
-                    l’informatique et surtout la Cybersécurité.</p>
+                <p>Je suis un jeune étudiant en 3ème à Oteria Cyber School après avoir eu mon BUT Informatique (Niveau Licence).
+                    <br>Je passionné par l'informatique et surtout la Cybersécurité.
+                    <br>Je me caractérise comme une personne très polyvalente qui à des connaissances dans tous les domaines de l'informatique et non informatique.
+                    <br>Grâce à cette polyvalence, je suis capable d'anticiper et de résoudre des défis complexes en cybersécurité en ayant une vision globale des systèmes et en comprenant les interactions entre chaque composant, qu'il s'agisse de réseaux, d'applications web et mobile, de base de données, de systèmes d'exploitation, de cryptographie ou encore d'intelligence artificielle (Machine Learning).
+                </p>
             </div>
             <div class="div_button">
                 <a href="/public/pages/projets.php" class="button">Voir mon travail</a>
@@ -70,7 +73,7 @@ $titre='Accueil';
         <div class="services_right">
             <div>
                 <h2>About me</h2>
-                <p>Je suis un étudiant passionné par le monde numérique et les nouvelles technologies. Je possède une expertise diversifiée dans plusieurs domaines, allant de la création de sites web à la conception graphique, en passant par le développement d'applications mobiles, la configuration de serveurs, l'administration des réseaux, la virtualisation, l'architecture des réseaux et l'administration bas niveau. Cette palette de compétences me rend à la fois polyvalent et adaptable.
+                <p>Je suis un étudiant passionné par le monde numérique et les nouvelles technologies. Je possède une expertise diversifiée dans plusieurs domaines, allant de la création de logiciel mais aussi de la réalisation de sites web à la conception graphique, en passant par le développement d'applications mobiles, le Machine Learning (IA), la cryptographie, la configuration de serveurs, l'administration des réseaux, la virtualisation, l'architecture des réseaux et l'administration bas niveau. Cette palette de compétences me rend à la fois polyvalent et adaptable.
                 </p>
                 <p>
                     Récemment, j'ai rejoint Oteria Cyber School pour obtenir un titre RNCP de niveau +7 et devenir un <b>Expert en Cybersécurité</b>.<br> Cette formation combinée à la précédente et la maitrise des différents langages de programmation, me permet de mener à bien une variété de projets.

@@ -448,29 +448,29 @@ main {
 }
 
 /* Image Container */
-.competences .image_container {
-    display: flex; /* Utilise flexbox pour aligner les éléments */
-    flex-wrap: wrap; /* Permet à l'image de passer à la ligne si l'espace est insuffisant */
-    justify-content: center; /* Centre les éléments horizontalement */
-    margin-top: 20px; /* Espacement au-dessus du conteneur d'images */
-}
+/*.competences .image_container {*/
+/*    display: flex; !* Utilise flexbox pour aligner les éléments *!*/
+/*    flex-wrap: wrap; !* Permet à l'image de passer à la ligne si l'espace est insuffisant *!*/
+/*    justify-content: center; !* Centre les éléments horizontalement *!*/
+/*    margin-top: 20px; !* Espacement au-dessus du conteneur d'images *!*/
+/*}*/
 
-.competences .image_container .image-item {
-    margin: 10px; /* Espace entre les images */
-    text-align: center; /* Centre le texte sous chaque image */
-    width: 200px; /* Largeur fixe pour les images */
-}
+/*.competences .image_container .image-item {*/
+/*    margin: 10px; !* Espace entre les images *!*/
+/*    text-align: center; !* Centre le texte sous chaque image *!*/
+/*    width: 200px; !* Largeur fixe pour les images *!*/
+/*}*/
 
-.competences .image_container .image-item img {
-    width: 100%; /* Les images s'adaptent à la largeur de leur conteneur */
-    border-radius: 5px; /* Arrondir les bords des images */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre pour un effet de profondeur */
-}
+/*.competences .image_container .image-item img {*/
+/*    width: 100%; !* Les images s'adaptent à la largeur de leur conteneur *!*/
+/*    border-radius: 5px; !* Arrondir les bords des images *!*/
+/*    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); !* Ombre pour un effet de profondeur *!*/
+/*}*/
 
-.competences .image_container .image-item p {
-    margin-top: 5px; /* Espace au-dessus du texte */
-    font-weight: bold; /* Met en gras le texte sous l'image */
-}
+/*.competences .image_container .image-item p {*/
+/*    margin-top: 5px; !* Espace au-dessus du texte *!*/
+/*    font-weight: bold; !* Met en gras le texte sous l'image *!*/
+/*}*/
 
 /* Container */
 .competences .competences_container {
@@ -485,6 +485,7 @@ main {
     margin: 0 50px; /* Ajustement des marges */
 }
 
+/* sous container */
 .competences .competences_container .sous_competences_container {
     margin-left: 50px;
 }
@@ -499,8 +500,9 @@ main {
     margin-bottom: 5px; /* Espacement entre les éléments de liste */
 }
 
+/* image langage */
 .competences .competences_container .sous_competences_container .languages {
-    margin-left: 50px;
+    margin-left: 70px;
     display: flex;
     gap: 15px; /* Espace entre les images */
     align-items: center;

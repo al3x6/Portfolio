@@ -140,36 +140,30 @@ $titre = 'CV';
         <nav class="mini-menu">
             <ul>
                 <li><a href="#systèmes-et-réseaux" class="button">Systèmes et Réseaux</a></li>
-                <li><a href="#web" class="button">Web</a></li>
-                <li><a href="#administration-bas-niveau" class="button">Administration Bas Niveau</a></li>
-                <li><a href="#virtualisation" class="button">Virtualisation</a></li>
-                <li><a href="#architecture-reseaux" class="button">Architecture Réseaux</a></li>
+                <li><a href="#cyber" class="button"> Cybersécurité</a></li>
+                <li><a href="#web" class="button">Web et Mobile</a></li>
+                <li><a href="#bd" class="button">Base de données</a></li>
+                <li><a href="#ml" class="button">Machine Learning (IA)</a></li>
+                <li><a href="#devlogiciel" class="button">Développement Logiciel</a></li>
+                <li><a href="#gestionprojet" class="button">Gestion de projet</a></li>
+                <li><a href="#qualitecode" class="button">Qualité de code</a></li>
+                <li><a href="#droit" class="button">Droit de l'informatique</a></li>
             </ul>
         </nav>
-
-        <!-- Conteneur d'images -->
-        <!--<div class="image_container">
-            <div class="image_item">
-                <img src="" alt="Routeur">
-                <p>Routeur</p>
-            </div>
-            <div class="image_item">
-                <img src="" alt="Globe Internet">
-                <p>Globe Internet</p>
-            </div>
-            <div class="image_item">
-                <img src="" alt="Serveur">
-                <p>Serveur</p>
-            </div>
-            <div class="image_item">
-                <img src="" alt="Câbles Réseau">
-                <p>Câbles Réseau</p>
-            </div>
-        </div>-->
 
         <div class="competences_container">
             <h3 id="systèmes-et-réseaux"><i class="fas fa-network-wired"></i> Systèmes et Réseaux</h3>
             <p>Depuis plus de 3 ans, je travaille dans les systèmes et réseaux, ce qui m'a permis d'acquérir une expérience solide pour mener à bien des projets de grande envergure. Le réseau est essentiel pour la cybersécurité, et je suis passionné par l'optimisation des systèmes pour assurer leur sécurité et leur performance.</p>
+            <div class="sous_competences_container">
+                <h4>Langages</h4>
+                <p>Je connais une variété de langage pour le réseaux</p>
+
+                <div class="languages">
+                    <img src="../image/cv/python_logo.webp" alt="Python" title="Python logo">
+                    <img src="../image/cv/c_logo.webp" alt="C" title="C logo">
+                    <img src="../image/cv/bash_logo.webp" alt="Bash" title="Bash logo">
+                </div>
+            </div>
 
             <div class="sous_competences_container">
                 <h4>Administration Réseaux</h4>
@@ -180,6 +174,16 @@ $titre = 'CV';
                     <li>Tunnel sécurisé pour la protection des données</li>
                     <li>Installation et configuration de serveur Apache de type LAMP pour héberger des applications web</li>
                 </ul>
+
+                <div class="languages">
+                    <img src="../image/cv/linux_logo.webp" alt="Linux" title="Linux logo">
+                    <img src="../image/cv/centos_logo.webp" alt="CentOS" title="CentOS logo">
+                    <img src="../image/cv/debian_logo.png" alt="Debian" title="Debian logo">
+                    <img src="../image/cv/ubuntu_logo.webp" alt="Ubuntu" title="Ubuntu logo">
+                    <img src="../image/cv/kalilinux_logo.webp" alt="Kali Linux" title="Kali Linux logo">
+                    <img src="../image/cv/apache_logo.webp" alt="Apache" title="Apache logo">
+                </div>
+
             </div>
 
             <div class="sous_competences_container">
@@ -193,6 +197,11 @@ $titre = 'CV';
                     <li>Gestion des releases et versioning des projets pour assurer la traçabilité</li>
                     <li>Configuration de Systemd pour la gestion des services et des processus</li>
                 </ul>
+
+                <div class="languages">
+                    <img src="../image/cv/raspberrypi_logo.webp" alt="Raspberry Pi" title="Raspberry Pi logo">
+                    <img src="../image/cv/arduino_logo.webp" alt="Arduino" title="Arduino logo">
+                </div>
             </div>
 
             <div class="sous_competences_container">
@@ -203,6 +212,11 @@ $titre = 'CV';
                     <li>Docker Swarm pour l'orchestration de conteneurs</li>
                     <li>Création et gestion de Dockerfiles pour automatiser les déploiements</li>
                 </ul>
+
+                <div class="languages">
+                    <img src="../image/cv/docker_logo.webp" alt="Docker" title="Docker logo">
+                </div>
+
             </div>
 
             <div class="sous_competences_container">
@@ -214,16 +228,29 @@ $titre = 'CV';
                     <li>Paramétrage IP pour assurer une communication efficace</li>
                     <li>Installations système et déploiement dans des environnements divers</li>
                 </ul>
+
+                <div class="languages">
+                    <!--<img src="../image/cv/vmware_logo.webp" alt="VMware" title="VMware logo">
+                    <img src="../image/cv/vbox_logo.webp" alt="Virtual Box" title="Virtual Box logo">
+                    -->
+                    <img src="../image/cv/docker_logo.webp" alt="Docker" title="Docker logo">
+                </div>
+
             </div>
         </div>
 
         <div class="competences_container">
-            <h3 id="web"><i class="fas fa-globe"></i> Web</h3>
+            <h3 id="cyber"><i class="fas fa-user-shield"></i> Cybersécurité</h3>
+            <p>Depuis plus de 3 ans, je travaille dans les systèmes et réseaux, ce qui m'a permis d'acquérir une expérience solide pour mener à bien des projets de grande envergure. Le réseau est essentiel pour la cybersécurité, et je suis passionné par l'optimisation des systèmes pour assurer leur sécurité et leur performance.</p>
+        </div>
+
+        <div class="competences_container">
+            <h3 id="web"><i class="fas fa-globe"></i> Web et Mobile</h3>
             <p>Depuis également plus de 3 ans, je travaille dans la réalisation, la correctivité et l'évolutivité d'applications et d'outils Web et mobiles, ce qui m'a permis d'acquérir une expérience solide pour mener à bien des projets de grande envergure que par ailleurs j'ai fait partie durant mes stages.<br> Le Web représente l'une des principales causes d'attaques en cybersécurité, et je suis passionné par l'optimisation des systèmes pour assurer leur sécurité et leur performance.<br> Avoir un passif web me permet d'avoir une importe connaissance sur les failles d'un site web, en connaissant toutes les petites subtilités de performance au network d'un site, ou encore le stockage local.</p>
 
             <div class="sous_competences_container">
                 <h4>Langages</h4>
-                <p>Je connais une variété de langage pour la programmation et protection de site Web et d'applications mobiles</p>
+                <p>Je connais une variété de langage et de framework pour la programmation et la protection de site Web et d'applications mobiles</p>
 
                 <div class="languages">
                     <img src="../image/cv/python_logo.webp" alt="Python" title="Python logo">
@@ -231,11 +258,51 @@ $titre = 'CV';
                     <img src="../image/cv/css_logo.webp" alt="CSS" title="CSS logo">
                     <img src="../image/cv/js_logo.webp" alt="JavaScript" title="JavaScript logo">
                     <img src="../image/cv/php_logo.webp" alt="PHP" title="PHP logo">
+                    <img src="../image/cv/laravel_logo.webp" alt="Laravel" title="Laravel logo">
+                    <img src="../image/cv/zend_logo.webp" alt="Zend" title="Zend logo">
+                    <img src="../image/cv/ajax_logo.webp" alt="Ajax" title="Ajax logo">
+                    <img src="../image/cv/ionic_logo.webp" alt="Ionic" title="Ionic logo">
+                    <img src="../image/cv/angular_logo.webp" alt="Angular" title="Angular logo">
+                    <img src="../image/cv/typescript_logo.webp" alt="TypeScript" title="TypeScript logo">
+                    <img src="../image/cv/react_logo.webp" alt="React" title="React logo">
+                    <img src="../image/cv/nodejs_logo.webp" alt="NodeJs" title="NodeJs logo">
+                    <img src="../image/cv/java_logo.webp" alt="Java" title="Java logo">
+                    <img src="../image/cv/jakartaee_logo.webp" alt="Jakarta EE" title="Jakarta EE logo">
+                    <img src="../image/cv/android_logo.webp" alt="Android" title="Android logo">
                 </div>
-
             </div>
-
         </div>
+
+        <div class="competences_container">
+            <h3 id="bd"><i class="fas fa-database"></i> Base de données</h3>
+            <p>Depuis plus de 3 ans, je travaille dans les systèmes et réseaux, ce qui m'a permis d'acquérir une expérience solide pour mener à bien des projets de grande envergure. Le réseau est essentiel pour la cybersécurité, et je suis passionné par l'optimisation des systèmes pour assurer leur sécurité et leur performance.</p>
+        </div>
+
+        <div class="competences_container">
+            <h3 id="ml"><i class="fas fa-brain"></i> Machine Learning (IA)</h3>
+            <p>Depuis plus de 3 ans, je travaille dans les systèmes et réseaux, ce qui m'a permis d'acquérir une expérience solide pour mener à bien des projets de grande envergure. Le réseau est essentiel pour la cybersécurité, et je suis passionné par l'optimisation des systèmes pour assurer leur sécurité et leur performance.</p>
+        </div>
+
+        <div class="competences_container">
+            <h3 id="devlogiciel"><i class="fas fa-laptop-code"></i> Développement Logiciel</h3>
+            <p>Depuis plus de 3 ans, je travaille dans les systèmes et réseaux, ce qui m'a permis d'acquérir une expérience solide pour mener à bien des projets de grande envergure. Le réseau est essentiel pour la cybersécurité, et je suis passionné par l'optimisation des systèmes pour assurer leur sécurité et leur performance.</p>
+        </div>
+
+        <div class="competences_container">
+            <h3 id="gestionprojet"><i class="fas fa-tasks"></i> Gestion de projet</h3>
+            <p>Depuis plus de 3 ans, je travaille dans les systèmes et réseaux, ce qui m'a permis d'acquérir une expérience solide pour mener à bien des projets de grande envergure. Le réseau est essentiel pour la cybersécurité, et je suis passionné par l'optimisation des systèmes pour assurer leur sécurité et leur performance.</p>
+        </div>
+
+        <div class="competences_container">
+            <h3 id="qualitecode"><i class="fas fa-project-diagram"></i> Qualité de code</h3>
+            <p>Depuis plus de 3 ans, je travaille dans les systèmes et réseaux, ce qui m'a permis d'acquérir une expérience solide pour mener à bien des projets de grande envergure. Le réseau est essentiel pour la cybersécurité, et je suis passionné par l'optimisation des systèmes pour assurer leur sécurité et leur performance.</p>
+        </div>
+
+        <div class="competences_container">
+            <h3 id="droit"><i class="fas fa-balance-scale"></i> Droit de l'informatique</h3>
+            <p>Depuis plus de 3 ans, je travaille dans les systèmes et réseaux, ce qui m'a permis d'acquérir une expérience solide pour mener à bien des projets de grande envergure. Le réseau est essentiel pour la cybersécurité, et je suis passionné par l'optimisation des systèmes pour assurer leur sécurité et leur performance.</p>
+        </div>
+
     </section>
 
     <section class="outils">

@@ -416,62 +416,6 @@ main {
     margin-bottom: 30px;
 }
 
-/* mini menu */
-.mini-menu {
-    text-align: center; /* Centrer le menu */
-    margin-bottom: 20px; /* Espacement sous le menu */
-}
-
-.mini-menu ul {
-    list-style: none; /* Supprime les puces de la liste */
-    padding: 0; /* Enlève le padding par défaut */
-    display: flex; /* Utilise flexbox pour aligner les éléments en ligne */
-    justify-content: center; /* Centre les éléments du menu */
-}
-
-.mini-menu ul li {
-    margin: 0 10px; /* Espace entre les éléments */
-}
-
-.mini-menu .button {
-    display: inline-block; /* Rend le lien comme un bloc en ligne */
-    padding: 10px 20px; /* Ajout de padding pour le style du bouton */
-    background-color: #333; /* Couleur de fond du bouton */
-    color: white; /* Couleur du texte du bouton */
-    border-radius: 5px; /* Coins arrondis */
-    text-decoration: none; /* Supprime le soulignement */
-    transition: background-color 0.3s; /* Animation lors du survol */
-}
-
-.mini-menu .button:hover {
-    background-color: #555; /* Couleur de fond au survol */
-}
-
-/* Image Container */
-/*.competences .image_container {*/
-/*    display: flex; !* Utilise flexbox pour aligner les éléments *!*/
-/*    flex-wrap: wrap; !* Permet à l'image de passer à la ligne si l'espace est insuffisant *!*/
-/*    justify-content: center; !* Centre les éléments horizontalement *!*/
-/*    margin-top: 20px; !* Espacement au-dessus du conteneur d'images *!*/
-/*}*/
-
-/*.competences .image_container .image-item {*/
-/*    margin: 10px; !* Espace entre les images *!*/
-/*    text-align: center; !* Centre le texte sous chaque image *!*/
-/*    width: 200px; !* Largeur fixe pour les images *!*/
-/*}*/
-
-/*.competences .image_container .image-item img {*/
-/*    width: 100%; !* Les images s'adaptent à la largeur de leur conteneur *!*/
-/*    border-radius: 5px; !* Arrondir les bords des images *!*/
-/*    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); !* Ombre pour un effet de profondeur *!*/
-/*}*/
-
-/*.competences .image_container .image-item p {*/
-/*    margin-top: 5px; !* Espace au-dessus du texte *!*/
-/*    font-weight: bold; !* Met en gras le texte sous l'image *!*/
-/*}*/
-
 /* Container */
 .competences .competences_container {
     margin-top: 50px;
@@ -492,6 +436,7 @@ main {
 
 .competences .competences_container .sous_competences_container ul {
     margin-left: 70px;
+    margin-bottom: 5px;
     margin-top: 0;
     padding: 10px; /* Ajout de padding pour un espacement intérieur */
 }
@@ -507,6 +452,7 @@ main {
     gap: 15px; /* Espace entre les images */
     align-items: center;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .competences .competences_container .sous_competences_container .languages img {
@@ -554,6 +500,38 @@ main {
 .projets_cv {
     padding: 50px;
     background-color: #464646;
+}
+
+/* ///////////////////////////// Section Total CV ///////////////////////////// */
+/* mini menu */
+.mini-menu {
+    text-align: center; /* Centrer le menu */
+    margin-bottom: 20px; /* Espacement sous le menu */
+}
+
+.mini-menu ul {
+    list-style: none; /* Supprime les puces de la liste */
+    padding: 0; /* Enlève le padding par défaut */
+    display: flex; /* Utilise flexbox pour aligner les éléments en ligne */
+    justify-content: center; /* Centre les éléments du menu */
+}
+
+.mini-menu ul li {
+    margin: 0 10px; /* Espace entre les éléments */
+}
+
+.mini-menu .button {
+    display: inline-block; /* Rend le lien comme un bloc en ligne */
+    padding: 10px 20px; /* Ajout de padding pour le style du bouton */
+    background-color: #333; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border-radius: 5px; /* Coins arrondis */
+    text-decoration: none; /* Supprime le soulignement */
+    transition: background-color 0.3s; /* Animation lors du survol */
+}
+
+.mini-menu .button:hover {
+    background-color: #555; /* Couleur de fond au survol */
 }
 
 /* ///////////////////////////// Section contact ///////////////////////////// */

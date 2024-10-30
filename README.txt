@@ -38,6 +38,30 @@ CV :
  - Ajout bouton téléchargement de CV
  - Ajout en détail le CV
 
+     profil
+     formations
+
+     compétences (langages)
+        Réseau : C, Python, Bash, Apache, Linux, Ubuntu, CentOs, Kali-Linux,(docker, vm)
+        Cyber : Cryptographie, Scan de port
+        Web : Accessibilité numérique, ...
+        Base de données
+        Machine Learning
+        Logiciel : Python, Java, R
+        Gestion de projet : Rédaction de rapport (markdown), méthode agile
+        Qualité de code : Modélisation UML, Git
+        Droit de l'informatique
+     outils
+        -> SQL Developpeur, JetBrain (phpstorm, webstorm, pycharm, Intellij), Xampp, Wampp, Visual Studio Code, vmware, Virtual Box, Arduino IE, git, GitHub desktop, neo4j, R studio, WinSCP, StarUML, draw io, Processing, ScpToolkit, Putty, OppenOffice (Excel, Word, ...)
+     expériences
+     suivi
+        -> Rootme, tryhackme, LinkedIn, github
+     langues
+     centres intérêts
+     projet
+        -> simple redirection
+
+
 connexion :
  - 2 pages : inscription et connexion
 

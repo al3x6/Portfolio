@@ -178,7 +178,7 @@ $titre = 'CV';
                 <div class="languages">
                     <img src="../image/cv/linux_logo.webp" alt="Linux" title="Linux logo">
                     <img src="../image/cv/centos_logo.webp" alt="CentOS" title="CentOS logo">
-                    <img src="../image/cv/debian_logo.png" alt="Debian" title="Debian logo">
+                    <img src="../image/cv/debian_logo.webp" alt="Debian" title="Debian logo">
                     <img src="../image/cv/ubuntu_logo.webp" alt="Ubuntu" title="Ubuntu logo">
                     <img src="../image/cv/kalilinux_logo.webp" alt="Kali Linux" title="Kali Linux logo">
                     <img src="../image/cv/apache_logo.webp" alt="Apache" title="Apache logo">
@@ -230,10 +230,8 @@ $titre = 'CV';
                 </ul>
 
                 <div class="languages">
-                    <!--<img src="../image/cv/vmware_logo.webp" alt="VMware" title="VMware logo">
+                    <img src="../image/cv/vmware_logo.webp" alt="VMware" title="VMware logo">
                     <img src="../image/cv/vbox_logo.webp" alt="Virtual Box" title="Virtual Box logo">
-                    -->
-                    <img src="../image/cv/docker_logo.webp" alt="Docker" title="Docker logo">
                 </div>
 
             </div>
@@ -256,6 +254,7 @@ $titre = 'CV';
                     <img src="../image/cv/python_logo.webp" alt="Python" title="Python logo">
                     <img src="../image/cv/html_logo.webp" alt="HTML" title="HTML logo">
                     <img src="../image/cv/css_logo.webp" alt="CSS" title="CSS logo">
+                    <img src="../image/cv/bootstrap_logo.webp" alt="Bootstrap" title="Bootstrap logo">
                     <img src="../image/cv/js_logo.webp" alt="JavaScript" title="JavaScript logo">
                     <img src="../image/cv/php_logo.webp" alt="PHP" title="PHP logo">
                     <img src="../image/cv/laravel_logo.webp" alt="Laravel" title="Laravel logo">
@@ -275,12 +274,126 @@ $titre = 'CV';
 
         <div class="competences_container">
             <h3 id="bd"><i class="fas fa-database"></i> Base de données</h3>
-            <p>Depuis plus de 3 ans, je travaille dans les systèmes et réseaux, ce qui m'a permis d'acquérir une expérience solide pour mener à bien des projets de grande envergure. Le réseau est essentiel pour la cybersécurité, et je suis passionné par l'optimisation des systèmes pour assurer leur sécurité et leur performance.</p>
+            <p>Depuis plus de 3 ans, j'ai acquis des compétences solides en bases de données grâce à mes cours et mes stages. Je possède des connaissances approfondies sur les bases de données relationnelles (SGBDR), NoSQL, en mémoire (In-Memory), orientées graphe et de type XML/JSON, me permettant de m'adapter à divers besoins en gestion et manipulation de données.</p>
+            <p>Dans un contexte où le nombre d'attaques augmente, il est essentiel de sécuriser les données et de garantir leur confidentialité, intégrité et disponibilité. Mon expérience inclut non seulement la manipulation des données, mais aussi la mise en place de bonnes pratiques de sécurité pour les bases de données, telles que le chiffrement, le contrôle des accès et la surveillance des activités suspectes, afin de prévenir les risques de fuites ou d'intrusions. L'objectif principal d'un hacker est souvent de trouver une faille permettant un accès à la base de données, un point crucial pour la protection de toute donnée sensible.</p>
+
+            <div class="sous_competences_container">
+                <h4>Bases de Données Relationnelles (SGBDR)</h4>
+                <p>Les bases de données relationnelles stockent les données sous forme de tables composées de lignes et de colonnes, se basant sur le modèle relationnel. Les tables sont liées entre elles par des clés primaires et étrangères, ce qui garantit l'intégrité des données et facilite les requêtes SQL.</p>
+                <p>Niveau : Je maîtrise très bien les bases de données relationnelles et leur utilisation avancée dans le développement d’applications ou pour un structure.</p>
+                <div class="languages">
+                    <h5>Langages</h5>
+                    <img src="../image/cv/sql_logo.webp" alt="SQL" title="SQL logo">
+                    <img src="../image/cv/plsql_logo.webp" alt="PL/SQL" title="PL/SQL logo">
+                </div>
+                <div class="languages">
+                    <h5>Base de données</h5>
+                    <img src="../image/cv/mysql_logo.webp" alt="MySQL" title="MySQL logo">
+                    <img src="../image/cv/postgresql_logo.webp" alt="PostgreSQL" title="PostgreSQL logo">
+                    <img src="../image/cv/oracle_logo.webp" alt="Oracle" title="Oracle logo">
+                </div>
+            </div>
+
+            <div class="sous_competences_container">
+                <h4>Bases de Données de type XML/JSON</h4>
+                <p>Les bases de données de type XML/JSON sont conçues pour stocker des données structurées, telles que des documents XML ou JSON, souvent utilisées pour les applications nécessitant un échange de données dans ces formats standardisés.</p>
+                <p>Niveau : Je maîtrise des bases de données XML/JSON, particulièrement utiles pour les échanges de données dans des applications web.</p>
+                <div class="languages">
+                    <h5>Langages</h5>
+                    <img src="../image/cv/xml_logo.webp" alt="XML" title="XML logo">
+                    <img src="../image/cv/json_logo.webp" alt="JSON" title="JSON logo">
+                    <img src="../image/cv/js_logo.webp" alt="JavaScript" title="JavaScript logo">
+                    <img src="../image/cv/nodejs_logo.webp" alt="Node.js" title="Node.js logo">
+                </div>
+
+                <div class="languages">
+                    <h5>Bases de données</h5>
+                    <img src="../image/cv/mongodb_logo.webp" alt="MongoDB" title="MongoDB logo">
+                </div>
+            </div>
+
+            <div class="sous_competences_container">
+                <h4>Bases de Données NoSQL</h4>
+                <p>Les bases de données NoSQL stockent les données de manière flexible, souvent sous forme de documents, de paires clé-valeur, ou de colonnes, ce qui les rend idéales pour des applications nécessitant une grande scalabilité et un schéma de données variable.</p>
+                <p>Niveau : Je possède une bonne compréhension des bases de données NoSQL et de leurs cas d'usage en entreprise.</p>
+                <div class="languages">
+                    <h5>Langages</h5>
+                    <img src="../image/cv/python_logo.webp" alt="Python" title="Python logo">
+                    <img src="../image/cv/js_logo.webp" alt="JavaScript" title="JavaScript logo">
+                </div>
+
+                <div class="languages">
+                    <h5>Bases de données</h5>
+                    <img src="../image/cv/mongodb_logo.webp" alt="MongoDB" title="MongoDB logo">
+                    <img src="../image/cv/redis_logo.webp" alt="Redis" title="Redis logo">
+                </div>
+            </div>
+
+            <div class="sous_competences_container">
+                <h4>Bases de Données en mémoire (In-Memory)</h4>
+                <p>Les bases de données en mémoire stockent les données directement en RAM, offrant ainsi des performances très élevées et des temps d'accès rapides. Elles sont particulièrement adaptées aux applications en temps réel.</p>
+                <p>Niveau : J'ai une connaissance de base des bases de données en mémoire et de leur utilisation pour améliorer la rapidité d'accès aux données.</p>
+                <div class="languages">
+                    <h5>Langages</h5>
+                    <img src="../image/cv/python_logo.webp" alt="Python" title="Python logo">
+                    <img src="../image/cv/js_logo.webp" alt="JavaScript" title="JavaScript logo">
+                </div>
+
+                <div class="languages">
+                    <h5>Bases de données</h5>
+                    <img src="../image/cv/redis_logo.webp" alt="Redis" title="Redis logo">
+                </div>
+            </div>
+
+            <div class="sous_competences_container">
+                <h4>Bases de Données orientées graphe</h4>
+                <p>Les bases de données orientées graphe permettent de modéliser les données sous forme de nœuds et d’arêtes, ce qui est idéal pour des applications ayant des relations complexes, telles que les réseaux sociaux ou les analyses de réseau.</p>
+                <p>Niveau : J'ai récemment acquis des connaissances pratiques en bases de données orientées graphe et je continue à renforcer mes compétences dans ce domaine.</p>
+                <div class="languages">
+                    <h5>Langage</h5>
+                    <img src="../image/cv/cypher_logo.webp" alt="Cypher" title="Cypher logo">
+                </div>
+                <div class="languages">
+                    <h5>Base de données</h5>
+                    <img src="../image/cv/neo4j_logo.webp" alt="Neo4j" title="Neo4j logo">
+                </div>
+            </div>
         </div>
 
         <div class="competences_container">
             <h3 id="ml"><i class="fas fa-brain"></i> Machine Learning (IA)</h3>
-            <p>Depuis plus de 3 ans, je travaille dans les systèmes et réseaux, ce qui m'a permis d'acquérir une expérience solide pour mener à bien des projets de grande envergure. Le réseau est essentiel pour la cybersécurité, et je suis passionné par l'optimisation des systèmes pour assurer leur sécurité et leur performance.</p>
+            <p>Depuis maintenant 1 an, j'ai découvert durant mes cours une véritable passion pour l'intelligence artificielle et son sous-domaine, le Machine Learning. Ce domaine repose sur une solide base de savoirs en mathématiques et en informatique.</p>
+            <p>Pour les non-initiés, je vais vous donner une brève explication de ce qu'est le Machine Learning et son impact sur notre monde actuel en cybersécurité. Aujourd'hui, l'intelligence artificielle occupe une place importante dans notre quotidien, notamment avec l'arrivée de ChatGPT, qui a révolutionné notre façon de vivre. Cependant, il est important de reconnaître que ces intelligences artificielles, bien que plus "intelligentes" que les humains dans certains contextes, peuvent être utilisées pour des usages bien veillant tout comme pour des usages malveillants. Cela est particulièrement pertinent dans le domaine de la cybersécurité, où nous devons nous préparer à des attaques potentielles réalisées par des intelligences artificielles.</p>
+            <p>Bien que je m'intéresse à l'intelligence artificielle dans son ensemble, je me suis spécialise particulièrement dans le Machine Learning. Mais en quoi cela consiste-t-il ? Le Machine Learning est une branche de l'intelligence artificielle qui permet aux systèmes d'apprendre et de s'améliorer automatiquement à partir de données. Grâce à des algorithmes et à des modèles statistiques, les machines peuvent analyser des ensembles de données, identifier des motifs et faire des prédictions. Cela a des applications dans de nombreux domaines, allant de la reconnaissance d'image à la détection de fraudes en passant par l'analyse des sentiments.</p>
+            <p>En tant qu'étudiant en cybersécurité, il est essentiel pour moi et pour les acteurs de ce domaine de se former à cette nouvelle technologie. Mon atout est d'être en école et d'avoir eu l'opportunité d'apprendre dans ce domaine.</p>
+            <!--<p>En tant qu'étudiant en cybersécurité, j'explore également comment le Machine Learning peut renforcer la sécurité des systèmes d'information. Par exemple, les algorithmes de Machine Learning peuvent être utilisés pour détecter des comportements anormaux dans les réseaux, identifier des menaces en temps réel et automatiser des réponses aux incidents. En intégrant ces technologies avancées dans la cybersécurité, nous pouvons mieux protéger nos données et infrastructures contre les cyberattaques de plus en plus sophistiquées.</p>-->
+            <div class="sous_competences_container">
+                <h4>Langage</h4>
+                <p>Je connais un langage de programmation utilisé pour réaliser des algorithmes d'apprentissage, notamment Python. Python est particulièrement utilisé dans le domaine du machine learning en raison de ses différentes librairies qui simplie les tâches.</p>
+                <div class="languages">
+                    <img src="../image/cv/python_logo.webp" alt="Python" title="Python logo">
+                </div>
+            </div>
+            <div class="sous_competences_container">
+                <h4>Librairies</h4>
+                <p>Dans le domaine du machine learning, plusieurs bibliothèques Python sont incontournables.</p>
+                <ul>
+                    <li><strong>Scikit-learn</strong> est essentielle pour l'apprentissage supervisé et non supervisé qui offre divers algorithmes pour la classification, la régression et le clustering.</li>
+                    <li><strong>TensorFlow</strong> est un framework puissant pour l'apprentissage profond, facilitant la création de réseaux neuronaux.</li>
+                    <!--<li><strong>PyTorch</strong> est apprécié pour sa flexibilité et sa simplicité, étant particulièrement utilisé dans la recherche.</li>-->
+                    <li><strong>Pandas</strong> permet une manipulation efficace des données dans un trainset et un testset</li>
+                    <li><strong>NumPy</strong> est une bibliothèque mathématiques.</li>
+                    <li><strong>Matplotlib</strong> est une bibliothèque pour représenter graphiquement les résultats des analyses</li>
+                </ul>
+
+                <div class="languages">
+                    <img src="../image/cv/scikitlearn_logo.webp" alt="Scikit-learn" title="Scikit-learn logo">
+                    <img src="../image/cv/tensorflow_logo.webp" alt="TensorFlow" title="TensorFlow logo">
+                    <img src="../image/cv/pandas_logo.webp" alt="Pandas" title="Pandas logo">
+                    <img src="../image/cv/numpy_logo.webp" alt="Numpy" title="Numpy logo">
+                    <img src="../image/cv/matplotlib_logo.webp" alt="Matplotlib" title="Matplotlib logo">
+                </div>
+            </div>
         </div>
 
         <div class="competences_container">

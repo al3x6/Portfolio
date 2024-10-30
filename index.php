@@ -45,7 +45,8 @@ $titre='Accueil';
                 </p>
             </div>
             <div class="div_button">
-                <a href="/public/pages/projets.php" class="button">Voir mon travail</a>
+                <!--<a href="/public/pages/projets.php" class="button">Voir mon travail</a>-->
+                <a href="#" class="button">Voir mon travail</a>
             </div>
         </div>
         <div class="hero_right">

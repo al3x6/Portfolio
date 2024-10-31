@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="15896a5a-69d0-4df2-9725-544576e5ccd3" name="portfolio" url="https://alexisaraujo.fr">
+        <fileTransfer host="194.163.165.82" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="b6824483-53ca-4034-a7d2-029943963853" name="test">
+        <fileTransfer accessType="SFTP" host="194.163.165.82" port="21" sshConfigId="7e37ab4f-6d38-4f80-beb1-fe853f35f563" sshConfig="alexiumm@194.163.165.82:21 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

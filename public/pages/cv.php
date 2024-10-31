@@ -80,7 +80,7 @@ $titre = 'CV';
         <table class="formations_table">
             <tr>
                 <td class="logo_cell">
-                    <img src="../image/cv/oteria_logo.webp" alt="Logo Oteria Cyber School">
+                    <a href="https://www.oteria.fr/"><img src="../image/cv/oteria_logo.webp" alt="Logo Oteria Cyber School" title="Site Web Oteria Cyber School"></a>
                 </td>
                 <td class="text_cell">
                     <h3>2027-2024 Oteria Cyber School, Bac +5</h3>
@@ -91,7 +91,7 @@ $titre = 'CV';
             </tr>
             <tr>
                 <td class="logo_cell">
-                    <img src="../image/cv/velizy_logo.webp" alt="Logo Iut de Vélizy">
+                    <a href="https://www.iut-velizy-rambouillet.uvsq.fr/"><img src="../image/cv/velizy_logo.webp" alt="Logo Iut de Vélizy" title="Site Web Iut de Vélizy"></a>
                 </td>
                 <td class="text_cell">
                     <h3><i class="fas fa-graduation-cap"></i> 2024-2021 But Informatique, Bac +3</h3>
@@ -358,6 +358,15 @@ $titre = 'CV';
                     <img src="../image/cv/neo4j_logo.webp" alt="Neo4j" title="Neo4j logo">
                 </div>
             </div>
+
+            <div class="sous_competences_container">
+                <h4>Statistique</h4>
+                <p>Je maîtrise également un autre langage destiné au statistique.</p>
+
+                <div class="languages">
+                    <img src="../image/cv/r_logo.webp" alt="R" title="R logo">
+                </div>
+            </div>
         </div>
 
         <div class="competences_container">
@@ -398,12 +407,54 @@ $titre = 'CV';
 
         <div class="competences_container">
             <h3 id="devlogiciel"><i class="fas fa-laptop-code"></i> Développement Logiciel</h3>
-            <p>Depuis plus de 3 ans, je travaille dans les systèmes et réseaux, ce qui m'a permis d'acquérir une expérience solide pour mener à bien des projets de grande envergure. Le réseau est essentiel pour la cybersécurité, et je suis passionné par l'optimisation des systèmes pour assurer leur sécurité et leur performance.</p>
+            <p>Depuis 3 ans, j'ai conçu et développé divers logiciels en suivant des processus rigoureux de programmation, de tests et d'optimisation. Cela inclut la création d'algorithmes, le développement de fonctionnalités et la mise en œuvre de tests pour garantir la qualité et la performance des solutions logicielles avant leur mise en production.</p>
+
+            <div class="sous_competences_container">
+                <h4>Langages</h4>
+                <p>Je maîtrise plusieurs langages adaptés au développement logiciel.</p>
+
+                <div class="languages">
+                    <img src="../image/cv/python_logo.webp" alt="Python" title="Python logo">
+                    <img src="../image/cv/java_logo.webp" alt="Java" title="Java logo">
+                    <img src="../image/cv/c_logo.webp" alt="C" title="C logo">
+                </div>
+            </div>
         </div>
+
 
         <div class="competences_container">
             <h3 id="gestionprojet"><i class="fas fa-tasks"></i> Gestion de projet</h3>
-            <p>Depuis plus de 3 ans, je travaille dans les systèmes et réseaux, ce qui m'a permis d'acquérir une expérience solide pour mener à bien des projets de grande envergure. Le réseau est essentiel pour la cybersécurité, et je suis passionné par l'optimisation des systèmes pour assurer leur sécurité et leur performance.</p>
+            <p>Depuis plusieurs années, je mène avec succès des projets académiques et personnels dans divers domaines, tels que le développement d’applications, de logiciels, ainsi que la gestion de systèmes et de réseaux. Cette expérience m'a permis d'acquérir une solide maîtrise de la gestion de projets de grande envergure, notamment pour des clients externes.</p>
+            <p>Je place l’organisation au coeur de mon travail, veillant à ce que chaque étape soit bien coordonnée pour atteindre les objectifs fixés avec efficacité.</p>
+            <div class="sous_competences_container">
+                <h4>Projet Informatique</h4>
+                <p>Durand ces années là j'ai moi même gérer ma propre équipe d'informaticien et moi-même mené à bien plusieurs projets, j'ai pu développer des compétences approfondies en suivi, en coordination et en contrôle de qualité.</p>
+                <p>Je maîtrise également diverses méthodologies de gestion de projet, notamment les <b>méthodes Agiles</b>, qui favorisent une adaptabilité et une réactivité accrues face aux changements. Je suis particulièrement à l'aise avec <b>Scrum</b>, une approche qui structure le travail en itérations (ou <b>sprints</b>) pour une livraison continue de valeur.</p>
+                <p>En plus des méthodes Agiles, j'ai également une bonne connaissance des <b>cycles de développement en V</b> et des <b>cycles incrémentaux</b>, qui permettent de structurer le projet en étapes successives (Analyse, Spécification, Conception, Développement, Test), assurant une validation à chaque phase du processus et une meilleure gestion des risques. Ces cycles sont adaptés pour des projets où les besoins sont bien définis dès le départ, mais nécessitent un contrôle qualité strict à chaque étape.</p>
+                <p>En termes de gestion du temps, je sais réaliser des <b>diagrammes de Gantt</b> et des <b>diagrammes d'ordonnancement</b> pour planifier et suivre efficacement les étapes.</p>
+                <p><b>"Je me considère comme un bon manager, capable de gérer une équipe autour d'objectifs communs et de maintenir un environnement de travail positif et productif."</b></p>
+            </div>
+            <div class="sous_competences_container">
+                <h4>Création d'entreprise/Entrepreneuriat</h4>
+                <p>En plus de mes compétences en gestion de projet informatique, je suis passionné par l'entrepreneuriat. Cette passion m'a amené à explorer différents aspects de la création d’entreprise.</p>
+                <p>Grâce à mes cours, j’ai eu l'opportunité de réaliser un projet de création d'entreprise, comprenant la conception d’un Business Plan détaillé. Ce projet m’a permis de développer mes compétences en planification stratégique, en analyse de marché et en modélisation financière.</p>
+            </div>
+            <div class="sous_competences_container">
+                <h4>Comptabilité</h4>
+                <p>La comptabilité est un aspect essentiel pour déterminer la faisabilité d'un projet ou d'une entreprise. Cette compétence, que j’ai pu renforcer notamment lors de la réalisation de business plans, m’a permis d’acquérir une bonne compréhension des bilans financiers, des comptes de résultat, ainsi que des plans de trésorerie et de financement.</p>
+                <p>Je suis capable de dresser et d’analyser des bilans comptables et d’évaluer la santé financière d'un projet ou d’une entreprise, ce qui est crucial pour une gestion efficace et éclairée.</p>
+            </div>
+            <div class="sous_competences_container">
+                <h4>Gestion et Étude de Risque</h4>
+                <p>La gestion des risques est primordiale dans tout projet pour anticiper et minimiser les imprévus. Je suis formé à l'identification, l'évaluation et la hiérarchisation des risques, ainsi qu’à la mise en place de stratégies de mitigation pour réduire leur impact.</p>
+                <p>Mon approche consiste à mener des analyses de risques approfondies, en tenant compte des variables financières, opérationnelles et stratégiques. En intégrant ces pratiques dès la phase de planification, j’assure une gestion proactive des projets.</p>
+            </div>
+            <div class="sous_competences_container">
+                <h4>Communication Professionnelle</h4>
+                <p>La communication est un élément clé de la réussite de tout projet, et j'accorde une grande importance à la clarté et à l'efficacité de mes échanges professionnels. Que ce soit dans la transmission d'instructions, le suivi des avancées ou la gestion des attentes, je veille à ce que les informations soient communiquées de manière précise et adaptée à chaque interlocuteur.</p>
+                <p>J'ai développé des compétences en communication orale et écrite, en particulier pour la rédaction de documents projet tels que des <b>comptes-rendus</b>, <b>des rapports d'avancement</b> et des <b>documentations techniques</b> (<b>Markdown</b>).</p>
+                <p>Mon approche consiste à établir une communication proactive et transparente, afin de maintenir une dynamique positive au sein d'une l'équipe et d'assurer une compréhension commune des objectifs et des étapes du projet.</p>
+            </div>
         </div>
 
         <div class="competences_container">

@@ -52,7 +52,7 @@ $titre = 'CV';
                 <li><a href="#profil" class="button">Profil</a></li>
                 <li><a href="#formations" class="button">Formations</a></li>
                 <li><a href="#competences" class="button">Compétences</a></li>
-                <li><a href="#outils" class="button">Outils</a></li>
+                <!--<li><a href="#outils" class="button">Outils</a></li>-->
                 <li><a href="#experiences" class="button">Expériences</a></li>
                 <li><a href="#suivi" class="button">Suivi</a></li>
                 <li><a href="#langues" class="button">Langues</a></li>
@@ -233,13 +233,34 @@ $titre = 'CV';
                     <img src="../image/cv/vmware_logo.webp" alt="VMware" title="VMware logo">
                     <img src="../image/cv/vbox_logo.webp" alt="Virtual Box" title="Virtual Box logo">
                 </div>
+            </div>
 
+            <div class="sous_competences_container">
+                <h4>Outils de réseau</h4>
+                <p></p>
+                <div class="languages">
+                    <img src="../image/cv/powershell_logo.webp" alt="Powershell" title="Powershell logo">
+                    <img src="../image/cv/bash_logo.webp" alt="Bash" title="Bash logo">
+                    <img src="../image/cv/vscode_logo.webp" alt="Visual Studio Code" title="Visual Studio Code logo">
+                    <img src="../image/cv/pycharm_logo.webp" alt="PyCharm" title="Pycharm logo">
+                    <img src="../image/cv/nano_logo.webp" alt="Nano" title="Nano logo">
+                    <img src="../image/cv/gedit_logo.webp" alt="Gedit" title="Gedit logo">
+                </div>
             </div>
         </div>
 
         <div class="competences_container">
             <h3 id="cyber"><i class="fas fa-user-shield"></i> Cybersécurité</h3>
-            <p>Depuis plus de 3 ans, je travaille dans les systèmes et réseaux, ce qui m'a permis d'acquérir une expérience solide pour mener à bien des projets de grande envergure. Le réseau est essentiel pour la cybersécurité, et je suis passionné par l'optimisation des systèmes pour assurer leur sécurité et leur performance.</p>
+            <p></p>
+
+            <div class="sous_competences_container">
+                <h4>Outils</h4>
+                <p></p>
+                <div class="languages">
+                    <img src="../image/cv/wireshark_logo.webp" alt="VMware" title="VMware logo">
+                    <img src="../image/cv/nmap_logo.webp" alt="VMware" title="VMware logo">
+                </div>
+            </div>
         </div>
 
         <div class="competences_container">
@@ -268,6 +289,26 @@ $titre = 'CV';
                     <img src="../image/cv/java_logo.webp" alt="Java" title="Java logo">
                     <img src="../image/cv/jakartaee_logo.webp" alt="Jakarta EE" title="Jakarta EE logo">
                     <img src="../image/cv/android_logo.webp" alt="Android" title="Android logo">
+                </div>
+            </div>
+
+            <div class="sous_competences_container">
+                <h4>Accessibilité Numérique</h4>
+                <p></p>
+
+            </div>
+
+            <div class="sous_competences_container">
+                <h4>Outils de développement Web et mobile</h4>
+                <p></p>
+                <div class="languages">
+                    <img src="../image/cv/vscode_logo.webp" alt="Visual Studio Code" title="Visual Studio Code logo">
+                    <img src="../image/cv/pycharm_logo.webp" alt="PyCharm" title="PyCharm logo">
+                    <img src="../image/cv/webstorm_logo.webp" alt="WebStorm" title="WebStorm logo">
+                    <img src="../image/cv/phpstorm_logo.webp" alt="PhpStorm" title="PhpStorm logo">
+                    <img src="../image/cv/androidstudio_logo.webp" alt="Android Studio" title="Android Studio logo">
+                    <img src="../image/cv/xampp_logo.webp" alt="Xampp" title="Xampp logo">
+                    <img src="../image/cv/wamp_logo.webp" alt="Wamp" title="Wamp logo">
                 </div>
             </div>
         </div>
@@ -367,6 +408,17 @@ $titre = 'CV';
                     <img src="../image/cv/r_logo.webp" alt="R" title="R logo">
                 </div>
             </div>
+
+            <div class="sous_competences_container">
+                <h4>Outils de base de données</h4>
+                <p></p>
+                <div class="languages">
+                    <img src="../image/cv/phpmyadmin_logo.webp" alt="PhpMyAdmin" title="PhpMyAdmin logo">
+                    <img src="../image/cv/sqldeveloppeur_logo.webp" alt="SqlDeveloppeur" title="SqlDeveloppeur logo">
+                    <img src="../image/cv/rstudio_logo.webp" alt="R studio" title="R studio logo">
+                    <img src="../image/cv/neo4j_logo.webp" alt="Neo4j" title="Neo4j logo">
+                </div>
+            </div>
         </div>
 
         <div class="competences_container">
@@ -403,6 +455,16 @@ $titre = 'CV';
                     <img src="../image/cv/matplotlib_logo.webp" alt="Matplotlib" title="Matplotlib logo">
                 </div>
             </div>
+
+            <div class="sous_competences_container">
+                <h4>Outils de développement (IDE) ML</h4>
+                <div class="languages">
+                    <img src="../image/cv/pycharm_logo.webp" alt="PyCharm" title="PyCharm logo">
+                    <img src="../image/cv/vscode_logo.webp" alt="Visual Studio Code" title="Visual Studio Code logo">
+                    <img src="../image/cv/jupyter_logo.webp" alt="Jupyter" title="Jupyter logo">
+                    <img src="../image/cv/anaconda_logo.webp" alt="Anaconda" title="Anaconda logo">
+                </div>
+            </div>
         </div>
 
         <div class="competences_container">
@@ -417,6 +479,15 @@ $titre = 'CV';
                     <img src="../image/cv/python_logo.webp" alt="Python" title="Python logo">
                     <img src="../image/cv/java_logo.webp" alt="Java" title="Java logo">
                     <img src="../image/cv/c_logo.webp" alt="C" title="C logo">
+                </div>
+            </div>
+            <div class="sous_competences_container">
+                <h4>Outils de développement Logiciel(IDE)</h4>
+                <div class="languages">
+                    <img src="../image/cv/pycharm_logo.webp" alt="PyCharm" title="PyCharm logo">
+                    <img src="../image/cv/vscode_logo.webp" alt="Visual Studio Code" title="Visual Studio Code logo">
+                    <img src="../image/cv/intellij_logo.webp" alt="Intellij" title="Intellij logo">
+                    <img src="../image/cv/processing_logo.webp" alt="Processing" title="Processing logo">
                 </div>
             </div>
         </div>
@@ -437,17 +508,17 @@ $titre = 'CV';
             <div class="sous_competences_container">
                 <h4>Création d'entreprise/Entrepreneuriat</h4>
                 <p>En plus de mes compétences en gestion de projet informatique, je suis passionné par l'entrepreneuriat. Cette passion m'a amené à explorer différents aspects de la création d’entreprise.</p>
-                <p>Grâce à mes cours, j’ai eu l'opportunité de réaliser un projet de création d'entreprise, comprenant la conception d’un Business Plan détaillé. Ce projet m’a permis de développer mes compétences en planification stratégique, en analyse de marché et en modélisation financière.</p>
+                <p>Grâce à mes cours, j’ai eu l'opportunité de réaliser un projet de création d'entreprise, comprenant la conception d’un <b>Business Plan</b> détaillé. Ce projet m’a permis de développer mes compétences en planification stratégique, en analyse de marché et en modélisation financière.</p>
             </div>
             <div class="sous_competences_container">
                 <h4>Comptabilité</h4>
-                <p>La comptabilité est un aspect essentiel pour déterminer la faisabilité d'un projet ou d'une entreprise. Cette compétence, que j’ai pu renforcer notamment lors de la réalisation de business plans, m’a permis d’acquérir une bonne compréhension des bilans financiers, des comptes de résultat, ainsi que des plans de trésorerie et de financement.</p>
-                <p>Je suis capable de dresser et d’analyser des bilans comptables et d’évaluer la santé financière d'un projet ou d’une entreprise, ce qui est crucial pour une gestion efficace et éclairée.</p>
+                <p>La comptabilité est un aspect essentiel pour déterminer la faisabilité d'un projet ou d'une entreprise. Cette compétence, que j'ai pu renforcer notamment lors de la réalisation de business plans, m'a permis d'acquérir une bonne compréhension des <b>bilans financiers</b>, des <b>comptes de résultat</b>, ainsi que des <b>plans de trésorerie</b> et de <b>financement</b>.</p>
+                <p>Je suis capable de dresser et d'analyser des <b>bilans comptables</b> et d'évaluer la santé financière d'un projet ou d'une entreprise, ce qui est crucial pour une gestion efficace et éclairée.</p>
             </div>
             <div class="sous_competences_container">
                 <h4>Gestion et Étude de Risque</h4>
-                <p>La gestion des risques est primordiale dans tout projet pour anticiper et minimiser les imprévus. Je suis formé à l'identification, l'évaluation et la hiérarchisation des risques, ainsi qu’à la mise en place de stratégies de mitigation pour réduire leur impact.</p>
-                <p>Mon approche consiste à mener des analyses de risques approfondies, en tenant compte des variables financières, opérationnelles et stratégiques. En intégrant ces pratiques dès la phase de planification, j’assure une gestion proactive des projets.</p>
+                <p>La gestion des risques est primordiale dans tout projet pour anticiper et minimiser les imprévus. Je suis formé à l'identification, l'évaluation et la hiérarchisation des risques, ainsi qu'à la mise en place de stratégies de mitigation pour réduire leur impact.</p>
+                <p>Mon approche consiste à mener des analyses de risques approfondies, en tenant compte des variables financières, opérationnelles et stratégiques. En intégrant ces pratiques dès la phase de planification, j'assure une gestion proactive des projets.</p>
             </div>
             <div class="sous_competences_container">
                 <h4>Communication Professionnelle</h4>
@@ -455,11 +526,39 @@ $titre = 'CV';
                 <p>J'ai développé des compétences en communication orale et écrite, en particulier pour la rédaction de documents projet tels que des <b>comptes-rendus</b>, <b>des rapports d'avancement</b> et des <b>documentations techniques</b> (<b>Markdown</b>).</p>
                 <p>Mon approche consiste à établir une communication proactive et transparente, afin de maintenir une dynamique positive au sein d'une l'équipe et d'assurer une compréhension commune des objectifs et des étapes du projet.</p>
             </div>
+            <div class="sous_competences_container">
+                <h4>Outils de Gestion</h4>
+                <p>J'utilise de nombreux outils pour la gestion et la rédaction de rapport.</p>
+                <div class="languages">
+                    <img src="../image/cv/jira_logo.webp" alt="Jira Software Manager" title="Jira Software Manager logo">
+                    <img src="../image/cv/gantt_logo.webp" alt="Gantt" title="Gantt logo">
+                    <img src="../image/cv/word_logo.webp" alt="Word" title="Word logo">
+                    <img src="../image/cv/excel_logo.webp" alt="Excel" title="Excel logo">
+                    <img src="../image/cv/powerpoint_logo.webp" alt="Powerpoint" title="Powerpoint logo">
+                    <img src="../image/cv/googlesheet_logo.webp" alt="Google Sheet" title="Google Sheet logo">
+                </div>
+            </div>
         </div>
 
         <div class="competences_container">
             <h3 id="qualitecode"><i class="fas fa-project-diagram"></i> Qualité de code</h3>
-            <p>Depuis plus de 3 ans, je travaille dans les systèmes et réseaux, ce qui m'a permis d'acquérir une expérience solide pour mener à bien des projets de grande envergure. Le réseau est essentiel pour la cybersécurité, et je suis passionné par l'optimisation des systèmes pour assurer leur sécurité et leur performance.</p>
+            <p>J'accorde une importance capitale à la qualité du code, car elle est essentielle pour assurer la <b>robustesse</b>, la <b>maintenabilité</b> et la <b>performance</b> des applications.</p>
+            <p>Mon approche repose sur des bonnes pratiques de développement, incluant la <b>modélisation</b>, le <b>contrôle de version</b> et une <b>rigueur technique</b> à chaque étape du processus de développement.</p>
+            <p>Je maîtrise les techniques de <b>modélisation UML</b>, qui me permettent de concevoir des architectures logicielles claires et adaptées aux besoins du projet.</p>
+            <p>Pour le contrôle de version et la collaboration en équipe, j'utilise <b>Git</b>, garantissant ainsi un suivi précis des modifications et une gestion optimale du code.</p>
+            <p>Ma démarche inclut également des étapes essentielles du <b>génie logiciel</b> : <b>analyse des besoins</b>, <b>spécification</b>, <b>conception</b>, <b>développement</b> et <b>tests</b>, afin de garantir un cycle de développement complet et de haute qualité.</p>
+            <p>L'<b>algorithmique</b> et le <b>calcul distribué</b> sont également des domaines que j'intègre dans mes projets lorsque la performance et l'efficacité sont importantes.</p>
+            <div class="sous_competences_container">
+                <h4>Outils  utilisés</h4>
+                <p>J'utilise de nombreux.</p>
+                <div class="languages">
+                    <img src="../image/cv/drawio_logo.webp" alt="drawio" title="drawio logo">
+                    <img src="../image/cv/staruml_logo.webp" alt="STARUML" title="STARUML logo">
+                    <img src="../image/cv/git_logo.webp" alt="Git" title="Git logo">
+                    <img src="../image/cv/github_logo.webp" alt="GitHub" title="GitHub logo">
+                    <img src="../image/cv/gitlab_logo.webp" alt="Gitlab" title="Gitlab logo">
+                </div>
+            </div>
         </div>
 
         <div class="competences_container">
@@ -469,9 +568,9 @@ $titre = 'CV';
 
     </section>
 
-    <section class="outils">
+    <!--<section class="outils">
 
-    </section>
+    </section>-->
 
     <section class="experiences">
 

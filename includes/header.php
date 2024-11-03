@@ -1,4 +1,5 @@
 <?php
+/*define('BASE_URL', '/public/pages/');*/
 ?>
 <header>
     <nav>

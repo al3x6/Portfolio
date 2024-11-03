@@ -42,7 +42,7 @@ $titre = 'Projets';
             </div>
         </div>
         <div class="hero_right">
-            <img src="public/image/me.webp" width="612" height="408" alt="Photo de profil">
+            <img src="../image/me.webp" width="612" height="408" alt="Photo de profil">
             <?php /*__DIR__*/ ?>
         </div>
     </section>

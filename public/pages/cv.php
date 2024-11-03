@@ -40,7 +40,7 @@ $titre = 'CV';
             </div>
         </div>
         <div class="hero_right">
-            <img src="/public/image/cv/CV_Alexis_ARAUJO.webp" width="700" height="990" alt="Photo de mon CV">
+            <img src="/public/image/cv/CV_Alexis_ARAUJO2.webp" width="700" height="990" alt="Photo de mon CV">
             <?php /*__DIR__*/ ?>
         </div>
     </section>
@@ -245,6 +245,8 @@ $titre = 'CV';
                     <img src="../image/cv/pycharm_logo.webp" alt="PyCharm" title="Pycharm logo">
                     <img src="../image/cv/nano_logo.webp" alt="Nano" title="Nano logo">
                     <img src="../image/cv/gedit_logo.webp" alt="Gedit" title="Gedit logo">
+                    <img src="../image/cv/winscp_logo.webp" alt="WinSCP" title="WinSCP logo">
+                    <img src="../image/cv/putty_logo.webp" alt="PuTTY" title="PuTTY logo">
                 </div>
             </div>
         </div>
@@ -257,8 +259,9 @@ $titre = 'CV';
                 <h4>Outils</h4>
                 <p></p>
                 <div class="languages">
-                    <img src="../image/cv/wireshark_logo.webp" alt="VMware" title="VMware logo">
-                    <img src="../image/cv/nmap_logo.webp" alt="VMware" title="VMware logo">
+                    <img src="../image/cv/wireshark_logo.webp" alt="Wireshark" title="Wireshark logo">
+                    <img src="../image/cv/nmap_logo.webp" alt="Nmap" title="Nmap logo">
+                    <img src="../image/cv/burpsuite_logo.webp" alt="BurpSuite" title="BurpSuite logo">
                 </div>
             </div>
         </div>
@@ -531,11 +534,15 @@ $titre = 'CV';
                 <p>J'utilise de nombreux outils pour la gestion et la rédaction de rapport.</p>
                 <div class="languages">
                     <img src="../image/cv/jira_logo.webp" alt="Jira Software Manager" title="Jira Software Manager logo">
+                    <img src="../image/cv/slack_logo.webp" alt="Slack" title="Slack logo">
                     <img src="../image/cv/gantt_logo.webp" alt="Gantt" title="Gantt logo">
                     <img src="../image/cv/word_logo.webp" alt="Word" title="Word logo">
                     <img src="../image/cv/excel_logo.webp" alt="Excel" title="Excel logo">
                     <img src="../image/cv/powerpoint_logo.webp" alt="Powerpoint" title="Powerpoint logo">
-                    <img src="../image/cv/googlesheet_logo.webp" alt="Google Sheet" title="Google Sheet logo">
+                    <img src="../image/cv/googlesheets_logo.webp" alt="Google Sheets" title="Google Sheets logo">
+                    <img src="../image/cv/googledocs_logo.webp" alt="Google Docs" title="Google Docs logo">
+                    <img src="../image/cv/googleslides_logo.webp" alt="Google Slides" title="Google Slides logo">
+                    <img src="../image/cv/canva_logo.webp" alt="Canva" title="Canva logo">
                 </div>
             </div>
         </div>
@@ -556,6 +563,7 @@ $titre = 'CV';
                     <img src="../image/cv/staruml_logo.webp" alt="STARUML" title="STARUML logo">
                     <img src="../image/cv/git_logo.webp" alt="Git" title="Git logo">
                     <img src="../image/cv/github_logo.webp" alt="GitHub" title="GitHub logo">
+                    <img src="../image/cv/githubdesktop_logo.webp" alt="GitHub Desktop" title="GitHub Desktop logo">
                     <img src="../image/cv/gitlab_logo.webp" alt="Gitlab" title="Gitlab logo">
                 </div>
             </div>

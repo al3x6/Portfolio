@@ -12,8 +12,8 @@ $titre = 'CV';
     <meta name="description" content="Je présente sur cette page mon Cv au complet. Il est possible d'être téléchargé">
     <title><?= $titre ?></title>
     <!-- Inclure des feuilles de style CSS ici -->
-    <link rel="stylesheet" href="../css/styles.css" media="only screen and (min-width: 941px)">
-    <link rel="stylesheet" href="../css/styles_mobile_css.css" media="only screen and (max-width: 940px)">
+    <link rel="stylesheet" href="../css/styles_css.css" media="only screen and (min-width: 941px)">
+    <link rel="stylesheet" href="../css/styles_mobile.css" media="only screen and (max-width: 940px)">
 
     <!-- Emeticones -->
     <script rel="preconnect" src="https://kit.fontawesome.com/c6abb0645d.js" crossorigin="anonymous"></script>
@@ -36,11 +36,11 @@ $titre = 'CV';
                 <p>Vous pouvez Télécharger ci-dessous mon CV.<br>Vous pouvez également parcourir cette page qui transmet des informations plus précises.</p>
             </div>
             <div class="div_button">
-                <a href="/public/image/cv/CV_Alexis_ARAUJO.pdf" class="button" download>Télécharger mon CV</a>
+                <a href="/public/image/cv/CV_Alexis_ARAUJO01.pdf" class="button" download>Télécharger mon CV</a>
             </div>
         </div>
         <div class="hero_right">
-            <img src="/public/image/cv/CV_Alexis_ARAUJO2.webp" width="700" height="990" alt="Photo de mon CV">
+            <img src="/public/image/cv/CV_Alexis_ARAUJO1.webp" width="700" height="990" alt="Photo de mon CV">
             <?php /*__DIR__*/ ?>
         </div>
     </section>

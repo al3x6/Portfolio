@@ -241,6 +241,45 @@ main {
 }
 
 
+/* ///////////////////////////// Section mini_menu ///////////////////////////// */
+.mini_menu{
+
+}
+
+.mini-menu h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+/* ///////////////////////////// Section profil ///////////////////////////// */
+.profil {
+    background-color: #f2f2f2;
+    padding: 50px 10px;
+}
+
+.profil h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.profil .profil_container {
+    flex-direction: column;
+}
+
+/* /// Left /// */
+.profil .profil_container .profil_left, .profil .profil_container .profil_right {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.profil .profil_container .profil_left p, .profil .profil_container .profil_right p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* ///////////////////////////// Section formations ///////////////////////////// */
+
+/* ///////////////////////////// Section compétences (langages) ///////////////////////////// */
+
 /* ///////////////////////////// Section contact ///////////////////////////// */
 .contact {
     background-color: #333;

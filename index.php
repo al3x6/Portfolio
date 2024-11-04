@@ -13,8 +13,8 @@ $titre='Accueil';
           content="Bienvenue sur mon portfolio ! Je suis Alexis Araujo, étudiant passionné en informatique. Avec une expertise diversifiée dans plusieurs domaines, notamment le développement web, la conception graphique et la configuration de serveurs, je suis prêt à relever de nouveaux défis avec créativité et détermination. Explorez mes réalisations concrètes et découvrez comment je peux contribuer à des projets innovants en tant que développeur web passionné.">
     <title><?=$titre?></title>
     <!-- Inclure des feuilles de style CSS ici -->
-    <link rel="stylesheet" href="/public/css/styles.css" media="only screen and (min-width: 941px)">
-    <link rel="stylesheet" href="/public/css/styles_mobile_css.css" media="only screen and (max-width: 940px)">
+    <link rel="stylesheet" href="/public/css/styles_css.css" media="only screen and (min-width: 941px)">
+    <link rel="stylesheet" href="/public/css/styles_mobile.css" media="only screen and (max-width: 940px)">
 
     <!-- Emoticone -->
     <script rel="preconnect" src="https://kit.fontawesome.com/c6abb0645d.js" crossorigin="anonymous"></script>

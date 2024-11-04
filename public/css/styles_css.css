@@ -1,0 +1,632 @@
+/* ///////////////////////////// body ///////////////////////////// */
+body {
+    /* Dégradé de Gris Foncé à Gris Clair */
+    /*background: linear-gradient(to bottom, #476e96, #BDC3C7);*/
+
+    /* Définit le corps de la page comme un conteneur Flex, permettant une mise en page flexible */
+    display: flex;
+    /* Organise les éléments enfants en colonne, assurant un empilement vertical de haut en bas*/
+    flex-direction: column;
+    /* Assure que le corps de la page a une hauteur minimale de la hauteur de la fenêtre visible, garantissant un affichage plein écran */
+    min-height: 100vh;
+    /* Supprime les marges par défaut du corps de la page, garantissant aucun espace indésirable autour de la page  évite le scroll*/
+    margin: 0;
+    padding: 0;
+    /* Font */
+    font-family: Arial, sans-serif;
+}
+
+/* ///////////////////////////// Header ///////////////////////////// */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+header nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    width: 100%;
+}
+header nav ul ul {
+    position: absolute;
+    right: 0;
+}
+header nav li, ul {
+    display: inline-block;
+    padding: 8px;
+}
+header nav a, a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+header nav a:hover {
+    color: #ccc;
+}
+
+/* ///////////////////////////// main ///////////////////////////// */
+main {
+    /* Fait en sorte que le contenu principal (élément <main>) s'étende pour remplir tout l'espace vertical disponible dans le conteneur Flex du corps de la page, poussant ainsi le footer en bas de la page, même si le contenu est limité */
+    flex: 1;
+    /* Ajoutez pour afficher une barre de défilement verticale lorsque le contenu dépasse la hauteur de la fenêtre du navigateur */
+    overflow-y: auto;
+}
+
+/*section {}*/
+
+/* ///////////////////////////// Titre ///////////////////////////// */
+.titre {
+    text-align: center;
+    padding: 20px;
+}
+.titre h1 {
+    font-size: 50px;
+}
+
+/* ///////////////////////////// Section hero ///////////////////////////// */
+.hero {
+    display: flex;
+    background-color: #f2f2f2;
+    padding: 100px;
+}
+
+/* /// Left /// */
+.hero .hero_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+/* text */
+.hero .hero_left h2 {
+    margin-top: 0;
+}
+.hero .hero_left p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* button */
+.hero .hero_left .div_button {
+    text-align: center;
+    padding: 50px;
+}
+.hero .hero_left .div_button .button {
+    background-color: #333; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    border: none; /* Supprime les bordures du bouton */
+    padding: 10px 20px; /* Ajoute un espace intérieur au bouton */
+    font-size: 16px; /* Taille de la police du texte */
+    border-radius: 5px; /* Ajoute des coins arrondis au bouton */
+    cursor: pointer; /* Change le curseur lorsqu'on survole le bouton */
+    text-decoration: none; /* Supprime les soulignements */
+}
+.hero .hero_left .div_button .button:hover {
+    background-color: #555; /* Couleur de fond du bouton au survol */
+}
+
+/* /// Right /// */
+.hero .hero_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+/* ///////////////////////////// Section services ///////////////////////////// */
+.services {
+    background-color: #c2c2c2;
+    padding: 100px;
+    display: flex;
+}
+
+/* /// Left /// */
+.services .services_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+/*.services .services_left .sphère {}*/
+
+/* sphère */
+.tagcloud {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 650;
+}
+.tagcloud--item:hover {
+    color: #ddd;
+}
+
+/* /// Right /// */
+.services .services_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.services .services_right h2 {
+    margin-top: 0;
+}
+
+.services .services_right p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* button */
+.services .services_right .div_button {
+    text-align: center;
+    padding: 50px;
+}
+.services .services_right .div_button .button {
+    background-color: #333; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    border: none; /* Supprime les bordures du bouton */
+    padding: 10px 20px; /* Ajoute un espace intérieur au bouton */
+    font-size: 16px; /* Taille de la police du texte */
+    border-radius: 5px; /* Ajoute des coins arrondis au bouton */
+    cursor: pointer; /* Change le curseur lorsqu'on survole le bouton */
+    text-decoration: none; /* Supprime les soulignements */
+}
+.services .services_right .div_button .button:hover {
+    background-color: #555; /* Couleur de fond du bouton au survol */
+}
+
+
+/* ///////////////////////////// Section portfolio ///////////////////////////// */
+.portfolio {
+    padding: 50px;
+    max-height: 700px; /* Hauteur maximale de la section */
+    overflow-y: auto; /* Activation du défilement vertical si nécessaire */
+    background-color: #6e6c6c;
+}
+
+.portfolio h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* carrousel */
+.portfolio .carrousel-container {
+    /*
+    max-width: 100%;
+    min-width: 0;
+    margin-left: auto;
+    margin-right: auto;
+    */
+    position: relative;
+    overflow: hidden;
+}
+
+/* bouton */
+.portfolio .carrousel-container .prec-btn, .next-btn {
+    font-size: 16px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(204, 204, 204, 0.5);
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    cursor: pointer;
+    /*opacity: 0.7;*/
+}
+.portfolio .carrousel-container .prec-btn {
+    left: 10px;
+}
+.portfolio .carrousel-container .next-btn {
+    right: 10px;
+}
+
+/* wrapper */
+.portfolio .carrousel-container .carrousel-wrapper {
+    display: flex;
+    padding: 20px;
+}
+.portfolio .carrousel-container .carrousel-wrapper.slide-animation {
+    transition: transform 0.5s ease-in-out; /* Durée et type de transition */
+}
+.portfolio .carrousel-container .carrousel-wrapper .projet {
+    flex: 0 0 300px;
+    /*margin-right: 80px;*/ /* Espacement entre les projets */
+    padding: 40px; /* Espace à l'intérieur de chaque projet */
+    background-color: #f9f9f9; /* Couleur de fond */
+    border-radius: 24px; /* Coins arrondis */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Ombre douce */
+    cursor: pointer;
+
+    transition: transform 0.3s ease; /* Effet de transition pour un agrandissement fluide */
+}
+.portfolio .carrousel-container .carrousel-wrapper .projet:hover {
+    /* Agrandit l'image lorsqu'elle est survolée */
+    transform: scale(1.1);
+    box-shadow: none;
+}
+
+/* conteneur projet */
+.portfolio .carrousel-container .carrousel-wrapper .projet a img {
+    width: 100%; /* Remplir l'espace disponible */
+    height: auto;
+    border-radius: 8px; /* Coins arrondis pour l'image */
+}
+.portfolio .carrousel-container .carrousel-wrapper .projet h3 {
+    margin-top: 10px; /* Marge en haut du titre */
+    font-size: 1.2em; /* Taille du titre */
+}
+.portfolio .carrousel-container .carrousel-wrapper .projet p {
+    margin-top: 5px; /* Marge en haut du paragraphe */
+    font-size: 1em; /* Taille du texte */
+}
+
+/* ///////////////////////////// Section mini_menu ///////////////////////////// */
+.mini_menu {
+    background-color: #f2f2f2;
+    padding: 1px;
+    padding-bottom: 50px;
+}
+
+.mini_menu h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* ///////////////////////////// Section profil ///////////////////////////// */
+.profil {
+    padding: 100px;
+    /*background-color: #c2c2c2;*/
+    background-color: #dfdfdf;
+}
+
+.profil h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.profil .profil_container {
+    display: flex;
+}
+
+/* /// Left /// */
+.profil .profil_container .profil_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.profil .profil_container .profil_left p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* /// Right /// */
+.profil .profil_container .profil_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.profil .profil_container .profil_right p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ///////////////////////////// Section formations ///////////////////////////// */
+.formations {
+    padding: 50px;
+    /*background-color: #6e6c6c;*/
+    background-color: #cccccc;
+}
+
+.formations h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* Styles du tableau pour la section des formations */
+.formations .formations_table {
+    width: 100%; /* Occupe toute la largeur disponible */
+    border-collapse: collapse; /* Supprime les espaces entre les cellules */
+}
+
+.formations .formations_table td {
+    vertical-align: top; /* Aligne le texte et les images en haut */
+    padding: 20px; /* Ajoute un peu d'espace autour du contenu */
+}
+
+/* Colonne pour les logos */
+.formations .formations_table .logo_cell {
+    width: 30%; /* La colonne des logos occupe 30% de la largeur totale */
+    text-align: center; /* Centrer les images dans la colonne */
+}
+
+.formations .formations_table .logo_cell img {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px; /* Limiter la hauteur des images */
+}
+
+/* Colonne pour le texte */
+.formations .formations_table .text_cell {
+    width: 70%; /* La colonne du texte occupe 70% de la largeur */
+}
+
+.formations .formations_table .text_cell h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.formations .formations_table .text_cell p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.formations .formations_table .text_cell p a {
+    color: black;
+}
+
+/* button laaaaa */
+.formations .formations_right .div_button {
+    text-align: center;
+    padding: 50px;
+}
+
+.formations .formations_right .div_button .button {
+    background-color: #333; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    border: none; /* Supprime les bordures du bouton */
+    padding: 10px 20px; /* Ajoute un espace intérieur au bouton */
+    font-size: 16px; /* Taille de la police du texte */
+    border-radius: 5px; /* Ajoute des coins arrondis au bouton */
+    cursor: pointer; /* Change le curseur lorsqu'on survole le bouton */
+    text-decoration: none; /* Supprime les soulignements */
+}
+
+.formations .formations_right .div_button .button:hover {
+    background-color: #555; /* Couleur de fond du bouton au survol */
+}
+
+/* ///////////////////////////// Section compétences (langages) ///////////////////////////// */
+.competences {
+    padding: 50px;
+    background-color: #b9b9b9;
+}
+
+.competences h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* Container */
+.competences .competences_container {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.competences .competences_container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 50px; /* Ajustement des marges */
+}
+
+/* sous container */
+.competences .competences_container .sous_competences_container {
+    margin-left: 50px;
+}
+
+.competences .competences_container .sous_competences_container ul {
+    margin-left: 70px;
+    margin-bottom: 5px;
+    margin-top: 0;
+    padding: 10px; /* Ajout de padding pour un espacement intérieur */
+}
+
+.competences .competences_container .sous_competences_container li {
+    margin-bottom: 5px; /* Espacement entre les éléments de liste */
+}
+
+/* image langage */
+.competences .competences_container .sous_competences_container .languages {
+    margin-left: 70px;
+    display: flex;
+    gap: 15px; /* Espace entre les images */
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.competences .competences_container .sous_competences_container .languages img {
+    width: 40px; /* Taille de chaque icône */
+    height: auto;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.competences .competences_container .sous_competences_container .languages img:hover {
+    transform: scale(1.1); /* Agrandissement au survol */
+}
+
+/* ///////////////////////////// Section outils ///////////////////////////// */
+.outils {
+    padding: 50px;
+    background-color: #a6a6a6;
+}
+
+/* ///////////////////////////// Section experiences ///////////////////////////// */
+.experiences {
+    padding: 50px;
+    background-color: #929292;
+}
+
+/* ///////////////////////////// Section suivi ///////////////////////////// */
+.suivi {
+    padding: 50px;
+    background-color: #7f7f7f;
+}
+
+/* ///////////////////////////// Section langues ///////////////////////////// */
+.langues {
+    padding: 50px;
+    background-color: #6c6c6c;
+}
+
+/* ///////////////////////////// Section centres interets ///////////////////////////// */
+.centres_interets {
+    padding: 50px;
+    background-color: #595959;
+}
+
+/* ///////////////////////////// Section projets_cv ///////////////////////////// */
+.projets_cv {
+    padding: 50px;
+    background-color: #464646;
+}
+
+/* ///////////////////////////// Section Total CV ///////////////////////////// */
+/* mini menu */
+.mini-menu {
+    text-align: center; /* Centrer le menu */
+    margin-bottom: 20px; /* Espacement sous le menu */
+}
+
+.mini-menu ul {
+    list-style: none; /* Supprime les puces de la liste */
+    padding: 0; /* Enlève le padding par défaut */
+    display: flex; /* Utilise flexbox pour aligner les éléments en ligne */
+    justify-content: center; /* Centre les éléments du menu */
+}
+
+.mini-menu ul li {
+    margin: 0 10px; /* Espace entre les éléments */
+}
+
+.mini-menu .button {
+    display: inline-block; /* Rend le lien comme un bloc en ligne */
+    padding: 10px 20px; /* Ajout de padding pour le style du bouton */
+    background-color: #333; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border-radius: 5px; /* Coins arrondis */
+    text-decoration: none; /* Supprime le soulignement */
+    transition: background-color 0.3s; /* Animation lors du survol */
+}
+
+.mini-menu .button:hover {
+    background-color: #555; /* Couleur de fond au survol */
+}
+
+/* ///////////////////////////// Section contact ///////////////////////////// */
+.contact {
+    background-color: #333; /* Couleur de fond de la section */
+    color: #fff; /* Couleur du texte */
+    padding: 100px; /* Espacement interne */
+    text-align: center; /* Centrage du contenu */
+}
+
+.contact h2 {
+    margin-top: 0; /* Suppression de la marge supérieure */
+    font-size: 30px; /* Taille du titre */
+}
+
+/* // formulaire //*/
+.contact form {
+    display: flex; /* Affichage en ligne des éléments du formulaire */
+    flex-direction: column; /* Disposition en colonne */
+    justify-content: center;
+    max-width: 500px; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centrage horizontal du formulaire */
+}
+
+.contact input[type="text"], .contact input[type="email"], .contact textarea {
+    width: 100%; /* Largeur de 100% */
+    padding: 10px; /* Espacement interne */
+    margin-bottom: 20px; /* Marge inférieure entre les champs */
+    border: 1px solid #fff; /* Bordure avec couleur blanche */
+    border-radius: 5px; /* Coins arrondis */
+    background-color: transparent; /* Fond transparent */
+    color: #fff; /* Couleur du texte */
+}
+.contact input[type="text"], .contact input[type="email"] {
+    height: 40px; /* Hauteur des champs de texte */
+}
+.contact textarea {
+    min-height: 150px; /* Hauteur minimale du champ de texte */
+}
+
+.contact .contact_valide {
+    width: 50%; /* Largeur de 100% */
+    padding: 10px 20px; /* Espacement interne */
+
+    border: none; /* Suppression de la bordure */
+    border-radius: 5px; /* Coins arrondis */
+
+    background-color: #fff; /* Couleur de fond */
+    color: #333; /* Couleur du texte */
+
+    font-weight: bold; /* Police en gras */
+    font-size: 16px; /* Taille de la police du texte */
+
+    cursor: pointer; /* Curseur de type pointeur */
+    transition: background-color 0.3s; /* Transition douce de couleur de fond */
+
+    margin: 0 auto;
+}
+.contact .contact_valide:hover {
+    background-color: #ddd; /* Couleur de fond au survol */
+}
+
+/* // button top //*/
+#retour_haut_btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Suppression de la bordure */
+    border-radius: 50%; /* Forme arrondie du bouton */
+    width: 40px; /* Largeur du bouton */
+    height: 40px; /* Hauteur du bouton */
+    font-size: 20px; /* Taille de la police du texte */
+    line-height: 40px; /* Centrage vertical du texte */
+    text-align: center; /* Centrage horizontal du texte */
+    cursor: pointer; /* Curseur de type pointeur */
+    z-index: 99; /* Assurer que le bouton reste au-dessus des autres éléments */
+    transition: background-color 0.3s; /* Transition douce de couleur de fond */
+}
+#retour_haut_btn:hover {
+    background-color: #555; /* Couleur de fond au survol */
+}
+
+/* ///////////////////////////// Footer ///////////////////////////// */
+footer {
+    margin-top: auto; /* Le footer est aligné en bas de la page */
+    background-color: #333; /* Couleur de fond du footer */
+    color: #fff; /* Couleur du texte */
+    text-align: center; /* Centrage du contenu */
+    padding: 20px 0; /* Espacement interne haut/bas */
+}
+
+footer p {
+    margin: 0; /* Suppression des marges */
+    font-size: 14px; /* Taille du texte */
+}

@@ -362,6 +362,11 @@ main {
     max-width: 100%;
     height: auto;
     max-height: 150px; /* Limiter la hauteur des images */
+    transition: transform 0.2s ease;
+}
+
+.formations .formations_table .logo_cell img:hover {
+    transform: scale(1.1); /* Agrandissement au survol */
 }
 
 /* Colonne pour le texte */
@@ -383,7 +388,7 @@ main {
     color: black;
 }
 
-/* button laaaaa */
+/* button */
 .formations .formations_right .div_button {
     text-align: center;
     padding: 50px;
@@ -466,16 +471,91 @@ main {
     transform: scale(1.1); /* Agrandissement au survol */
 }
 
+/* icônes Perf */
+.competences .competences_container .sous_competences_container .perf {
+    margin-left: 70px;
+    display: flex;
+    gap: 15px; /* Espace entre les images */
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.competences .competences_container .sous_competences_container .perf img {
+    width: 400px; /* Taille de chaque icône */
+    height: auto;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.competences .competences_container .sous_competences_container .perf img:hover {
+    transform: scale(1.1); /* Agrandissement au survol */
+}
+
 /* ///////////////////////////// Section outils ///////////////////////////// */
+/*
 .outils {
     padding: 50px;
     background-color: #a6a6a6;
-}
+}*/
 
 /* ///////////////////////////// Section experiences ///////////////////////////// */
 .experiences {
     padding: 50px;
     background-color: #929292;
+}
+
+.experiences h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* Styles du tableau pour la section des formations */
+.experiences .experiences_table {
+    width: 100%; /* Occupe toute la largeur disponible */
+    border-collapse: collapse; /* Supprime les espaces entre les cellules */
+}
+
+.experiences .experiences_table td {
+    vertical-align: top; /* Aligne le texte et les images en haut */
+    padding: 20px; /* Ajoute un peu d'espace autour du contenu */
+}
+
+/* Colonne pour les logos */
+.experiences .experiences_table .logo_cell {
+    width: 30%; /* La colonne des logos occupe 30% de la largeur totale */
+    text-align: center; /* Centrer les images dans la colonne */
+}
+
+.experiences .experiences_table .logo_cell img {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px; /* Limiter la hauteur des images */
+    transition: transform 0.2s ease;
+}
+
+.experiences .experiences_table .logo_cell img:hover {
+    transform: scale(1.1); /* Agrandissement au survol */
+}
+
+/* Colonne pour le texte */
+.experiences .experiences_table .text_cell {
+    width: 70%; /* La colonne du texte occupe 70% de la largeur */
+}
+
+.experiences .experiences_table .text_cell h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.experiences .experiences_table .text_cell p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.experiences .experiences_table .text_cell p a {
+    color: black;
 }
 
 /* ///////////////////////////// Section suivi ///////////////////////////// */

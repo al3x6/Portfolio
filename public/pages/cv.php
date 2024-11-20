@@ -104,7 +104,7 @@ $titre = 'CV';
             </tr>
             <tr>
                 <td class="logo_cell">
-                    <img src="../image/cv/lyceejulesferry_logo.webp" alt="Logo dy Lycée Jules Ferry">
+                    <img src="../image/cv/lyceejulesferry_logo.webp" alt="Logo du Lycée Jules Ferry">
                 </td>
                 <td class="text_cell">
                     <h3>2021-2020 Classe Préparatoire aux Grandes Écoles (CPGE) TSI</h3>
@@ -183,7 +183,42 @@ $titre = 'CV';
                     <img src="../image/cv/kalilinux_logo.webp" alt="Kali Linux" title="Kali Linux logo">
                     <img src="../image/cv/apache_logo.webp" alt="Apache" title="Apache logo">
                 </div>
+            </div>
 
+            <div class="sous_competences_container">
+                <h4>Architecture Réseaux</h4>
+                <p>J'ai une compréhension approfondie des architectures réseau, y compris la conception et la mise en oeuvre de réseaux locaux et étendus. J'ai participé à la configuration de systèmes IP et à l'installation de systèmes dans des environnements.</p>
+                <ul>
+                    <li>LAN : conception et configuration de réseaux locaux</li>
+                    <li>WAN : interconnexion de réseaux sur de grandes distances</li>
+                    <li>Analyse et dépannage des réseaux à l'aide de Cisco Packet Tracer</li> <!-- gns3 -->
+                    <li>Programmation des commutateurs (switch) et routeurs Cisco via CLI (IOS, IOS-XE)</li>
+                    <li>Configuration VLAN, routage, et sécurité des interfaces</li>
+                    <li>Paramétrage IP pour assurer une communication efficace</li>
+                    <li>Installations système et déploiement dans des environnements divers</li>
+                </ul>
+
+                <div class="languages">
+                    <img src="../image/cv/vmware_logo.webp" alt="VMware" title="VMware logo">
+                    <img src="../image/cv/vbox_logo.webp" alt="Virtual Box" title="Virtual Box logo">
+                    <img src="../image/cv/cisco_logo.webp" alt="Cisco" title="Cisco logo">
+                </div>
+            </div>
+
+            <div class="sous_competences_container">
+                <h4>Outils de réseau</h4>
+                <p></p>
+                <div class="languages">
+                    <img src="../image/cv/powershell_logo.webp" alt="Powershell" title="Powershell logo">
+                    <img src="../image/cv/bash_logo.webp" alt="Bash" title="Bash logo">
+                    <img src="../image/cv/vscode_logo.webp" alt="Visual Studio Code" title="Visual Studio Code logo">
+                    <img src="../image/cv/pycharm_logo.webp" alt="PyCharm" title="Pycharm logo">
+                    <img src="../image/cv/nano_logo.webp" alt="Nano" title="Nano logo">
+                    <img src="../image/cv/gedit_logo.webp" alt="Gedit" title="Gedit logo">
+                    <img src="../image/cv/winscp_logo.webp" alt="WinSCP" title="WinSCP logo">
+                    <img src="../image/cv/putty_logo.webp" alt="PuTTY" title="PuTTY logo">
+                    <img src="../image/cv/packettracer_logo.webp" alt="Cisco Packet Tracer" title="Cisco Packet Tracer logo">
+                </div>
             </div>
 
             <div class="sous_competences_container">
@@ -218,37 +253,6 @@ $titre = 'CV';
                 </div>
 
             </div>
-
-            <div class="sous_competences_container">
-                <h4>Architecture Réseaux</h4>
-                <p>J'ai une compréhension approfondie des architectures réseau, y compris la conception et la mise en oeuvre de réseaux locaux et étendus. J'ai participé à la configuration de systèmes IP et à l'installation de systèmes dans des environnements.</p>
-                <ul>
-                    <li>LAN : conception et configuration de réseaux locaux</li>
-                    <li>WAN : interconnexion de réseaux sur de grandes distances</li>
-                    <li>Paramétrage IP pour assurer une communication efficace</li>
-                    <li>Installations système et déploiement dans des environnements divers</li>
-                </ul>
-
-                <div class="languages">
-                    <img src="../image/cv/vmware_logo.webp" alt="VMware" title="VMware logo">
-                    <img src="../image/cv/vbox_logo.webp" alt="Virtual Box" title="Virtual Box logo">
-                </div>
-            </div>
-
-            <div class="sous_competences_container">
-                <h4>Outils de réseau</h4>
-                <p></p>
-                <div class="languages">
-                    <img src="../image/cv/powershell_logo.webp" alt="Powershell" title="Powershell logo">
-                    <img src="../image/cv/bash_logo.webp" alt="Bash" title="Bash logo">
-                    <img src="../image/cv/vscode_logo.webp" alt="Visual Studio Code" title="Visual Studio Code logo">
-                    <img src="../image/cv/pycharm_logo.webp" alt="PyCharm" title="Pycharm logo">
-                    <img src="../image/cv/nano_logo.webp" alt="Nano" title="Nano logo">
-                    <img src="../image/cv/gedit_logo.webp" alt="Gedit" title="Gedit logo">
-                    <img src="../image/cv/winscp_logo.webp" alt="WinSCP" title="WinSCP logo">
-                    <img src="../image/cv/putty_logo.webp" alt="PuTTY" title="PuTTY logo">
-                </div>
-            </div>
         </div>
 
         <div class="competences_container">
@@ -262,6 +266,8 @@ $titre = 'CV';
                     <img src="../image/cv/wireshark_logo.webp" alt="Wireshark" title="Wireshark logo">
                     <img src="../image/cv/nmap_logo.webp" alt="Nmap" title="Nmap logo">
                     <img src="../image/cv/burpsuite_logo.webp" alt="BurpSuite" title="BurpSuite logo">
+                    <img src="../image/cv/nuclei_logo.webp" alt="Nuclei" title="Nuclei logo">
+                    <img src="../image/cv/maltego_logo.webp" alt="Maltego" title="Maltego logo">
                 </div>
             </div>
         </div>
@@ -297,8 +303,12 @@ $titre = 'CV';
 
             <div class="sous_competences_container">
                 <h4>Accessibilité Numérique</h4>
-                <p></p>
-
+                <p>Dans tous mes projets, j'ai veillé à intégrer les principes d'accessibilité numérique en respectant les normes W3C, notamment les directives WCAG (Web Content Accessibility Guidelines). J'ai conçu des interfaces inclusives pour garantir l'accès aux personnes en situation de handicap, qu'il s'agisse de déficiences visuelles, auditives, motrices ou cognitives.</p>
+                <p>Je m'efforce de rendre mes projets non seulement conformes aux standards, mais aussi agréables et pratiques pour tous les utilisateurs, quelles que soient leurs capacités.</p>
+                <p>Notamment ce portfolio à un score de 100 d'accessibilité sur Page Speed (Google Insight)</p>
+                <div class="perf">
+                    <img src="../image/cv/perf.webp" alt="Image de Performance site" title="Image de Performance site">
+                </div>
             </div>
 
             <div class="sous_competences_container">
@@ -312,6 +322,7 @@ $titre = 'CV';
                     <img src="../image/cv/androidstudio_logo.webp" alt="Android Studio" title="Android Studio logo">
                     <img src="../image/cv/xampp_logo.webp" alt="Xampp" title="Xampp logo">
                     <img src="../image/cv/wamp_logo.webp" alt="Wamp" title="Wamp logo">
+                    <img src="../image/cv/postman_logo.webp" alt="Postman" title="Postman logo">
                 </div>
             </div>
         </div>
@@ -580,8 +591,38 @@ $titre = 'CV';
 
     </section>-->
 
-    <section class="experiences">
-
+    <section id="experiences" class="experiences">
+        <h2><i class="fas fa-briefcase"></i> Expériences</h2>
+        <table class="experiences_table">
+            <tr>
+                <td class="logo_cell">
+                    <a href="https://www.iut-velizy-rambouillet.uvsq.fr/"><img src="../image/cv/velizy_logo.webp" alt="Logo Iut de Vélizy" title="Site Web Iut de Vélizy"></a>
+                </td>
+                <td class="text_cell">
+                    <h3>En Cours-2024 Alternance Administration et Réseaux, IUT de Vélizy</h3>
+                    <p>Mon objectif est de devenir un expert capable de prévenir et contrer les cyberattaques, en m'investissant à fond dans cette discipline en constante évolution.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="logo_cell">
+                    <a href="https://www.alphalives.com/"><img src="../image/cv/alphalives_logo.webp" alt="Logo d'Alphalives" title="Site Web d'Alphalives"></a>
+                </td>
+                <td class="text_cell">
+                    <h3>Juillet 2024-Mars 2024 Stage Développement Web, Alphalives</h3>
+                    <p><b>Diplômé (Niveau: 6, Licence) :</b> BUT Informatique parcours parcours réalisation d'applications : conception, développement, validation. <a target="_blank" href="https://www.francecompetences.fr/recherche/rncp/35475/">ici</a></p>
+                    <p>C'est donc ici, au sein de cette formation que j'ai pu être formé dans différent domaine de l'informatique</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="logo_cell">
+                    <a href="https://www.alphalives.com/"><img src="../image/cv/alphalives_logo.webp" alt="Logo d'Alphalives" title="Site Web d'Alphalives"></a>
+                </td>
+                <td class="text_cell">
+                    <h3>Juillet 2024-Avril 2024 Stage Développement Web, Alphalives</h3>
+                    <p>Ces compétences, je les ai précieusement conservées pour les appliquer à mes projets futurs, en particulier dans ma formation en BUT Informatique. La persévérance, la rigueur, et la gestion du stress sont des qualités essentielles dans ce domaine, et cette expérience m'a permis de les développer et de mieux les maîtriser.</p>
+                </td>
+            </tr>
+        </table>
     </section>
 
     <section class="suivi">

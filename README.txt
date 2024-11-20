@@ -43,7 +43,7 @@ CV :
 
      compétences (langages)
      	Réseau : C, Python, Bash, Apache, Linux, Ubuntu, CentOs, Kali-Linux,(docker, vm)
-     	Cyber : Cryptographie, Scan de port, attaque je sais détect (sql injection, xss injection), OSINT
+     	Cyber : Cryptographie, Scan de port, attaque je sais détect (sql injection, xss injection), OSINT,
      	Web : Accessibilité numérique, ...
      	Base de données
      	Machine Learning
@@ -52,21 +52,21 @@ CV :
      	Qualité de code : Modélisation UML, Git, ANA SPE CON DEV TEST, Algorithmique, calcul distribué
      	Droit de l'informatique : RGPD, Norme ISO, Droit propriété Intellectuelle
      outils
-     	-> SQL Developpeur, phpmyadmin, neo4j
      	-> dockerhub, vmware, Virtual Box, shell, powershell
-     	-> WinSCP, ScpToolkit, Putty
-     	-> Wireshark, nmap,
-     	-> JetBrain (phpstorm, webstorm, pycharm, Intellij, android studio), Xampp, Wampp, Visual Studio Code, R studio, Processing
+     	-> WinSCP, Putty
      	-> Arduino IE,
-     	-> git, GitHub desktop,
-     	-> StarUML, draw io
-     	-> OppenOffice (Excel, Word, ...)
-     	-> Slack
-     	-> Jira
+     	-> Wireshark, nmap, Burp Suite, nuclei, maltego, whois, theHarvester, SQLmap, Hydra, Hashcat, (sniff, socket), metasploit
+     	-> JetBrain (phpstorm, webstorm, pycharm, Intellij, android studio), Xampp, Wamp, Postman, Visual Studio Code, R studio, Processing
+     	-> SQL Developpeur, phpmyadmin, neo4j
+     	-> git, GitHub desktop, StarUML, draw io
+     	-> Jira, OppenOffice (Excel, Word, ...), Slack
      expériences
+     	-> Parler des stages et ce que j'ai fait dans mes stages
      suivi
+     	-> section en une ligne avec les logos et pseudo en dessous
      	-> Rootme, tryhackme, LinkedIn, github
      langues
+     	-> Drapeaux de pays
      centres intérêts
      projet
      	-> simple redirection

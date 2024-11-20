@@ -318,7 +318,7 @@ main {
 
 /* ///////////////////////////// Section formations ///////////////////////////// */
 .formations {
-    padding: 20px; /* Réduit le padding pour mobile */
+    padding: 20px; /* Réduit le padding */
     background-color: #cccccc;
 }
 
@@ -337,7 +337,7 @@ main {
 /* Ligne de formation en colonne inversée pour afficher le logo en dessous du texte */
 .formations .formations_table tr {
     display: flex;
-    flex-direction: column-reverse; /* Place le logo sous le texte */
+    flex-direction: column; /* Place le texte sous le logo */
 }
 
 .formations .formations_table td {
@@ -368,7 +368,7 @@ main {
 
 .formations .formations_table .text_cell p {
     margin-bottom: 10px; /* Espacement réduit entre paragraphes */
-    font-size: 16px; /* Taille réduite pour mobile */
+    font-size: 18px; /* Taille réduite pour mobile */
     line-height: 1.4;
 }
 
@@ -377,6 +377,85 @@ main {
 }
 
 /* ///////////////////////////// Section compétences (langages) ///////////////////////////// */
+.competences {
+    padding: 20px;
+    background-color: #b9b9b9;
+}
+
+.competences h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Container */
+.competences .competences_container {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.competences .competences_container p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0 10px; /* Ajustement des marges pour compacter */
+}
+
+/* sous container */
+.competences .competences_container .sous_competences_container {
+    margin-left: 15px;
+    margin-bottom: 15px; /* Ajoute un espacement pour les sections */
+}
+
+.competences .competences_container .sous_competences_container ul {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 0;
+    padding: 10px; /* Ajout de padding pour un espacement intérieur */
+}
+
+.competences .competences_container .sous_competences_container li {
+    margin-bottom: 5px; /* Espacement entre les éléments de liste */
+    font-size: 16px; /* Taille de police réduite */
+}
+
+/* icônes langage */
+.competences .competences_container .sous_competences_container .languages {
+    margin-left: 22px;
+    display: flex;
+    flex-wrap: wrap; /* Permet un agencement compact */
+    gap: 10px; /* Espace entre les images */
+    margin-top: 10px;
+}
+
+.competences .competences_container .sous_competences_container .languages img {
+    width: 30px; /* Taille réduite des icônes */
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+.competences .competences_container .sous_competences_container .languages img:hover {
+    transform: scale(1.05); /* Légère mise en valeur au survol */
+}
+
+/* icônes Perf */
+.competences .competences_container .sous_competences_container .perf {
+    margin-left: 22px;
+    display: flex;
+    flex-wrap: wrap; /* Permet un agencement compact */
+    gap: 10px; /* Espace entre les images */
+    margin-top: 10px;
+}
+
+.competences .competences_container .sous_competences_container .perf img {
+    width: 100px; /* Taille réduite des icônes */
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+.competences .competences_container .sous_competences_container .perf img:hover {
+    transform: scale(1.05); /* Légère mise en valeur au survol */
+}
 
 /* ///////////////////////////// Section contact ///////////////////////////// */
 .contact {

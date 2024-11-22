@@ -55,6 +55,7 @@ main {
     flex: 1;
     /* Ajoutez pour afficher une barre de défilement verticale lorsque le contenu dépasse la hauteur de la fenêtre du navigateur */
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 /*section {}*/
@@ -427,6 +428,7 @@ main {
     margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
+    /*overflow-x: hidden;*/ /* Empêche le scroll horizontal */
 }
 
 .competences .competences_container p {
@@ -453,10 +455,12 @@ main {
 
 /* image langage */
 .competences .competences_container .sous_competences_container .languages {
-    margin-left: 70px;
     display: flex;
+    flex-wrap: wrap; /* Force le retour à la ligne si nécessaire */
+    /*justify-content: flex-start;*/ /* Alignement des icônes à gauche */
     gap: 15px; /* Espace entre les images */
-    align-items: center;
+    /*align-items: center;*/
+    margin-left: 70px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -464,6 +468,7 @@ main {
 .competences .competences_container .sous_competences_container .languages img {
     width: 40px; /* Taille de chaque icône */
     height: auto;
+    object-fit: contain; /* Assure que l'image reste dans les proportions */
     transition: transform 0.2s ease;
     cursor: pointer;
 }
@@ -660,7 +665,9 @@ main {
     list-style: none; /* Supprime les puces de la liste */
     padding: 0; /* Enlève le padding par défaut */
     display: flex; /* Utilise flexbox pour aligner les éléments en ligne */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
     justify-content: center; /* Centre les éléments du menu */
+    gap: 10px;
 }
 
 .mini-menu ul li {

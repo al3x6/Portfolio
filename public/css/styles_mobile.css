@@ -431,6 +431,8 @@ main {
 .competences .competences_container .sous_competences_container .languages img {
     width: 30px; /* Taille réduite des icônes */
     height: auto;
+    /* a voir, gourmand*/
+    object-fit: contain; /* Assure que l'image reste dans les proportions (a voir)*/
     transition: transform 0.2s ease;
 }
 

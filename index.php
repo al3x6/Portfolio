@@ -38,8 +38,8 @@ $titre='Accueil';
         <div class="hero_left">
             <div>
                 <h2>Alexis Araujo</h2>
-                <p>Je suis un jeune étudiant en 3ème à Oteria Cyber School après avoir eu mon BUT Informatique (Niveau Licence).
-                    <br>Je passionné par l'informatique et surtout la Cybersécurité.
+                <p>Je suis un jeune étudiant en 3ème année à Oteria Cyber School après avoir eu mon BUT Informatique (Niveau Licence).
+                    <br>Je suis passionné par l'informatique et surtout la Cybersécurité.
                     <br>Je me caractérise comme une personne très polyvalente qui à des connaissances dans tous les domaines de l'informatique et non informatique.
                     <br>Grâce à cette polyvalence, je suis capable d'anticiper et de résoudre des défis complexes en cybersécurité en ayant une vision globale des systèmes et en comprenant les interactions entre chaque composant, qu'il s'agisse de réseaux, d'applications web et mobile, de base de données, de systèmes d'exploitation, de cryptographie ou encore d'intelligence artificielle (Machine Learning).
                 </p>

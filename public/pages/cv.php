@@ -672,8 +672,34 @@ $titre = 'CV';
         </table>
     </section>
 
-    <section class="suivi">
-
+    <section id="suivi" class="suivi">
+        <h2><i class="fa-solid fa-address-card"></i> Suivi</h2>
+        <div class="suivi_container">
+            <a href="https://www.root-me.org/hehealex" target="_blank" class="suivi_container_logo">
+                <div class="suivi_logo">
+                    <img src="../image/cv/rootme_logo.webp" alt="Logo RootMe" title="Logo RootMe">
+                </div>
+                <p>hehealex</p>
+            </a>
+            <a href="https://tryhackme.com/r/p/alexisar" target="_blank" class="suivi_container_logo">
+                <div class="suivi_logo">
+                    <img src="../image/cv/tryhackme_logo.webp" alt="Logo TryHackMe" title="Logo TryHackMe">
+                </div>
+                <p>alexisar</p>
+            </a>
+            <a href="https://www.linkedin.com/in/alexis-araujo-b7333822a/" target="_blank" class="suivi_container_logo">
+                <div class="suivi_logo">
+                    <img src="../image/cv/linkedin_logo.webp" alt="Logo LinkedIn" title="Logo LinkedIn">
+                </div>
+                <p>Alexis Araujo</p>
+            </a>
+            <a href="https://github.com/al3x6" target="_blank" class="suivi_container_logo">
+                <div class="suivi_logo">
+                    <img src="../image/cv/github_logo_suivi.webp" alt="Logo GitHub" title="Logo GitHub">
+                </div>
+                <p>al3x6</p>
+            </a>
+        </div>
     </section>
 
     <section class="langues">

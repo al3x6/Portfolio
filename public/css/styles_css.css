@@ -577,6 +577,58 @@ main {
 .suivi {
     padding: 50px;
     background-color: #7f7f7f;
+    text-align: center;
+}
+
+.suivi h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.suivi .suivi_container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.suivi .suivi_container .suivi_container_logo {
+    /*background-color: #fff;*/
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+    padding: 40px 70px 70px 70px;
+    /*width: 250px;*/
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.suivi .suivi_container .suivi_container_logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+}
+
+.suivi .suivi_container .suivi_container_logo .suivi_logo {
+    /*background-color: #ccc;*/ /* Couleur de fond du logo */
+    height: 350px;
+    width: 350px;
+    margin: 0 auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.suivi .suivi_container .suivi_container_logo .suivi_logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* controle l'image dans le conteneur sans rognage */
+}
+
+.suivi .suivi_container .suivi_container_logo p {
+    /*margin-top: 10px;*/
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
 }
 
 /* ///////////////////////////// Section langues ///////////////////////////// */

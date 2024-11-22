@@ -13,7 +13,7 @@ $titre = 'CV';
     <title><?= $titre ?></title>
     <!-- Inclure des feuilles de style CSS ici -->
     <link rel="stylesheet" href="../css/styles_css.css" media="only screen and (min-width: 941px)">
-    <link rel="stylesheet" href="../css/styles_mobile.css" media="only screen and (max-width: 940px)">
+    <link rel="stylesheet" href="../css/styles_mobile_css.css" media="only screen and (max-width: 940px)">
 
     <!-- Emeticones -->
     <script rel="preconnect" src="https://kit.fontawesome.com/c6abb0645d.js" crossorigin="anonymous"></script>
@@ -261,7 +261,7 @@ $titre = 'CV';
 
             <div class="sous_competences_container">
                 <h4>Outils</h4>
-                <p></p>
+                <p>En développement....</p>
                 <div class="languages">
                     <img src="../image/cv/wireshark_logo.webp" alt="Wireshark" title="Wireshark logo">
                     <img src="../image/cv/nmap_logo.webp" alt="Nmap" title="Nmap logo">
@@ -560,7 +560,7 @@ $titre = 'CV';
 
         <div class="competences_container">
             <h3 id="qualitecode"><i class="fas fa-project-diagram"></i> Qualité de code</h3>
-            <p>J'accorde une importance capitale à la qualité du code, car elle est essentielle pour assurer la <b>robustesse</b>, la <b>maintenabilité</b> et la <b>performance</b> des applications.</p>
+            <p>J'accorde une importance à la qualité du code, car elle est essentielle pour assurer la <b>robustesse</b>, la <b>maintenabilité</b> et la <b>performance</b> des applications.</p>
             <p>Mon approche repose sur des bonnes pratiques de développement, incluant la <b>modélisation</b>, le <b>contrôle de version</b> et une <b>rigueur technique</b> à chaque étape du processus de développement.</p>
             <p>Je maîtrise les techniques de <b>modélisation UML</b>, qui me permettent de concevoir des architectures logicielles claires et adaptées aux besoins du projet.</p>
             <p>Pour le contrôle de version et la collaboration en équipe, j'utilise <b>Git</b>, garantissant ainsi un suivi précis des modifications et une gestion optimale du code.</p>
@@ -582,7 +582,7 @@ $titre = 'CV';
 
         <div class="competences_container">
             <h3 id="droit"><i class="fas fa-balance-scale"></i> Droit de l'informatique</h3>
-            <p>Depuis plus de 3 ans, je travaille dans les systèmes et réseaux, ce qui m'a permis d'acquérir une expérience solide pour mener à bien des projets de grande envergure. Le réseau est essentiel pour la cybersécurité, et je suis passionné par l'optimisation des systèmes pour assurer leur sécurité et leur performance.</p>
+            <p>Mon parcours ma permis de me former au droit de l'informatique depuis plusieurs années. Cette aspect est très important dans la réalisations de logiciel ou dans le secteur de la cybersécurité.</p>
         </div>
 
     </section>
@@ -599,8 +599,22 @@ $titre = 'CV';
                     <a href="https://www.iut-velizy-rambouillet.uvsq.fr/"><img src="../image/cv/velizy_logo.webp" alt="Logo Iut de Vélizy" title="Site Web Iut de Vélizy"></a>
                 </td>
                 <td class="text_cell">
-                    <h3>En Cours-2024 Alternance Administration et Réseaux, IUT de Vélizy</h3>
-                    <p>Mon objectif est de devenir un expert capable de prévenir et contrer les cyberattaques, en m'investissant à fond dans cette discipline en constante évolution.</p>
+                    <h3>
+                        <span class="periode">
+                            <time datetime="2025">En Cours</time> -
+                            <time datetime="2024">2024</time>
+                        </span>
+                        <span class="poste">Alternance Administration et Réseaux, IUT de Vélizy</span>
+                    </h3>
+                    <p>J'ai récemment intégré l'équipe de l'Université de Vélizy, où je participe activement à la sécurisation, à la gestion et à la maintenance du parc informatique de l'établissement avec ses différents départements.</p>
+                    <p>Mes principales missions incluent :</p>
+                    <ul>
+                        <li>Installation, configuration et maintenance des équipements informatiques et réseaux.</li>
+                        <li>Supervision de la sécurité des systèmes, incluant la mise en oeuvre de politiques de protection des données sensibles.</li>
+                        <li>Assistance technique auprès des utilisateurs pour résoudre les problèmes matériels et logiciels.</li>
+                        <li>Participation à des projets d'amélioration des infrastructures réseau pour garantir leur fiabilité et performance.</li>
+                    </ul>
+                    <!--<p>Cette alternance me permet de développer des compétences techniques approfondies dans l'administration des systèmes et réseaux, tout en renforçant mes capacités d'analyse et de résolution de problèmes en contexte réel. Elle constitue également une excellente opportunité pour mettre en pratique mes apprentissages académiques au sein d'un environnement professionnel stimulant.</p>-->
                 </td>
             </tr>
             <tr>
@@ -608,9 +622,24 @@ $titre = 'CV';
                     <a href="https://www.alphalives.com/"><img src="../image/cv/alphalives_logo.webp" alt="Logo d'Alphalives" title="Site Web d'Alphalives"></a>
                 </td>
                 <td class="text_cell">
-                    <h3>Juillet 2024-Mars 2024 Stage Développement Web, Alphalives</h3>
-                    <p><b>Diplômé (Niveau: 6, Licence) :</b> BUT Informatique parcours parcours réalisation d'applications : conception, développement, validation. <a target="_blank" href="https://www.francecompetences.fr/recherche/rncp/35475/">ici</a></p>
-                    <p>C'est donc ici, au sein de cette formation que j'ai pu être formé dans différent domaine de l'informatique</p>
+                    <h3>
+                        <span class="periode">
+                            <time datetime="2024-07">Juillet 2024</time> -
+                            <time datetime="2024-03">Mars 2024</time>
+                        </span>
+                        <span class="poste">Stage Développement Web, Alphalives</span>
+                    </h3>
+                    <p>Après une première expérience chez Alphalives, j'ai eu l'opportunité de réintégrer cette équipe dynamique et bienveillante pour un second stage. Ce nouveau stage m'a permis de consolider mes compétences en développement web et de participer à des projets pour des entreprises de grande envergure.</p>
+                    <p>Au cours de ce stage, j'ai eu l'occasion de :</p>
+                    <ul>
+                        <li>Participer au développement et à la maintenance corrective et évolutive d’applications et d'outils web.</li>
+                        <li>Contribuer à la mise en œuvre de solutions techniques innovantes pour des projets à fort impact, notamment pour des clients issus de secteurs variés.</li>
+                        <li>Me former à de nouveaux outils et technologies, en approfondissant notamment la performance des sites web ainsi que d'autres technologies mentionnées dans la partie "Compétences".</li>
+                        <li>Collaborer avec une équipe pour définir et atteindre les objectifs des projets.</li>
+                    </ul>
+                    <p>Cette expérience a également renforcé mes compétences humaines, telles que le travail en équipe, la gestion des priorités et l'adaptabilité face à des défis techniques complexes.</p>
+                    <p>J'ai particulièrement apprécié la convivialité de l'entreprise Alphalives, qui favorise l'entraide et l'esprit d'équipe.</p>
+                    <p>Enfin, ce stage a été une étape décisive dans mon parcours. Il m'a permis de mieux comprendre les aspects techniques du web, tout en approfondissant mes connaissances sur les technologies et les spécificités du secteur. Cela m'a également aidé à mieux appréhender les enjeux du web dans le secteur de la cybersécurité.</p>
                 </td>
             </tr>
             <tr>
@@ -618,8 +647,26 @@ $titre = 'CV';
                     <a href="https://www.alphalives.com/"><img src="../image/cv/alphalives_logo.webp" alt="Logo d'Alphalives" title="Site Web d'Alphalives"></a>
                 </td>
                 <td class="text_cell">
-                    <h3>Juillet 2024-Avril 2024 Stage Développement Web, Alphalives</h3>
-                    <p>Ces compétences, je les ai précieusement conservées pour les appliquer à mes projets futurs, en particulier dans ma formation en BUT Informatique. La persévérance, la rigueur, et la gestion du stress sont des qualités essentielles dans ce domaine, et cette expérience m'a permis de les développer et de mieux les maîtriser.</p>
+                    <h3>
+                        <span class="periode">
+                            <time datetime="2024-07">Juillet 2023</time> -
+                            <time datetime="2024-04">Avril 2023</time>
+                        </span>
+                        <span class="poste">Stage Développement Web, Alphalives</span>
+                    </h3>
+                    <p>Ma première expérience professionnelle en tant qu'informaticien s'est déroulée chez Alphalives, une petite entreprise à taille humaine. J'y ai occupé le poste de développeur web, ce qui m’a permis de découvrir l'univers du développement.</p>
+                    <p>Durant ce stage, j'ai eu l’occasion de :</p>
+                    <ul>
+                        <li>Participer à plusieurs projets web et mobiles, en utilisant divers langages de programmation.</li>
+                        <li>Conduire de manière autonome un projet pour l'un des clients d'Alphalives, comprenant :
+                            <ul>
+                                <li>La conception et le développement de la solution technique.</li>
+                                <li>La participation à des réunions de suivi pour présenter l'avancement du projet et les livrables.</li>
+                                <li>La gestion des retours clients pour ajuster et améliorer le produit final.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Cette expérience m'a permis de développer des compétences techniques solides en développement web tout en renforçant mes capacités de gestion de projet et de communication.</p>
                 </td>
             </tr>
         </table>

@@ -28,8 +28,9 @@ $titre = 'Projets';
 <main>
     <!-- titre -->
     <?php include("../../includes/titre.php"); ?>
+    <h2>En développement .....</h2>
 
-    <section class="hero">
+    <!--<section class="hero">
         <div class="hero_left">
             <div>
                 <h2>CV</h2>
@@ -45,10 +46,11 @@ $titre = 'Projets';
             <img src="../image/me.webp" width="612" height="408" alt="Photo de profil">
             <?php /*__DIR__*/ ?>
         </div>
-    </section>
+    </section>-->
 
 
-    <section class="services">
+    <!--<section class="services">
+        <h2></h2>
         <div class="services_left">
 
         </div>
@@ -59,10 +61,10 @@ $titre = 'Projets';
 
 
     <section class="portfolio">
-        <h2>Portfolio</h2>
+        <h2></h2>
 
         </div>
-    </section>
+    </section>-->
 
     <section class="contact">
         <h2>Contactez-moi</h2>

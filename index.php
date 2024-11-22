@@ -14,7 +14,7 @@ $titre='Accueil';
     <title><?=$titre?></title>
     <!-- Inclure des feuilles de style CSS ici -->
     <link rel="stylesheet" href="/public/css/styles_css.css" media="only screen and (min-width: 941px)">
-    <link rel="stylesheet" href="/public/css/styles_mobile.css" media="only screen and (max-width: 940px)">
+    <link rel="stylesheet" href="/public/css/styles_mobile_css.css" media="only screen and (max-width: 940px)">
 
     <!-- Emoticone -->
     <script rel="preconnect" src="https://kit.fontawesome.com/c6abb0645d.js" crossorigin="anonymous"></script>

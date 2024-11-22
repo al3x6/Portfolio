@@ -457,6 +457,91 @@ main {
     transform: scale(1.05); /* Légère mise en valeur au survol */
 }
 
+/* ///////////////////////////// Section outils ///////////////////////////// */
+/*
+.outils {
+    padding: 20px;
+    background-color: #a6a6a6;
+}
+
+.outils h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+*/
+
+/* ///////////////////////////// Section experiences ///////////////////////////// */
+.experiences {
+    padding: 20px;
+    background-color: #929292;
+}
+
+.experiences h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Styles du tableau pour la section des formations */
+.experiences .experiences_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Ligne de formation en colonne inversée pour afficher le logo en dessous du texte */
+.experiences .experiences_table tr {
+    display: flex;
+    flex-direction: column; /* Place le texte sous le logo */
+}
+
+.experiences .experiences_table td {
+    padding: 15px; /* Réduit le padding autour du contenu */
+}
+
+/* Colonne pour les logos */
+.experiences .experiences_table .logo_cell {
+    text-align: center;
+    margin-top: 10px; /* Espacement au-dessus de l'image */
+}
+
+.experiences .experiences_table .logo_cell img {
+    max-width: 80%; /* Réduit la taille de l'image */
+    height: auto;
+    max-height: 100px; /* Limite la hauteur pour mobile */
+}
+
+/* Colonne pour le texte */
+.experiences .experiences_table .text_cell {
+    margin-bottom: 10px; /* Ajoute un espacement en bas */
+}
+
+.experiences .experiences_table .text_cell h3 {
+    font-size: 20px; /* Taille réduite pour mobile */
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column; /* Période et poste empilés */
+}
+.experiences .experiences_table .text_cell h3 .periode{
+    margin-right: 0;
+    margin-bottom: 5px; /* Espacement vertical pour mobile */
+}
+
+.experiences .experiences_table .text_cell p {
+    margin-bottom: 5px; /* Espacement réduit entre paragraphes */
+    font-size: 18px; /* Taille réduite pour mobile */
+    line-height: 1.2;
+}
+.experiences .experiences_table .text_cell p a {
+    color: black;
+}
+
+.experiences .experiences_table .text_cell ul li {
+    margin-bottom: 2px;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
 /* ///////////////////////////// Section contact ///////////////////////////// */
 .contact {
     background-color: #333;

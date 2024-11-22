@@ -43,14 +43,14 @@ CV :
 
      compétences (langages)
      	Réseau : C, Python, Bash, Apache, Linux, Ubuntu, CentOs, Kali-Linux,(docker, vm)
-     	Cyber : Cryptographie, Scan de port, attaque je sais détect (sql injection, xss injection), OSINT,
+     	Cyber (reste): Cryptographie, Scan de port, attaque je sais détect (sql injection, xss injection), OSINT,
      	Web : Accessibilité numérique, ...
      	Base de données
      	Machine Learning
      	Logiciel : Python, Java, R
      	Gestion de projet : Rédaction de rapport (markdown), méthode agile, compta, ...
-     	Qualité de code : Modélisation UML, Git, ANA SPE CON DEV TEST, Algorithmique, calcul distribué
-     	Droit de l'informatique : RGPD, Norme ISO, Droit propriété Intellectuelle
+     	Qualité de code (reste ajout): Modélisation UML, Git, ANA SPE CON DEV TEST, Algorithmique, calcul distribué
+     	Droit de l'informatique (reste): RGPD, Norme ISO, Droit propriété Intellectuelle
      outils
      	-> dockerhub, vmware, Virtual Box, shell, powershell
      	-> WinSCP, Putty

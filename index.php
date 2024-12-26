@@ -34,11 +34,11 @@ $titre='Accueil';
     <!-- titre -->
     <?php include("includes/titre.php"); ?>
 
-    <section class="hero">
+    <section class="hero section-hidden">
         <div class="hero_left">
             <div>
                 <h2>Alexis Araujo</h2>
-                <p>Je suis un jeune étudiant en 3ème année à Oteria Cyber School après avoir eu mon BUT Informatique (Niveau Licence).
+                <p id="intro_presentation">Je suis un jeune étudiant en 3ème année à Oteria Cyber School après avoir eu mon BUT Informatique (Niveau Licence).
                     <br>Je suis passionné par l'informatique et surtout la Cybersécurité.
                     <br>Je me caractérise comme une personne très polyvalente qui à des connaissances dans tous les domaines de l'informatique et non informatique.
                     <br>Grâce à cette polyvalence, je suis capable d'anticiper et de résoudre des défis complexes en cybersécurité en ayant une vision globale des systèmes et en comprenant les interactions entre chaque composant, qu'il s'agisse de réseaux, d'applications web et mobile, de base de données, de systèmes d'exploitation, de cryptographie ou encore d'intelligence artificielle (Machine Learning).
@@ -55,8 +55,7 @@ $titre='Accueil';
         </div>
     </section>
 
-
-    <section class="services">
+    <section class="services section-hidden">
         <div class="services_left">
             <!-- Sans API Sphere -->
             <!--<div>
@@ -97,42 +96,50 @@ $titre='Accueil';
         </div>
     </section>
 
-
-    <section class="portfolio">
+    <section class="portfolio section-hidden">
         <h2>Projets</h2>
         <div class="swiper carrousel-container">
             <div class="swiper-wrapper carrousel-wrapper">
                 <div class="swiper-slide projet">
-                    <a href=""><img src="image1.jpg" alt="Projet Portfolio"></a>
+                    <a href="#"
+                       onclick="openPopup('public/image/Projet/p1/portfolio_acceuil.webp', 'Projet Portfolio', 1000, 880); return false;">
+                        <img src="public/image/Projet/p1/portfolio_acceuil.webp" alt="Projet Portfolio">
+                    </a>
                     <h3>Projet Portfolio</h3>
                     <p>Le voici !!! Le projet Portfolio constitue à la création d'un site web de A à Z où je me présente.</p>
                 </div>
 
                 <div class="swiper-slide projet">
-                    <a href=""><img src="image2.jpg" alt="Projet NIDS"></a>
+                    <a href="#"
+                       onclick="openPopup('public/image/Projet/p2/nids_acceuil.webp', 'Projet NIDS', 1000, 880); return false;">
+                        <img src="public/image/Projet/p2/nids_acceuil.webp" alt="Projet NIDS">
+                    </a>
                     <h3>Projet NIDS</h3>
-                    <p>Description du projet NIDS</p>
+                    <p>Création d'un système de détection d'intrusion réseau pour analyser le trafic et détecter des activités suspectes.</p>
                 </div>
 
                 <div onclick="window.location.href='test.php';" class="swiper-slide projet">
                     <a href="#"
-                       onclick="openPopup('public/image/simfast_accueil.png', 'Projet Simfast', 1000, 880); return false;">
-                        <img src="public/image/Projet/p1/simfast_accueil.png" alt="Projet SimFast">
+                       onclick="openPopup('public/image/Projet/p3/simfast_accueil.webp', 'Projet Simfast', 1000, 880); return false;">
+                        <img src="public/image/Projet/p3/simfast_accueil.webp" alt="Projet SimFast">
                     </a>
                     <h3>Projet SimFast</h3>
                     <p>Création d'un site web hebergé sur Raspberry Pi avec des modules de calcul (Probabilité, chiffrement RC4)</p>
                 </div>
 
                 <div class="swiper-slide projet">
-                    <img src="image4.jpg" alt="Projet Arduino Badgeuse">
+                    <a href="#"
+                       onclick="openPopup('public/image/Projet/p4/arduino_accueil.webp', 'Projet Arduino Badgeuse', 1000, 880); return false;">
+                        <img src="public/image/Projet/p4/arduino_accueil.webp" alt="Projet Arduino Badgeuse">
+                    </a>
                     <h3>Projet Arduino Badgeuse</h3>
-                    <p>Description du projet Arduino Badgeuse</p>
+                    <p>Création d'un système de contrôle d'accès basé sur Arduino, permettant de gérer l'accès à d'un bâtiment via des badges RFID.</p>
                 </div>
 
                 <div class="swiper-slide projet">
-                    <img src="image5.jpg" alt="Projet 5">
-                    <h3>Projet 5</h3>
-                    <p>Description du projet 5</p>
+                    <img src="dns_acceuil.jpg" alt="Projet DNS">
+                    <h3>Projet DNS</h3>
+                    <p>Description du projet DNS</p>
                 </div>
                 <div class="swiper-slide projet">
                     <img src="image6.jpg" alt="Projet 6">
@@ -163,8 +170,7 @@ $titre='Accueil';
         </div>
     </section>
 
-
-    <section class="contact">
+    <section class="contact section-hidden">
         <h2>Contactez-moi</h2>
         <form action="#">
             <label for="nom" aria-label="Nom"></label><input type="text" id="nom" name="nom" placeholder="Votre nom">
@@ -183,6 +189,49 @@ $titre='Accueil';
 <!-- Footer -->
 <?php include("includes/footer.php"); ?>
 
+<!-- Animation défilement -->
+<!--<script>
+    // Sélectionner toutes les sections à animer
+    const sections = document.querySelectorAll('.section-hidden');
+
+    // Créer un observateur
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Ajouter la classe pour rendre la section visible
+                entry.target.classList.add('section-visible');
+                // Arrêter d'observer cette section
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1 // Déclenchement lorsque 10% de la section est visible
+    });
+    // Observer chaque section
+    sections.forEach(section => observer.observe(section));
+</script>-->
+
+<!-- Texte version machine -->
+<!--<script>
+    const text = `Je suis un jeune étudiant en 3ème année à Oteria Cyber School après avoir eu mon BUT Informatique (Niveau Licence).<br><br>
+Je suis passionné par l'informatique et surtout la Cybersécurité.<br><br>
+Je me caractérise comme une personne très polyvalente qui a des connaissances dans tous les domaines de l'informatique et non informatique.<br><br>
+Grâce à cette polyvalence, je suis capable d'anticiper et de résoudre des défis complexes en cybersécurité en ayant une vision globale des systèmes et en comprenant les interactions entre chaque composant, qu'il s'agisse de réseaux, d'applications web et mobile, de base de données, de systèmes d'exploitation, de cryptographie ou encore d'intelligence artificielle (Machine Learning).`;
+    let index = 0;
+    const typingSpeed = 30; // Vitesse de frappe (ms)
+    const textElement = document.getElementById("intro_presentation");
+
+    function typeWriter() {
+        if (index < text.length) {
+            // Ajoute un caractère et conserve les balises HTML intactes
+            textElement.innerHTML += text[index] === '\n' ? '<br>' : text.charAt(index);
+            index++;
+            setTimeout(typeWriter, typingSpeed);
+        }
+    }
+    document.addEventListener("DOMContentLoaded", typeWriter);
+</script>-->
+
 <!-- Inclure des scripts JavaScript ici -->
 <script>
     // Fonction pour détecter si l'écran est un appareil mobile
@@ -197,9 +246,7 @@ $titre='Accueil';
 
     // Définition du rayon en fonction du type d'appareil
     let radius = isMobileDevice() ? 160 : 300;
-
     var tagCloud = TagCloud('.content', myTags, {
-
         radius: radius, // radius in px
         maxSpeed: 'fast', // animation speed
         initSpeed: 'fast', // slow, normal, fast
@@ -208,9 +255,7 @@ $titre='Accueil';
         // 90 = left
         // 135 = right-bottom
         direction: 135,
-
         keep: true // interact with cursor move on mouse out
-
     });
     // var colors = ['#34A853', '#FBBC05', '#4285F4', '#7FBC00', 'FFBA01', '01A6F0'];
     // var random_color = colors[Math.floor(Math.random() * colors.length)];
@@ -323,8 +368,6 @@ $titre='Accueil';
 <script>
     // Menu Burger
 </script>
-
-
 
 </body>
 </html>

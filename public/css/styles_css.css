@@ -69,6 +69,21 @@ main {
     font-size: 50px;
 }
 
+/* Styles animation pour les sections invisibles */
+/*.section-hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transform: scale(0.9);
+    transform: translateX(-100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}*/
+
+/* Styles lorsque les sections deviennent visibles */
+/*.section-visible {
+    opacity: 1;
+    transform: translateY(0);
+}*/
+
 /* ///////////////////////////// Section hero ///////////////////////////// */
 .hero {
     display: flex;
@@ -640,6 +655,54 @@ main {
 .langues {
     padding: 50px;
     background-color: #6c6c6c;
+}
+
+.langues h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* Styles du tableau pour la section des formations */
+.langues .langues_table {
+    width: 100%; /* Occupe toute la largeur disponible */
+    border-collapse: collapse; /* Supprime les espaces entre les cellules */
+}
+
+.langues .langues_table td {
+    vertical-align: top; /* Aligne le texte et les images en haut */
+    padding: 20px; /* Ajoute un peu d'espace autour du contenu */
+}
+
+/* Colonne pour le texte */
+.langues .langues_table .text_cell {
+    width: 55%; /* La colonne du texte occupe 70% de la largeur */
+    padding-left: 300px; /* Ajout d'un espace supplémentaire à gauche */
+}
+.langues .langues_table .text_cell h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.langues .langues_table .text_cell p {
+    margin-bottom: 5px;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+/* Colonne pour les logos */
+.langues .langues_table .logo_cell {
+    width: 45%; /* La colonne des logos occupe 50% de la largeur totale */
+    /*text-align: center;*/ /* Centrer les images dans la colonne */
+}
+.langues .langues_table .logo_cell img {
+    max-width: 100%;
+    height: auto;
+    max-height: 250px; /* Limiter la hauteur des images */
+    transition: transform 0.2s ease;
+    margin-top: 22px;
+}
+.langues .langues_table .logo_cell img:hover {
+    transform: scale(1.1); /* Agrandissement au survol */
 }
 
 /* ///////////////////////////// Section centres interets ///////////////////////////// */

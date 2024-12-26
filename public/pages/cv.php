@@ -604,7 +604,7 @@ $titre = 'CV';
                             <time datetime="2025">En Cours</time> -
                             <time datetime="2024">2024</time>
                         </span>
-                        <span class="poste">Alternance Administration et Réseaux, IUT de Vélizy</span>
+                        <span class="poste">Alternance Administration Sécurité et Réseaux, IUT de Vélizy</span>
                     </h3>
                     <p>J'ai récemment intégré l'équipe de l'Université de Vélizy, où je participe activement à la sécurisation, à la gestion et à la maintenance du parc informatique de l'établissement avec ses différents départements.</p>
                     <p>Mes principales missions incluent :</p>
@@ -702,8 +702,49 @@ $titre = 'CV';
         </div>
     </section>
 
-    <section class="langues">
-
+    <section class="langues" id="langues">
+        <h2><i class="fas fa-briefcase"></i> Langues</h2>
+        <table class="langues_table">
+            <tr>
+                <td class="text_cell">
+                    <h3>Français, Langue natale</h3>
+                    <p>Le français est ma langue maternelle. La compréhension orale, l'écriture et l'expression orale sont pour moi des compétences naturelles et très maîtrisées.</p>
+                </td>
+                <td class="logo_cell">
+                    <img src="../image/cv/drapeau_france.webp" alt="Drapeau Français" title="Drapeau Français">
+                </td>
+            </tr>
+            <tr>
+                <td class="text_cell">
+                    <h3>Espanol, Nivel C1</h3>
+                    <p>Aunque no soy bilingue, el espanol es un idioma que disfruto especialmente. Tengo una buena comprension oral, una buena expresion escrita y me siento comodo participando en conversaciones en espanol.</p>
+                    <p>Sigo mejorando mi nivel gracias a mis viajes y a la lectura de medios de comunicacion en espanol.</p>
+                </td>
+                <td class="logo_cell">
+                    <img src="../image/cv/drapeau_espagne.webp" alt="Drapeau Espagnol" title="Drapeau Espagnol">
+                </td>
+            </tr>
+            <tr>
+                <td class="text_cell">
+                    <h3>Portugues, Nivel C1</h3>
+                    <p>O portugues faz parte das minhas raizes familiares, o que me permitiu adquirir um bom nivel do idioma. Aprendi esta lingua crescendo em um ambiente familiar portugues.</p>
+                    <p>Embora nao tenha frequentado cursos formais, continuo a melhorar constantemente gracas as leituras, aos meios de comunicacao portugueses e as minhas viagens a Portugal.</p>
+                </td>
+                <td class="logo_cell">
+                    <img src="../image/cv/drapeau_portugal.webp" alt="Drapeau Portugais" title="Drapeau Portugais">
+                </td>
+            </tr>
+            <tr>
+                <td class="text_cell">
+                    <h3>English, Level B2</h3>
+                    <p>Although learning English has been a challenge for me, I can hold a conversation and understand written texts in English. My level allows me to interact in both professional and informal settings.</p>
+                    <p>I am committed to becoming bilingual in English by engaging in daily practices and immersive experiences.</p>
+                </td>
+                <td class="logo_cell">
+                    <img src="../image/cv/drapeau_ru.webp" alt="Drapeau Royaume-Uni" title="Drapeau Royaume-Uni">
+                </td>
+            </tr>
+        </table>
     </section>
 
     <section class="centres_interets">

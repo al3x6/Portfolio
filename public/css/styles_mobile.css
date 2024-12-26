@@ -602,6 +602,65 @@ main {
     color: #333;
 }
 
+/* ///////////////////////////// Section langues ///////////////////////////// */
+.langues {
+    padding: 20px;
+    background-color: #6c6c6c;
+}
+
+.langues h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Styles du tableau pour la section des formations */
+.langues .langues_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Ligne de formation en colonne inversée pour afficher le logo en dessous du texte */
+.langues .langues_table tr {
+    display: flex;
+    flex-direction: column-reverse; /* Place le texte sous le drapeau */
+}
+
+.langues .langues_table td {
+    padding: 15px; /* Réduit le padding autour du contenu */
+}
+
+/* Colonne pour le texte */
+.langues .langues_table .text_cell {
+    margin-bottom: 10px; /* Ajout d'un espacement en bas */
+}
+
+.langues .langues_table .text_cell h3 {
+    font-size: 20px; /* Taille réduite pour mobile */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column; /* Période et poste empilés */
+}
+
+.experiences .experiences_table .text_cell p {
+    margin-bottom: 5px; /* Espacement réduit entre paragraphes */
+    font-size: 18px; /* Taille réduite pour mobile */
+    line-height: 1.2;
+}
+
+/* Colonne pour les logos */
+.langues .langues_table .logo_cell {
+    text-align: center;
+    margin-top: 10px; /* Espacement au-dessus de l'image */
+}
+
+.langues .langues_table .logo_cell img {
+    max-width: 80%; /* Réduit la taille de l'image */
+    height: auto;
+    max-height: 100px; /* Limite la hauteur pour mobile */
+}
+
 /* ///////////////////////////// Section contact ///////////////////////////// */
 .contact {
     background-color: #333;

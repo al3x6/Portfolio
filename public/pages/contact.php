@@ -12,7 +12,7 @@ $titre = 'Contacts';
     <meta name="description" content="Je présente sur cette page mon Cv au complet. Il est possible d'être téléchargé">
     <title><?= $titre ?></title>
     <!-- Inclure des feuilles de style CSS ici -->
-    <link rel="stylesheet" href="../css/styles_css.css" media="only screen and (min-width: 941px)">
+    <link rel="stylesheet" href="../css/styles_css_css_css.css" media="only screen and (min-width: 941px)">
     <link rel="stylesheet" href="../css/styles_mobile.css" media="only screen and (max-width: 940px)">
 
     <!-- Emeticones -->

@@ -12,7 +12,7 @@ $titre = 'CV';
     <meta name="description" content="Je présente sur cette page mon Cv au complet. Il est possible d'être téléchargé">
     <title><?= $titre ?></title>
     <!-- Inclure des feuilles de style CSS ici -->
-    <link rel="stylesheet" href="../css/styles_css.css" media="only screen and (min-width: 941px)">
+    <link rel="stylesheet" href="../css/styles_css_css_css.css" media="only screen and (min-width: 941px)">
     <link rel="stylesheet" href="../css/styles_mobile.css" media="only screen and (max-width: 940px)">
 
     <!-- Emeticones -->
@@ -329,7 +329,7 @@ $titre = 'CV';
 
         <div class="competences_container">
             <h3 id="bd"><i class="fas fa-database"></i> Base de données</h3>
-            <p>Depuis plus de 3 ans, j'ai acquis des compétences solides en bases de données grâce à mes cours et mes stages. Je possède des connaissances approfondies sur les bases de données relationnelles (SGBDR), NoSQL, en mémoire (In-Memory), orientées graphe et de type XML/JSON, me permettant de m'adapter à divers besoins en gestion et manipulation de données.</p>
+            <p>Depuis plus de 3 ans, j'ai acquis des compétences solides en bases de données grâce à mes cours et mes stages. Je possède des connaissances approfondies sur les bases de données relationnelles (SGBDR), NoSQL, en mémoire (In-Memory), orientées graphes et de type XML/JSON, me permettant de m'adapter à divers besoins en gestion et manipulation de données.</p>
             <p>Dans un contexte où le nombre d'attaques augmente, il est essentiel de sécuriser les données et de garantir leur confidentialité, intégrité et disponibilité. Mon expérience inclut non seulement la manipulation des données, mais aussi la mise en place de bonnes pratiques de sécurité pour les bases de données, telles que le chiffrement, le contrôle des accès et la surveillance des activités suspectes, afin de prévenir les risques de fuites ou d'intrusions. L'objectif principal d'un hacker est souvent de trouver une faille permettant un accès à la base de données, un point crucial pour la protection de toute donnée sensible.</p>
 
             <div class="sous_competences_container">
@@ -401,8 +401,8 @@ $titre = 'CV';
             </div>
 
             <div class="sous_competences_container">
-                <h4>Bases de Données orientées graphe</h4>
-                <p>Les bases de données orientées graphe permettent de modéliser les données sous forme de nœuds et d’arêtes, ce qui est idéal pour des applications ayant des relations complexes, telles que les réseaux sociaux ou les analyses de réseau.</p>
+                <h4>Bases de Données orientées graphes</h4>
+                <p>Les bases de données orientées graphes permettent de modéliser les données sous forme de nœuds et d’arêtes, ce qui est idéal pour des applications ayant des relations complexes, telles que les réseaux sociaux ou les analyses de réseau.</p>
                 <p>Niveau : J'ai récemment acquis des connaissances pratiques en bases de données orientées graphe et je continue à renforcer mes compétences dans ce domaine.</p>
                 <div class="languages">
                     <h5>Langage</h5>
@@ -602,7 +602,7 @@ $titre = 'CV';
                     <h3>
                         <span class="periode">
                             <time datetime="2025">En Cours</time> -
-                            <time datetime="2024">2024</time>
+                            <time datetime="2024">Décembre 2024</time>
                         </span>
                         <span class="poste">Alternance Administration Sécurité et Réseaux, IUT de Vélizy</span>
                     </h3>
@@ -748,7 +748,48 @@ $titre = 'CV';
     </section>
 
     <section class="centres_interets">
-
+        <h2><i class="fas fa-briefcase"></i> Centres d'intérêts</h2>
+        <table class="centres_interets_table">
+            <tr>
+                <td class="logo_interet_cell">
+                    <img src="../image/cv/linkedin_logo.webp" alt="Drapeau Français" title="Drapeau Français">
+                </td>
+                <td class="logo_interet_cell">
+                    <img src="../image/cv/linkedin_logo.webp" alt="Drapeau Français" title="Drapeau Français">
+                </td>
+                <td class="logo_interet_cell">
+                    <img src="../image/cv/linkedin_logo.webp" alt="Drapeau Français" title="Drapeau Français">
+                </td>
+                <td class="logo_interet_cell">
+                    <img src="../image/cv/linkedin_logo.webp" alt="Drapeau Français" title="Drapeau Français">
+                </td>
+                <td class="logo_interet_cell">
+                    <img src="../image/cv/linkedin_logo.webp" alt="Drapeau Français" title="Drapeau Français">
+                </td>
+            </tr>
+            <tr>
+                <td class="text_interet_cell">
+                    <h3>laaaa</h3>
+                    <p>laaa</p>
+                </td>
+                <td class="text_interet_cell">
+                    <h3>laaa</h3>
+                    <p>laaaa</p>
+                </td>
+                <td class="text_interet_cell">
+                    <h3>laaa</h3>
+                    <p>laaaa</p>
+                </td>
+                <td class="text_interet_cell">
+                    <h3>laaa</h3>
+                    <p>laaaa</p>
+                </td>
+                <td class="text_interet_cell">
+                    <h3>laaa</h3>
+                    <p>laaaa</p>
+                </td>
+            </tr>
+        </table>
     </section>
 
     <section class="projets_cv">

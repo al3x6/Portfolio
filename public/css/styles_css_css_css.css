@@ -711,6 +711,39 @@ main {
     background-color: #595959;
 }
 
+.centres_interets h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* Styles du tableau pour la section des formations */
+.centres_interets .centres_interets_table {
+    width: 100%; /* Occupe toute la largeur disponible */
+    border-collapse: collapse; /* Supprime les espaces entre les cellules */
+    text-align: center;
+}
+
+.centres_interets .centres_interets_table tr {
+}
+.centres_interets .centres_interets_table td {
+    padding: 20px ;
+}
+
+/* Colonne pour le texte */
+.centres_interets .centres_interets_table .text_interet_cell {
+
+}
+.centres_interets .centres_interets_table .text_interet_cell h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.centres_interets .centres_interets_table .text_interet_cell p {
+    margin-bottom: 5px;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
 /* ///////////////////////////// Section projets_cv ///////////////////////////// */
 .projets_cv {
     padding: 50px;

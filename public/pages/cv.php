@@ -36,7 +36,7 @@ $titre = 'CV';
                 <p>Vous pouvez Télécharger ci-dessous mon CV.<br>Vous pouvez également parcourir cette page qui transmet des informations plus précises.</p>
             </div>
             <div class="div_button">
-                <a href="/public/image/cv/CV_Alexis_ARAUJO01.pdf" class="button" download>Télécharger mon CV</a>
+                <a href="/public/image/cv/CV_Alexis_ARAUJO01.pdf" class="button_fonce" download><i class="fas fa-download"></i> Télécharger mon CV</a>
             </div>
         </div>
         <div class="hero_right">
@@ -49,15 +49,15 @@ $titre = 'CV';
         <!-- Mini Menu -->
         <nav class="mini-menu">
             <ul>
-                <li><a href="#profil" class="button">Profil</a></li>
-                <li><a href="#formations" class="button">Formations</a></li>
-                <li><a href="#competences" class="button">Compétences</a></li>
-                <!--<li><a href="#outils" class="button">Outils</a></li>-->
-                <li><a href="#experiences" class="button">Expériences</a></li>
-                <li><a href="#suivi" class="button">Suivi</a></li>
-                <li><a href="#langues" class="button">Langues</a></li>
-                <li><a href="#centres_interets" class="button">Centres d'intérêts</a></li>
-                <li><a href="#projets_cv" class="button">Projets</a></li>
+                <li><a href="#profil" class="button_mini-menu">Profil</a></li>
+                <li><a href="#formations" class="button_mini-menu">Formations</a></li>
+                <li><a href="#competences" class="button_mini-menu">Compétences</a></li>
+                <!--<li><a href="#outils" class="button_mini-menu">Outils</a></li>-->
+                <li><a href="#experiences" class="button_mini-menu">Expériences</a></li>
+                <li><a href="#suivi" class="button_mini-menu">Suivi</a></li>
+                <li><a href="#langues" class="button_mini-menu">Langues</a></li>
+                <li><a href="#centres_interets" class="button_mini-menu">Centres d'intérêts</a></li>
+                <li><a href="#projets_cv" class="button_mini-menu">Projets</a></li>
             </ul>
         </nav>
     </section>
@@ -139,15 +139,15 @@ $titre = 'CV';
         <!-- Mini Menu -->
         <nav class="mini-menu">
             <ul>
-                <li><a href="#systèmes-et-réseaux" class="button">Systèmes et Réseaux</a></li>
-                <li><a href="#cyber" class="button"> Cybersécurité</a></li>
-                <li><a href="#web" class="button">Web et Mobile</a></li>
-                <li><a href="#bd" class="button">Base de données</a></li>
-                <li><a href="#ml" class="button">Machine Learning (IA)</a></li>
-                <li><a href="#devlogiciel" class="button">Développement Logiciel</a></li>
-                <li><a href="#gestionprojet" class="button">Gestion de projet</a></li>
-                <li><a href="#qualitecode" class="button">Qualité de code</a></li>
-                <li><a href="#droit" class="button">Droit de l'informatique</a></li>
+                <li><a href="#systèmes-et-réseaux" class="button_mini-menu">Systèmes et Réseaux</a></li>
+                <li><a href="#cyber" class="button_mini-menu"> Cybersécurité</a></li>
+                <li><a href="#web" class="button_mini-menu">Web et Mobile</a></li>
+                <li><a href="#bd" class="button_mini-menu">Base de données</a></li>
+                <li><a href="#ml" class="button_mini-menu">Machine Learning (IA)</a></li>
+                <li><a href="#devlogiciel" class="button_mini-menu">Développement Logiciel</a></li>
+                <li><a href="#gestionprojet" class="button_mini-menu">Gestion de projet</a></li>
+                <li><a href="#qualitecode" class="button_mini-menu">Qualité de code</a></li>
+                <li><a href="#droit" class="button_mini-menu">Droit de l'informatique</a></li>
             </ul>
         </nav>
 
@@ -773,8 +773,13 @@ $titre = 'CV';
         </div>
     </section>
 
-    <section class="projets_cv" id="centres_interets">
-
+    <section class="projets_cv" id="projets_cv">
+        <div class="bubble-top"></div>
+        <div class="bubble-bottom"></div>
+        <h2><!--<i class="fas fa-cogs"></i>--><i class="fas fa-chart-bar"></i> Projets</h2>
+        <div class="cv_div_projet_button">
+            <a href="/public/pages/projets.php" class="button_claire"><i class="fas fa-eye"></i> Voir les projets</a>
+        </div>
     </section>
 
     <section class="contact">

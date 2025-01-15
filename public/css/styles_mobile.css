@@ -77,7 +77,7 @@ main {
 .hero .hero_left .div_button {
     text-align: center;
 }
-.hero .hero_left .div_button .button {
+.hero .hero_left .div_button .button_fonce {
     background-color: #333; /* Couleur de fond du bouton */
     color: #fff; /* Couleur du texte du bouton */
     border: none; /* Supprime les bordures du bouton */
@@ -87,7 +87,7 @@ main {
     cursor: pointer; /* Change le curseur lorsqu'on survole le bouton */
     text-decoration: none; /* Supprime les soulignements */
 }
-.hero .hero_left .div_button .button:hover {
+.hero .hero_left .div_button .button_fonce:hover {
     background-color: #555; /* Couleur de fond du bouton au survol */
 }
 
@@ -140,7 +140,7 @@ main {
 .services .services_right .div_button {
     text-align: center;
 }
-.services .services_right .div_button .button {
+.services .services_right .div_button .button_fonce {
     background-color: #333; /* Couleur de fond du bouton */
     color: #fff; /* Couleur du texte du bouton */
     border: none; /* Supprime les bordures du bouton */
@@ -150,7 +150,7 @@ main {
     cursor: pointer; /* Change le curseur lorsqu'on survole le bouton */
     text-decoration: none; /* Supprime les soulignements */
 }
-.services .services_right .div_button .button:hover {
+.services .services_right .div_button .button_fonce:hover {
     background-color: #555; /* Couleur de fond du bouton au survol */
 }
 
@@ -274,7 +274,7 @@ main {
     box-sizing: border-box; /* Assure que le padding ne dépasse pas la largeur définie */
 }
 
-.mini-menu .button {
+.mini-menu .button_mini-menu {
     display: inline-block; /* Rend le lien comme un bloc en ligne */
     width: 100%; /* Les boutons prennent toute la largeur disponible */
     box-sizing: border-box; /* Assure que le padding ne dépasse pas la largeur définie */
@@ -287,7 +287,7 @@ main {
     transition: background-color 0.3s; /* Animation lors du survol */
 }
 
-.mini-menu .button:hover {
+.mini-menu .button_mini-menu:hover {
     background-color: #555; /* Couleur de fond au survol */
 }
 
@@ -661,11 +661,57 @@ main {
     max-height: 100px; /* Limite la hauteur pour mobile */
 }
 
+/* ///////////////////////////// Section centres interets ///////////////////////////// */
+.centres_interets {
+    padding: 50px;
+    background-color: #595959;
+    text-align: center;
+}
+
+.centres_interets h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.centres_interets .centres_interets_container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.centres_interets .centres_interets_container .centres_interets_item {
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    padding: 15px 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+.centres_interets .centres_interets_container .centres_interets_item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.8);
+}
+
+.centres_interets .centres_interets_container .centres_interets_item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* controle l'image dans le conteneur sans rognage */
+}
+
+.centres_interets .centres_interets_container .centres_interets_item p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+}
+
 /* ///////////////////////////// Section contact ///////////////////////////// */
 .contact {
     background-color: #333;
     color: #fff;
-    padding: 30px 10px;
+    padding: 30px 50px;
     text-align: center;
 }
 
@@ -725,7 +771,7 @@ main {
     background-color: #ddd; /* Couleur de fond au survol */
 }
 
-/* // button top //*/
+/* ///////////////////////////// button top ///////////////////////////// */
 #retour_haut_btn {
     display: none;
     position: fixed;

@@ -103,7 +103,20 @@ main {
 /* text */
 .hero .hero_left h2 {
     margin-top: 0;
+    position: relative;
 }
+.hero .hero_left h2::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #000;
+    bottom: -7px;
+    left: 3%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
 .hero .hero_left p {
     margin-bottom: 10px;
     font-size: 18px;
@@ -114,18 +127,30 @@ main {
     text-align: center;
     padding: 50px;
 }
-.hero .hero_left .div_button .button {
-    background-color: #333; /* Couleur de fond du bouton */
+.hero .hero_left .div_button .button_fonce {
+    background: linear-gradient(135deg, #333, #4a4a4a); /* Fond dégradé pour le bouton */
     color: #fff; /* Couleur du texte du bouton */
     border: none; /* Supprime les bordures du bouton */
-    padding: 10px 20px; /* Ajoute un espace intérieur au bouton */
+    /*padding: 10px 20px;*/ /* Ajoute un espace intérieur au bouton */
+    padding: 15px 30px; /* Ajoute un espace intérieur au bouton */
     font-size: 16px; /* Taille de la police du texte */
-    border-radius: 5px; /* Ajoute des coins arrondis au bouton */
+    border-radius: 25px; /* Ajoute des coins arrondis au bouton */
     cursor: pointer; /* Change le curseur lorsqu'on survole le bouton */
     text-decoration: none; /* Supprime les soulignements */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Ajoute une ombre au bouton */
+    transition: transform 0.3s, background 0.3s; /* Ajoute une transition pour les effets */
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
 }
-.hero .hero_left .div_button .button:hover {
-    background-color: #555; /* Couleur de fond du bouton au survol */
+.hero .hero_left .div_button .button_fonce:hover {
+    background: linear-gradient(135deg, #4a4a4a, #333); /* Change le fond dégradé au survol */
+    transform: translateY(-5px); /* Ajoute un effet de soulèvement au survol */
+}
+
+.hero .hero_left .div_button .button_fonce i {
+    margin-right: 10px; /* Ajoute un espace entre l'icône et le texte */
 }
 
 /* /// Right /// */
@@ -186,20 +211,47 @@ main {
     text-align: center;
     padding: 50px;
 }
-.services .services_right .div_button .button {
-    background-color: #333; /* Couleur de fond du bouton */
+.services .services_right .div_button .button_fonce {
+    background: linear-gradient(135deg, #333, #4a4a4a); /* Fond dégradé pour le bouton */
     color: #fff; /* Couleur du texte du bouton */
     border: none; /* Supprime les bordures du bouton */
-    padding: 10px 20px; /* Ajoute un espace intérieur au bouton */
+    /*padding: 10px 20px;*/ /* Ajoute un espace intérieur au bouton */
+    padding: 15px 30px; /* Ajoute un espace intérieur au bouton */
     font-size: 16px; /* Taille de la police du texte */
-    border-radius: 5px; /* Ajoute des coins arrondis au bouton */
+    border-radius: 25px; /* Ajoute des coins arrondis au bouton */
     cursor: pointer; /* Change le curseur lorsqu'on survole le bouton */
     text-decoration: none; /* Supprime les soulignements */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Ajoute une ombre au bouton */
+    transition: transform 0.3s, background 0.3s; /* Ajoute une transition pour les effets */
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
 }
-.services .services_right .div_button .button:hover {
-    background-color: #555; /* Couleur de fond du bouton au survol */
+.services .services_right .div_button .button_fonce:hover {
+    background: linear-gradient(135deg, #4a4a4a, #333); /* Change le fond dégradé au survol */
+    transform: translateY(-5px); /* Ajoute un effet de soulèvement au survol */
 }
 
+.services .services_right .div_button .button_fonce i {
+    margin-right: 10px; /* Ajoute un espace entre l'icône et le texte */
+}
+
+/* Ancienne version du bouton équivalent hero_left*/
+/*
+.services .services_right .div_button .button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.services .services_right .div_button .button:hover {
+    background-color: #555;
+}*/
 
 /* ///////////////////////////// Section portfolio ///////////////////////////// */
 .portfolio {
@@ -213,6 +265,18 @@ main {
     text-align: center;
     font-size: 30px;
     margin-bottom: 30px;
+    position: relative;
+}
+.portfolio h2::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background: #000;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
 }
 
 /* carrousel */
@@ -298,6 +362,18 @@ main {
     text-align: center;
     font-size: 30px;
     margin-bottom: 30px;
+    position: relative;
+}
+.mini_menu h2::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background: #000;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
 }
 
 /* ///////////////////////////// Section profil ///////////////////////////// */
@@ -311,6 +387,18 @@ main {
     text-align: center;
     font-size: 30px;
     margin-bottom: 30px;
+    position: relative;
+}
+.profil h2::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background: #000;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
 }
 
 .profil .profil_container {
@@ -356,6 +444,18 @@ main {
     text-align: center;
     font-size: 30px;
     margin-bottom: 30px;
+    position: relative;
+}
+.formations h2::before {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 5px;
+    background: #000;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
 }
 
 /* Styles du tableau pour la section des formations */
@@ -411,21 +511,6 @@ main {
     padding: 50px;
 }
 
-.formations .formations_right .div_button .button {
-    background-color: #333; /* Couleur de fond du bouton */
-    color: #fff; /* Couleur du texte du bouton */
-    border: none; /* Supprime les bordures du bouton */
-    padding: 10px 20px; /* Ajoute un espace intérieur au bouton */
-    font-size: 16px; /* Taille de la police du texte */
-    border-radius: 5px; /* Ajoute des coins arrondis au bouton */
-    cursor: pointer; /* Change le curseur lorsqu'on survole le bouton */
-    text-decoration: none; /* Supprime les soulignements */
-}
-
-.formations .formations_right .div_button .button:hover {
-    background-color: #555; /* Couleur de fond du bouton au survol */
-}
-
 /* ///////////////////////////// Section compétences (langages) ///////////////////////////// */
 .competences {
     padding: 50px;
@@ -436,6 +521,18 @@ main {
     text-align: center;
     font-size: 30px;
     margin-bottom: 30px;
+    position: relative;
+}
+.competences h2::before {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 5px;
+    background: #000;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
 }
 
 /* Container */
@@ -530,6 +627,18 @@ main {
     text-align: center;
     font-size: 30px;
     margin-bottom: 30px;
+    position: relative;
+}
+.experiences h2::before {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 5px;
+    background: #000;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
 }
 
 /* Styles du tableau pour la section des formations */
@@ -603,6 +712,18 @@ main {
 .suivi h2 {
     font-size: 30px;
     margin-bottom: 30px;
+    position: relative;
+}
+.suivi h2::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background: #000;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-20%);
+    border-radius: 5px;
 }
 
 .suivi .suivi_container{
@@ -661,6 +782,18 @@ main {
     text-align: center;
     font-size: 30px;
     margin-bottom: 30px;
+    position: relative;
+}
+.langues h2::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background: #000;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
 }
 
 /* Styles du tableau pour la section des formations */
@@ -715,6 +848,18 @@ main {
     text-align: center;
     font-size: 30px;
     margin-bottom: 30px;
+    position: relative;
+}
+.centres_interets h2::before {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 5px;
+    background: #000;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
 }
 
 /* Styles pour la grille */
@@ -750,7 +895,7 @@ main {
     object-fit: contain; /* controle l'image dans le conteneur sans rognage */
 }
 
-.centres_interets .centres_interets_container .interet_item h3 {
+.centres_interets .centres_interets_container .centres_interets_item h3 {
     font-size: 22px;
     margin-bottom: 10px;
 }
@@ -765,9 +910,137 @@ main {
 .projets_cv {
     padding: 50px;
     background-color: #464646;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
-/* ///////////////////////////// Section Total CV ///////////////////////////// */
+/* Bulles */
+.projets_cv::before, .projets_cv::after, .projets_cv .bubble-top, .projets_cv .bubble-bottom {
+    content: '';
+    position: absolute;
+    width: 100px; /* Taille des bulles */
+    height: 100px; /* Taille des bulles */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%; /* Forme circulaire */
+    pointer-events: none;
+    /*z-index: -1;*/ /* Pour s'assurer que les bulles sont derrière le contenu */
+    animation: float 5s infinite ease-in-out;
+}
+/* Bulle en haut à gauche */
+.projets_cv .bubble-top {
+    left: 20%;
+    top: 10px;
+}
+/* Bulle en bas à droite */
+.projets_cv .bubble-bottom {
+    right: 20%;
+    bottom: 10px;
+}
+/* Bulle à gauche */
+.projets_cv::before {
+    top: 20%;
+    left: 10px; /* Position à gauche */
+    transform: translateY(-50%);
+}
+/* Bulle à droite */
+.projets_cv::after {
+    top: 20%;
+    right: 10px; /* Position à droite */
+    transform: translateY(-50%);
+}
+/*
+.projets_cv::before {
+    top: -50px;
+    left: 30%;
+    animation-delay: 0s;
+}
+.projets_cv::after {
+    bottom: -50px;
+    right: 30%;
+    animation-delay: 2.5s;
+}*/
+/* Changement d'oppacité selon position */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 0.1;
+    }
+    50% {
+        transform: translateY(-20px);
+        opacity: 0.3;
+    }
+}
+
+/* titre */
+.projets_cv h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.projets_cv h2::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background: #000;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+/**/
+
+.projets_cv .cv_div_projet_button {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* trait coté*/
+/*
+.projets_cv .cv_div_projet_button::before, .projets_cv .cv_div_projet_button::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    top: 0;
+}
+.projets_cv .cv_div_projet_button::before {
+    left: -20px;
+}
+.projets_cv .cv_div_projet_button::after {
+    right: -20px;
+}
+*/
+
+.projets_cv .cv_div_projet_button .button_claire {
+    /*background: linear-gradient(135deg, #ff7e5f, #feb47b);*/ /* Fond dégradé pour le bouton */
+    background: linear-gradient(135deg, #f0f0f0, #c0c0c0); /* Fond dégradé pour le bouton */
+    color: #333; /* Couleur du texte du bouton */
+    border: none; /* Supprime les bordures du bouton */
+    padding: 15px 30px; /* Ajoute un espace intérieur au bouton */
+    font-size: 18px; /* Taille de la police du texte */
+    border-radius: 25px; /* Ajoute des coins arrondis au bouton */
+    cursor: pointer; /* Change le curseur lorsqu'on survole le bouton */
+    text-decoration: none; /* Supprime les soulignements */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Ajoute une ombre au bouton */
+    transition: transform 0.3s, background 0.3s; /* Ajoute une transition pour les effets */
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.projets_cv .cv_div_projet_button .button_claire:hover {
+    /*background: linear-gradient(135deg, #feb47b, #ff7e5f);*/ /* Change le fond dégradé au survol */
+    background: linear-gradient(135deg, #c0c0c0, #f0f0f0); /* Change le fond dégradé au survol */
+    transform: translateY(-5px); /* Ajoute un effet de soulèvement au survol */
+}
+.projets_cv .cv_div_projet_button .button_claire i {
+    margin-right: 10px; /* Ajoute un espace entre l'icône et le texte */
+}
+
+/* ///////////////////////////// Section Total CV mini-menu ///////////////////////////// */
 /* mini menu */
 .mini-menu {
     text-align: center; /* Centrer le menu */
@@ -787,7 +1060,7 @@ main {
     margin: 0 10px; /* Espace entre les éléments */
 }
 
-.mini-menu .button {
+.mini-menu .button_mini-menu {
     display: inline-block; /* Rend le lien comme un bloc en ligne */
     padding: 10px 20px; /* Ajout de padding pour le style du bouton */
     background-color: #333; /* Couleur de fond du bouton */
@@ -797,7 +1070,7 @@ main {
     transition: background-color 0.3s; /* Animation lors du survol */
 }
 
-.mini-menu .button:hover {
+.mini-menu .button_mini-menu:hover {
     background-color: #555; /* Couleur de fond au survol */
 }
 
@@ -812,6 +1085,18 @@ main {
 .contact h2 {
     margin-top: 0; /* Suppression de la marge supérieure */
     font-size: 30px; /* Taille du titre */
+    position: relative;
+}
+.contact h2::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background: #fff;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
 }
 
 /* // formulaire //*/
@@ -861,7 +1146,7 @@ main {
     background-color: #ddd; /* Couleur de fond au survol */
 }
 
-/* // button top //*/
+/* ///////////////////////////// button top ///////////////////////////// */
 #retour_haut_btn {
     display: none;
     position: fixed;

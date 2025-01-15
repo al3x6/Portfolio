@@ -46,7 +46,7 @@ $titre='Accueil';
             </div>
             <div class="div_button">
                 <!--<a href="/public/pages/projets.php" class="button">Voir mon travail</a>-->
-                <a href="#" class="button">Voir mon travail</a>
+                <a href="/public/pages/projets.php" class="button_fonce"><i class="fas fa-eye"></i> Voir mon travail</a>
             </div>
         </div>
         <div class="hero_right">
@@ -91,7 +91,7 @@ $titre='Accueil';
                 </p>
             </div>
             <div class="div_button">
-                <a href="/public/pages/cv.php" class="button">En savoir +</a>
+                <a href="/public/pages/cv.php" class="button_fonce"><i class="fas fa-user"></i> En savoir +</a>
             </div>
         </div>
     </section>
@@ -142,9 +142,9 @@ $titre='Accueil';
                     <p>Description du projet DNS</p>
                 </div>
                 <div class="swiper-slide projet">
-                    <img src="image6.jpg" alt="Projet 6">
-                    <h3>Projet 6</h3>
-                    <p>Description du projet 6</p>
+                    <img src="reseau_acceuil.jpg" alt="Projet Réseau">
+                    <h3>Projet Réseau</h3>
+                    <p>Description du projet Réseau</p>
                 </div>
                 <div class="swiper-slide projet">
                     <img src="image7.jpg" alt="Projet 7">

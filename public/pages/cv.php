@@ -12,7 +12,7 @@ $titre = 'CV';
     <meta name="description" content="Je présente sur cette page mon Cv au complet. Il est possible d'être téléchargé">
     <title><?= $titre ?></title>
     <!-- Inclure des feuilles de style CSS ici -->
-    <link rel="stylesheet" href="../css/styles_css_css_css.css" media="only screen and (min-width: 941px)">
+    <link rel="stylesheet" href="../css/styles_css.css" media="only screen and (min-width: 941px)">
     <link rel="stylesheet" href="../css/styles_mobile.css" media="only screen and (max-width: 940px)">
 
     <!-- Emeticones -->
@@ -57,7 +57,7 @@ $titre = 'CV';
                 <li><a href="#suivi" class="button">Suivi</a></li>
                 <li><a href="#langues" class="button">Langues</a></li>
                 <li><a href="#centres_interets" class="button">Centres d'intérêts</a></li>
-                <li><a href="#projets" class="button">Projets</a></li>
+                <li><a href="#projets_cv" class="button">Projets</a></li>
             </ul>
         </nav>
     </section>
@@ -747,52 +747,33 @@ $titre = 'CV';
         </table>
     </section>
 
-    <section class="centres_interets">
+    <section class="centres_interets" id="centres_interets">
         <h2><i class="fas fa-briefcase"></i> Centres d'intérêts</h2>
-        <table class="centres_interets_table">
-            <tr>
-                <td class="logo_interet_cell">
-                    <img src="../image/cv/linkedin_logo.webp" alt="Drapeau Français" title="Drapeau Français">
-                </td>
-                <td class="logo_interet_cell">
-                    <img src="../image/cv/linkedin_logo.webp" alt="Drapeau Français" title="Drapeau Français">
-                </td>
-                <td class="logo_interet_cell">
-                    <img src="../image/cv/linkedin_logo.webp" alt="Drapeau Français" title="Drapeau Français">
-                </td>
-                <td class="logo_interet_cell">
-                    <img src="../image/cv/linkedin_logo.webp" alt="Drapeau Français" title="Drapeau Français">
-                </td>
-                <td class="logo_interet_cell">
-                    <img src="../image/cv/linkedin_logo.webp" alt="Drapeau Français" title="Drapeau Français">
-                </td>
-            </tr>
-            <tr>
-                <td class="text_interet_cell">
-                    <h3>laaaa</h3>
-                    <p>laaa</p>
-                </td>
-                <td class="text_interet_cell">
-                    <h3>laaa</h3>
-                    <p>laaaa</p>
-                </td>
-                <td class="text_interet_cell">
-                    <h3>laaa</h3>
-                    <p>laaaa</p>
-                </td>
-                <td class="text_interet_cell">
-                    <h3>laaa</h3>
-                    <p>laaaa</p>
-                </td>
-                <td class="text_interet_cell">
-                    <h3>laaa</h3>
-                    <p>laaaa</p>
-                </td>
-            </tr>
-        </table>
+        <div class="centres_interets_container">
+            <div class="centres_interets_item">
+                <img src="../image/cv/sport_logo.webp" alt="Image de sport" title="Image de sport">
+                <h3>Sport</h3>
+                <p>Le sport me permet de m'évader au-delà de mon travail. Je pratique une variété de sports, tant collectifs qu'individuels. Très sportif, j'ai pratiqué et continue de pratiquer la natation, le football, le basket-ball, le judo, le handball et le tennis de table. Ces activités encouragent le travail d'équipe et m'ont appris à bien communiquer et à travailler en collectif, des compétences particulièrement importantes en informatique où il est crucial de faire valoir ce que l'on propose et ce que l'on réalise.</p>
+            </div>
+            <div class="centres_interets_item">
+                <img src="../image/cv/danse_logo.webp" alt="Image de danse" title="Image de danse">
+                <h3>Musique latine</h3>
+                <p>La musique latine et sa culture font partie de mes racines et de mon quotidien. Cela me permet de me familiariser facilement avec les langues latines, telles que l'espagnol et le portugais.</p>
+            </div>
+            <div class="centres_interets_item">
+                <img src="../image/cv/filmserie_logo.webp" alt="Image de film/série" title="Image de film/série">
+                <h3>Séries/Film</h3>
+                <p>Je regarde souvent des séries, des films et des documentaires pour ma culture personnelle et par plaisir. Cela me permet de m'enrichir culturellement, mais aussi d'améliorer mes compétences linguistiques.</p>
+            </div>
+            <div class="centres_interets_item">
+                <img src="../image/cv/streetwear_logo.webp" alt="Image de vêtement" title="Image de vêtement">
+                <h3>Modes - Streetwear</h3>
+                <p>La mode fait partie de mon quotidien. J'aime faire du shopping et m'habiller avec soin. Je suis toujours à l'affût des dernières tendances et des nouvelles sorties.</p>
+            </div>
+        </div>
     </section>
 
-    <section class="projets_cv">
+    <section class="projets_cv" id="centres_interets">
 
     </section>
 

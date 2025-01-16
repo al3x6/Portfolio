@@ -775,6 +775,8 @@ $titre = 'CV';
 
     <section class="projets_cv" id="projets_cv">
         <div class="bubble-top"></div>
+        <div class="bubble-between_left"></div>
+        <div class="bubble-between_right"></div>
         <div class="bubble-bottom"></div>
         <h2><!--<i class="fas fa-cogs"></i>--><i class="fas fa-chart-bar"></i> Projets</h2>
         <div class="cv_div_projet_button">
@@ -790,7 +792,7 @@ $titre = 'CV';
                                                                  placeholder="Votre adresse email">
             <label for="message" aria-label="message"></label><textarea name="message" id="message"
                                                                         placeholder="Votre message"></textarea>
-            <button class="contact_valide" type="submit">Envoyer</button>
+            <button class="contact_valide" type="submit"><i class="fas fa-check"></i> Envoyer</button>
         </form>
         <button onclick="RetourHaut()" id="retour_haut_btn" title="Retour en haut de la page">↑</button>
     </section>

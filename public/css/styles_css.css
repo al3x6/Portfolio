@@ -916,7 +916,7 @@ main {
 }
 
 /* Bulles */
-.projets_cv::before, .projets_cv::after, .projets_cv .bubble-top, .projets_cv .bubble-bottom {
+.projets_cv::before, .projets_cv::after, .projets_cv .bubble-top, .projets_cv .bubble-bottom, .projets_cv .bubble-between_right, .projets_cv .bubble-between_left{
     content: '';
     position: absolute;
     width: 100px; /* Taille des bulles */
@@ -931,6 +931,16 @@ main {
 .projets_cv .bubble-top {
     left: 20%;
     top: 10px;
+}
+/* Bulle entre gauche */
+.projets_cv .bubble-between_left {
+    left: 40%;
+    top: 50%;
+}
+/* Bulle entre droit*/
+.projets_cv .bubble-between_right {
+    right: 40%;
+    bottom: 50%;
 }
 /* Bulle en bas à droite */
 .projets_cv .bubble-bottom {
@@ -1125,25 +1135,34 @@ main {
 }
 
 .contact .contact_valide {
+    background: linear-gradient(135deg, #f0f0f0, #c0c0c0); /* Fond dégradé pour le bouton */
+    color: #333; /* Couleur du texte du bouton */
+
     width: 50%; /* Largeur de 100% */
-    padding: 10px 20px; /* Espacement interne */
+    padding: 15px 30px; /* Ajoute un espace intérieur au bouton */
 
     border: none; /* Suppression de la bordure */
-    border-radius: 5px; /* Coins arrondis */
-
-    background-color: #fff; /* Couleur de fond */
-    color: #333; /* Couleur du texte */
+    border-radius: 25px; /* Coins arrondis */
 
     font-weight: bold; /* Police en gras */
-    font-size: 16px; /* Taille de la police du texte */
+    font-size: 18px; /* Taille de la police du texte */
 
     cursor: pointer; /* Curseur de type pointeur */
-    transition: background-color 0.3s; /* Transition douce de couleur de fond */
-
-    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Ajoute une ombre au bouton */
+    transition: transform 0.3s, background 0.3s; /* Ajoute une transition pour les effets */
+    display: inline-flex;
+    margin: 0 auto 0 auto; /* Centre le bouton horizontalement */
+    justify-content: center;
+    /*align-items: center;*/
+    /*position: relative;*/
+    /*z-index: 1;*/
 }
 .contact .contact_valide:hover {
-    background-color: #ddd; /* Couleur de fond au survol */
+    background: linear-gradient(135deg, #c0c0c0, #f0f0f0); /* Change le fond dégradé au survol */
+    transform: translateY(-5px); /* Ajoute un effet de soulèvement au survol */
+}
+.contact .contact_valide i {
+    margin-right: 10px; /* Ajoute un espace entre l'icône et le texte */
 }
 
 /* ///////////////////////////// button top ///////////////////////////// */

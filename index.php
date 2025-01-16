@@ -178,7 +178,7 @@ $titre='Accueil';
                                                                  placeholder="Votre adresse email">
             <label for="message" aria-label="message"></label><textarea name="message" id="message"
                                                                         placeholder="Votre message"></textarea>
-            <button class="contact_valide" type="submit">Envoyer</button>
+            <button class="contact_valide" type="submit"><i class="fas fa-check"></i> Envoyer</button>
         </form>
         <button onclick="RetourHaut()" id="retour_haut_btn" title="Retour en haut de la page">↑</button>
     </section>

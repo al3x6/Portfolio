@@ -432,7 +432,11 @@ main {
 /* sous container */
 .competences .competences_container .sous_competences_container {
     margin-left: 15px;
-    margin-bottom: 15px; /* Ajoute un espacement pour les sections */
+    margin-bottom: 25px; /* Ajoute un espacement pour les sections */
+}
+
+.competences .competences_container .sous_competences_container h4{
+    margin-bottom: 10px;
 }
 
 .competences .competences_container .sous_competences_container ul {

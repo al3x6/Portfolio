@@ -155,16 +155,16 @@ $titre = 'CV';
             <h3 id="systèmes-et-réseaux"><i class="fas fa-network-wired"></i> Systèmes et Réseaux</h3>
             <p>Depuis plus de 3 ans, je travaille dans les systèmes et réseaux, ce qui m'a permis d'acquérir une expérience solide pour mener à bien des projets de grande envergure. Le réseau est essentiel pour la cybersécurité, et je suis passionné par l'optimisation des systèmes pour assurer leur sécurité et leur performance.</p>
             <div class="sous_competences_container">
-                <h4>Langages</h4>
+                <h4>Langages Réseaux</h4>
                 <p>Je connais une variété de langage pour le réseaux</p>
 
                 <div class="languages">
                     <img src="../image/cv/python_logo.webp" alt="Python" title="Python logo">
                     <img src="../image/cv/c_logo.webp" alt="C" title="C logo">
                     <img src="../image/cv/bash_logo.webp" alt="Bash" title="Bash logo">
+                    <img src="../image/cv/powershell_logo.webp" alt="Powershell" title="Powershell logo">
                 </div>
             </div>
-
             <div class="sous_competences_container">
                 <h4>Administration Réseaux</h4>
                 <p>J'ai une forte expérience dans l'administration de réseaux, où j'assure la configuration, la gestion et la sécurité des réseaux. J'ai travaillé sur des projets de mise en place de réseaux locaux.</p>
@@ -184,40 +184,63 @@ $titre = 'CV';
                     <img src="../image/cv/apache_logo.webp" alt="Apache" title="Apache logo">
                 </div>
             </div>
-
             <div class="sous_competences_container">
                 <h4>Architecture Réseaux</h4>
-                <p>J'ai une compréhension approfondie des architectures réseau, y compris la conception et la mise en oeuvre de réseaux locaux et étendus. J'ai participé à la configuration de systèmes IP et à l'installation de systèmes dans des environnements.</p>
+                <p>J'ai une compréhension approfondie des architectures réseau, y compris la conception et la mise en oeuvre de réseaux locaux et étendus. J'ai participé à la configuration de réseau dans des environnements.</p>
                 <ul>
                     <li>LAN : conception et configuration de réseaux locaux</li>
                     <li>WAN : interconnexion de réseaux sur de grandes distances</li>
                     <li>Analyse et dépannage des réseaux à l'aide de Cisco Packet Tracer</li> <!-- gns3 -->
                     <li>Programmation des commutateurs (switch) et routeurs Cisco via CLI (IOS, IOS-XE)</li>
-                    <li>Configuration VLAN, routage, et sécurité des interfaces</li>
-                    <li>Paramétrage IP pour assurer une communication efficace</li>
-                    <li>Installations système et déploiement dans des environnements divers</li>
+                    <li>Configuration VLAN, INTER-VLAN, routage, et sécurité des interfaces</li>
+                    <li>Connaissances du concept de Redondance et du Protocole spanning-tree </li>
+                    <li>Paramétrage IP de sous-réseaux</li>
                 </ul>
 
                 <div class="languages">
-                    <img src="../image/cv/vmware_logo.webp" alt="VMware" title="VMware logo">
-                    <img src="../image/cv/vbox_logo.webp" alt="Virtual Box" title="Virtual Box logo">
                     <img src="../image/cv/cisco_logo.webp" alt="Cisco" title="Cisco logo">
+                </div>
+            </div>
+            <div class="sous_competences_container">
+                <h4>Outils pour le réseaux</h4>
+                <p>Je connais une variété d'outil pour le réseaux</p>
+                <div class="languages">
+                    <img src="../image/cv/winscp_logo.webp" alt="WinSCP" title="WinSCP logo">
+                    <img src="../image/cv/putty_logo.webp" alt="PuTTY" title="PuTTY logo">
+                    <img src="../image/cv/packettracer_logo.webp" alt="Cisco Packet Tracer" title="Cisco Packet Tracer logo">
+                    <img src="../image/cv/powershell_logo.webp" alt="Powershell" title="Powershell logo">
+                    <img src="../image/cv/bash_logo.webp" alt="Bash" title="Bash logo">
+                    <img src="../image/cv/nano_logo.webp" alt="Nano" title="Nano logo">
+                    <img src="../image/cv/gedit_logo.webp" alt="Gedit" title="Gedit logo">
+                    <img src="../image/cv/vscode_logo.webp" alt="Visual Studio Code" title="Visual Studio Code logo">
+                    <img src="../image/cv/pycharm_logo.webp" alt="PyCharm" title="Pycharm logo">
                 </div>
             </div>
 
             <div class="sous_competences_container">
-                <h4>Outils de réseau</h4>
-                <p></p>
+                <h4>Systèmes et OS</h4>
+                <p>J'ai pu travailler sur différent systèmes et OS ce qui me permet d'avoir une grande flexibilité.</p>
+                <ul>
+                    <li>Déploiement d'image dans des environnements divers</li>
+                    <li>Installations de système</li>
+                    <li>Installation et configuration de grub</li>
+                    <li>Dépannage technique lié au système</li>
+                </ul>
+
                 <div class="languages">
-                    <img src="../image/cv/powershell_logo.webp" alt="Powershell" title="Powershell logo">
-                    <img src="../image/cv/bash_logo.webp" alt="Bash" title="Bash logo">
-                    <img src="../image/cv/vscode_logo.webp" alt="Visual Studio Code" title="Visual Studio Code logo">
-                    <img src="../image/cv/pycharm_logo.webp" alt="PyCharm" title="Pycharm logo">
-                    <img src="../image/cv/nano_logo.webp" alt="Nano" title="Nano logo">
-                    <img src="../image/cv/gedit_logo.webp" alt="Gedit" title="Gedit logo">
-                    <img src="../image/cv/winscp_logo.webp" alt="WinSCP" title="WinSCP logo">
-                    <img src="../image/cv/putty_logo.webp" alt="PuTTY" title="PuTTY logo">
-                    <img src="../image/cv/packettracer_logo.webp" alt="Cisco Packet Tracer" title="Cisco Packet Tracer logo">
+                    <img src="../image/cv/windows_logo.webp" alt="Windows" title="Windows logo">
+                    <img src="../image/cv/linux_logo.webp" alt="Linux" title="Linux logo">
+                    <img src="../image/cv/centos_logo.webp" alt="CentOS" title="CentOS logo">
+                    <img src="../image/cv/debian_logo.webp" alt="Debian" title="Debian logo">
+                    <img src="../image/cv/ubuntu_logo.webp" alt="Ubuntu" title="Ubuntu logo">
+                    <img src="../image/cv/kalilinux_logo.webp" alt="Kali Linux" title="Kali Linux logo">
+                </div>
+            </div>
+            <div class="sous_competences_container">
+                <h4>Outils Systèmes</h4>
+                <div class="languages">
+                    <img src="../image/cv/vmware_logo.webp" alt="VMware" title="VMware logo">
+                    <img src="../image/cv/vbox_logo.webp" alt="Virtual Box" title="Virtual Box logo">
                 </div>
             </div>
 

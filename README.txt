@@ -10,14 +10,14 @@ Différent Répertoire :
 /public/js : script javascript     _js
 /public/page : Page utilisateur    .php, .html, _lst, _appel, _scr
 
-Tâches Globale :
-- faire le css mobile                 FAIT
-- faire les conditions mobile
+Mobile :
 - Menu Burger
 
 Accueil :
  - google map
- - ajouter les liens redirection bouton
+ - ajouter les liens de redirection lorsque clique sur l'encadrer projet
+ - Compléter les projets sur la page d'acceuil avec texte + image
+ - Réaliser le dynamique du formulaire de contact
  - intégrer base de données le formulaire contact
 
 Projet :
@@ -35,21 +35,25 @@ Projet :
     - Projet pokémon chemin (Java)
 
 CV :
- - Ajout bouton téléchargement de CV
  - Ajout en détail le CV
 
-     profil
-     formations
+     Profil
+     Formations
 
-     compétences (langages)
-     	Réseau : C, Python, Bash, Apache, Linux, Ubuntu, CentOs, Kali-Linux,(docker, vm)
+     Compétences
+     	Réseau : Inter-Vlan, Spanning Tree, Routage, Switch de niveau 3, Par-Feux
+     	    Langages : C, Python, Bash, POWERSHELL
+     	    Apache, Linux, Ubuntu, CentOs, Kali-Linux,(docker, vm)
      	Cyber (reste): Cryptographie, Scan de port, attaque je sais détect (sql injection, xss injection), OSINT,
-     	Web : Accessibilité numérique, ...
-     	Base de données
-     	Machine Learning
+     	    Faire un topo sur je sais tout pratiqué réseau, base de données, machine learning, développement logiciel web et application ce qui me permet d'avoir un ensemble varié sur les failles de ces domaines de l'informatique
+     	Web : Fin
+     	Base de données :
+     	    A revérifier
+     	Machine Learning :
+     	    A reversifié
      	Logiciel : Python, Java, R
      	Gestion de projet : Rédaction de rapport (markdown), méthode agile, compta, ...
-     	Qualité de code (reste ajout): Modélisation UML, Git, ANA SPE CON DEV TEST, Algorithmique, calcul distribué
+     	Qualité de code (reste ajout): Modélisation UML, Cas d'utilisation, Git, ANA SPE CON DEV TEST, Algorithmique, calcul distribué
      	Droit de l'informatique (reste): RGPD, Norme ISO, Droit propriété Intellectuelle
      outils
      	-> dockerhub, vmware, Virtual Box, shell, powershell

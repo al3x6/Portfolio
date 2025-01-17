@@ -551,7 +551,12 @@ main {
 
 /* sous container */
 .competences .competences_container .sous_competences_container {
+    margin-top: 30px;
     margin-left: 50px;
+}
+
+.competences .competences_container .sous_competences_container h4{
+    margin-bottom: 10px;
 }
 
 .competences .competences_container .sous_competences_container ul {

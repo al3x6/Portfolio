@@ -946,12 +946,14 @@ main {
 .projets_cv .bubble-bottom {
     right: 20%;
     bottom: 10px;
+    animation-delay: 2.5s;
 }
 /* Bulle à gauche */
 .projets_cv::before {
     top: 20%;
     left: 10px; /* Position à gauche */
     transform: translateY(-50%);
+    animation-delay: 2.5s;
 }
 /* Bulle à droite */
 .projets_cv::after {

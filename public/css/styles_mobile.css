@@ -78,17 +78,32 @@ main {
     text-align: center;
 }
 .hero .hero_left .div_button .button_fonce {
-    background-color: #333; /* Couleur de fond du bouton */
+    /*background-color: #333;*/ /* Couleur de fond du bouton */
+    background: linear-gradient(135deg, #333, #4a4a4a); /* Fond dégradé pour le bouton */
     color: #fff; /* Couleur du texte du bouton */
+
     border: none; /* Supprime les bordures du bouton */
+    border-radius: 20px; /* Ajoute des coins arrondis au bouton */
+
     padding: 10px 20px; /* Ajoute un espace intérieur au bouton */
     font-size: 16px; /* Taille de la police du texte */
-    border-radius: 5px; /* Ajoute des coins arrondis au bouton */
+    font-weight: bold;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Ajoute une ombre au bouton */
     cursor: pointer; /* Change le curseur lorsqu'on survole le bouton */
     text-decoration: none; /* Supprime les soulignements */
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
 }
 .hero .hero_left .div_button .button_fonce:hover {
-    background-color: #555; /* Couleur de fond du bouton au survol */
+    /*background-color: #555;*/ /* Couleur de fond du bouton au survol */
+    background: linear-gradient(135deg, #4a4a4a, #333); /* Change le fond dégradé au survol */
+    transform: translateY(-3px); /* Ajoute un effet de soulèvement au survol */
+}
+.hero .hero_left .div_button .button_fonce i {
+    margin-right: 8px; /* Ajoute un espace entre l'icône et le texte */
 }
 
 /* image */
@@ -141,17 +156,30 @@ main {
     text-align: center;
 }
 .services .services_right .div_button .button_fonce {
-    background-color: #333; /* Couleur de fond du bouton */
+    background: linear-gradient(135deg, #333, #4a4a4a); /* Fond dégradé pour le bouton */
     color: #fff; /* Couleur du texte du bouton */
+
     border: none; /* Supprime les bordures du bouton */
+    border-radius: 20px; /* Ajoute des coins arrondis au bouton */
+
     padding: 10px 20px; /* Ajoute un espace intérieur au bouton */
     font-size: 16px; /* Taille de la police du texte */
-    border-radius: 5px; /* Ajoute des coins arrondis au bouton */
+    font-weight: bold;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Ajoute une ombre au bouton */
     cursor: pointer; /* Change le curseur lorsqu'on survole le bouton */
     text-decoration: none; /* Supprime les soulignements */
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
 }
 .services .services_right .div_button .button_fonce:hover {
-    background-color: #555; /* Couleur de fond du bouton au survol */
+    background: linear-gradient(135deg, #4a4a4a, #333); /* Change le fond dégradé au survol */
+    transform: translateY(-3px); /* Ajoute un effet de soulèvement au survol */
+}
+.services .services_right .div_button .button_fonce i {
+    margin-right: 8px; /* Ajoute un espace entre l'icône et le texte */
 }
 
 /* ///////////////////////////// Section portfolio ///////////////////////////// */
@@ -707,6 +735,131 @@ main {
     color: #333;
 }
 
+/* ///////////////////////////// Section projets_cv ///////////////////////////// */
+.projets_cv {
+    padding: 50px;
+    background-color: #464646;
+    text-align: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* Bulles */
+.projets_cv::before, .projets_cv::after, .projets_cv .bubble-top, .projets_cv .bubble-bottom, .projets_cv .bubble-between_right, .projets_cv .bubble-between_left {
+    content: '';
+    position: absolute;
+    width: 50px; /* Taille réduite des bulles pour les petits écrans */
+    height: 50px; /* Taille réduite des bulles pour les petits écrans */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%; /* Forme circulaire */
+    pointer-events: none;
+    animation: float 5s infinite ease-in-out;
+}
+
+/* Bulle en haut à gauche */
+.projets_cv .bubble-top {
+    left: 10%;
+    top: 10px;
+}
+
+/* Bulle entre gauche */
+.projets_cv .bubble-between_left {
+    left: 20%;
+    top: 50%;
+}
+
+/* Bulle entre droit */
+.projets_cv .bubble-between_right {
+    right: 20%;
+    bottom: 50%;
+}
+
+/* Bulle en bas à droite */
+.projets_cv .bubble-bottom {
+    right: 10%;
+    bottom: 10px;
+}
+
+/* Bulle à gauche */
+.projets_cv::before {
+    top: 70%;
+    left: 5px; /* Position à gauche */
+    transform: translateY(-50%);
+}
+
+/* Bulle à droite */
+.projets_cv::after {
+    top: 20%;
+    right: 5px; /* Position à droite */
+    transform: translateY(-50%);
+}
+
+/* Changement d'opacité selon position */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 0.1;
+    }
+    50% {
+        transform: translateY(-20px);
+        opacity: 0.3;
+    }
+}
+
+.projets_cv h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.projets_cv h2::before {
+    content: '';
+    position: absolute;
+    width: 30px; /* Réduction de la largeur pour les petits écrans */
+    height: 3px; /* Réduction de la hauteur pour les petits écrans */
+    background: #000;
+    bottom: -5px; /* Ajustement de la position pour les petits écrans */
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px; /* Réduction du rayon pour les petits écrans */
+}
+
+.projets_cv .cv_div_projet_button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.projets_cv .cv_div_projet_button .button_claire {
+    background: linear-gradient(135deg, #f0f0f0, #c0c0c0); /* Fond dégradé pour le bouton */
+    color: #333; /* Couleur du texte du bouton */
+
+    border: none; /* Supprime les bordures du bouton */
+    padding: 10px 20px; /* Ajoute un espace intérieur au bouton */
+    border-radius: 20px; /* Ajoute des coins arrondis au bouton */
+
+    font-size: 16px; /* Taille de la police du texte */
+    font-weight: bold;
+
+    cursor: pointer; /* Change le curseur lorsqu'on survole le bouton */
+    text-decoration: none; /* Supprime les soulignements */
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Ajoute une ombre au bouton */
+
+    transition: transform 0.3s, background 0.3s; /* Ajoute une transition pour les effets */
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.projets_cv .cv_div_projet_button .button_claire:hover {
+    background: linear-gradient(135deg, #c0c0c0, #f0f0f0); /* Change le fond dégradé au survol */
+    transform: translateY(-3px); /* Ajoute un effet de soulèvement au survol */
+}
+.projets_cv .cv_div_projet_button .button_claire i {
+    margin-right: 8px; /* Ajoute un espace entre l'icône et le texte */
+}
+
 /* ///////////////////////////// Section contact ///////////////////////////// */
 .contact {
     background-color: #333;
@@ -750,26 +903,38 @@ main {
 
 .contact .contact_valide {
     width: 50%; /* Largeur de 100% */
-    padding: 10px 20px; /* Espacement interne */
 
-    border: none; /* Suppression de la bordure */
-    border-radius: 5px; /* Coins arrondis */
+    padding: 10px 20px; /* Ajoute un espace intérieur au bouton */
 
-    background-color: #fff; /* Couleur de fond */
+    border: none; /* Supprime les bordures du bouton */
+    /*border-radius: 5px;*/ /* Coins arrondis */
+    border-radius: 20px; /* Coins arrondis */
+
+    /*background-color: #fff;*/ /* Couleur de fond */
+    background: linear-gradient(135deg, #f0f0f0, #c0c0c0); /* Fond dégradé pour le bouton */
     color: #333; /* Couleur du texte */
 
     font-weight: bold; /* Police en gras */
     font-size: 16px; /* Taille de la police du texte */
 
     cursor: pointer; /* Curseur de type pointeur */
-    transition: background-color 0.3s; /* Transition douce de couleur de fond */
 
-    margin: 0 auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Ajoute une ombre au bouton */
+
+    transition: transform 0.3s, background 0.3s; /* Ajoute une transition pour les effets */
+    display: inline-flex;
+    margin: 0 auto 0 auto; /* Centre le bouton horizontalement */
+    justify-content: center;
 }
-
 .contact .contact_valide:hover {
-    background-color: #ddd; /* Couleur de fond au survol */
+    /*background-color: #ddd;*/ /* Couleur de fond au survol */
+    background: linear-gradient(135deg, #c0c0c0, #f0f0f0); /* Change le fond dégradé au survol */
+    transform: translateY(-3px); /* Ajoute un effet de soulèvement au survol */
 }
+.contact .contact_valide i {
+    margin-right: 8px; /* Ajoute un espace entre l'icône et le texte */
+}
+
 
 /* ///////////////////////////// button top ///////////////////////////// */
 #retour_haut_btn {

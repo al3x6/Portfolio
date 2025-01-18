@@ -26,7 +26,7 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 header nav ul li a {

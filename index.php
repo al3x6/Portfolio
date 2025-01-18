@@ -366,7 +366,7 @@ Grâce à cette polyvalence, je suis capable d'anticiper et de résoudre des dé
 </script>
 
 <script>
-    // Menu Burger
+    // Menu Burgers
 </script>
 
 </body>

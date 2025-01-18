@@ -12,6 +12,7 @@ $titre = 'Services';
     <meta name="description" content="Je présente sur cette page mon Cv au complet. Il est possible d'être téléchargé">
     <title><?= $titre ?></title>
     <!-- Inclure des feuilles de style CSS ici -->
+    <link rel="stylesheet" href="/public/css/styles_css_header.css">
     <link rel="stylesheet" href="../css/styles_css.css" media="only screen and (min-width: 941px)">
     <link rel="stylesheet" href="../css/styles_mobile.css" media="only screen and (max-width: 940px)">
 
@@ -107,8 +108,24 @@ $titre = 'Services';
     }
 </script>
 
+<!-- Menu Burgers -->
 <script>
-    // Menu Burger
+    // Menu Burgers
+    document.addEventListener('DOMContentLoaded', function() {
+        const burgerMenu = document.querySelector('.burger');
+        const navLinks = document.querySelector('.navbar-links');
+
+        burgerMenu.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            if (navLinks.classList.contains('active')) {
+                setTimeout(() => {
+                    navLinks.classList.add('show');
+                }, 10); // Add a slight delay to ensure the active class is applied first
+            } else {
+                navLinks.classList.remove('show');
+            }
+        });
+    });
 </script>
 
 

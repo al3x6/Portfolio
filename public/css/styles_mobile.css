@@ -8,33 +8,6 @@ body {
 }
 
 /* ///////////////////////////// Header ///////////////////////////// */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 10px;
-    text-align: center;
-}
-
-header nav {
-    display: block;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin: 10px 10px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 16px;
-}
 
 /* ///////////////////////////// main ///////////////////////////// */
 main {

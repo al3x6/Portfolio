@@ -17,37 +17,6 @@ body {
 }
 
 /* ///////////////////////////// Header ///////////////////////////// */
-header {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-}
-header nav {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    justify-content: space-between;
-    width: 100%;
-}
-header nav ul ul {
-    position: absolute;
-    right: 0;
-}
-/*ul{display: inline-block;} léger décalage de la page*/
-header nav li, header nav ul {
-    display: inline-block;
-    padding: 8px;
-}
-header nav a, a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
-}
-header nav a:hover {
-    color: #ccc;
-}
 
 /* ///////////////////////////// main ///////////////////////////// */
 main {

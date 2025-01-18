@@ -1,0 +1,91 @@
+
+Le header sans menu burger
+
+################ Dans index.php
+- Retirer le css importer styles_css_header.css
+- Retirer le javascript Menu Burgers
+
+############### Dans header.php
+<header>
+    <nav>
+        <ul>
+            <li><a href="/">Alexis</a></li>
+            <li><a href="https://github.com/al3x6" aria-label="github" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/alexis-araujo-b7333822a" aria-label="linkedin" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.root-me.org/hehealex" aria-label="root-me" target="_blank"><img src="/public/image/rootme_logo.webp" alt="RootMe" style="width: 25px; height: 25px;"></a></li>
+        </ul>
+        <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/public/pages/cv.php">CV</a></li>
+            <li><a href="/public/pages/projets.php">Projets</a></li>
+            <li><a href="/public/pages/services.php">Services</a></li>
+            <li><a href="/public/pages/contact.php">Contact</a></li>
+            <li><a href="#">Paramètres</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+############### Dans styles.css AJOUTER
+/* ///////////////////////////// Header ///////////////////////////// */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+header nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    width: 100%;
+}
+header nav ul ul {
+    position: absolute;
+    right: 0;
+}
+/*ul{display: inline-block;} léger décalage de la page*/
+header nav li, header nav ul {
+    display: inline-block;
+    padding: 8px;
+}
+header nav a, a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+header nav a:hover {
+    color: #ccc;
+}
+
+
+############### Dans styles_mobile.css
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+header nav {
+    display: block;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}

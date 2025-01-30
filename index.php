@@ -12,6 +12,9 @@ $titre='Accueil';
     <meta name="description"
           content="Bienvenue sur mon portfolio ! Je suis Alexis Araujo, étudiant passionné en informatique. Avec une expertise diversifiée dans plusieurs domaines, notamment le développement web, la conception graphique et la configuration de serveurs, je suis prêt à relever de nouveaux défis avec créativité et détermination. Explorez mes réalisations concrètes et découvrez comment je peux contribuer à des projets innovants en tant que développeur web passionné.">
     <title><?=$titre?></title>
+
+    <link rel="icon" href="/public/image/icone/favicon-48x48.webp" type="image/x-icon">
+
     <!-- Inclure des feuilles de style CSS ici -->
     <link rel="stylesheet" href="/public/css/styles_css_header.css">
     <link rel="stylesheet" href="/public/css/styles_css.css" media="only screen and (min-width: 941px)">

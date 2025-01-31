@@ -30,6 +30,8 @@ $titre = 'Blog';
             padding: 2rem;
             display: flex;
             justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
 
         .book-container {
@@ -39,6 +41,9 @@ $titre = 'Blog';
             perspective: 1500px;
             margin: 2rem auto;
             position: relative;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
         }
 
         .book {
@@ -47,7 +52,7 @@ $titre = 'Blog';
             position: relative;
             display: flex;
             background: #eee;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
             transform-style: preserve-3d;
         }
 
@@ -59,6 +64,8 @@ $titre = 'Blog';
             backface-visibility: hidden;
             transition: transform 0.6s ease-in-out;
             transform-style: preserve-3d;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
 
         .left-page {
@@ -91,11 +98,21 @@ $titre = 'Blog';
             z-index: 2;
         }
 
+        .page-number {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 0.8rem;
+            color: #777;
+            font-weight: bold;
+        }
+
         .navigation {
             display: flex;
             justify-content: space-between;
             width: 100%;
             margin-top: 20px;
+            z-index: 10; /* Assurez-vous que les boutons sont au-dessus du livre */
         }
 
         .nav-btn {
@@ -141,32 +158,37 @@ $titre = 'Blog';
                         <p>Explorez des articles inspirants sur divers thèmes tels que les voyages, la productivité, et la cuisine.</p>
                         <p>Tournez les pages pour en découvrir davantage !</p>
                     </div>
+                    <div class="page-number">1</div>
                 </div>
                 <div class="page right-page" id="page2">
                     <div class="page-content">
                         <h2>Voyage au bout du monde</h2>
                         <p>Partez à la découverte des paysages magnifiques et des cultures enrichissantes...</p>
                     </div>
+                    <div class="page-number">2</div>
                 </div>
                 <div class="page left-page" id="page3">
                     <div class="page-content">
                         <h2>Les secrets de la productivité</h2>
                         <p>Apprenez comment rester concentré et motivé dans un monde plein de distractions.</p>
                     </div>
+                    <div class="page-number">3</div>
                 </div>
                 <div class="page right-page" id="page4">
                     <div class="page-content">
                         <h2>Cuisine : Recettes favorites</h2>
                         <p>Découvrez des recettes simples et savoureuses que j’aime préparer.</p>
                     </div>
+                    <div class="page-number">4</div>
                 </div>
             </div>
-            <div class="navigation">
-                <button class="nav-btn" onclick="prevPage()">Page Précédente</button>
-                <button class="nav-btn" onclick="nextPage()">Page Suivante</button>
-            </div>
+        </div>
+        <div class="navigation">
+            <button class="nav-btn" onclick="prevPage()">Page Précédente</button>
+            <button class="nav-btn" onclick="nextPage()">Page Suivante</button>
         </div>
     </section>
+
 
     <!-- PARTIE INSTAGRAM -->
     <!--<section class="hero">
@@ -210,31 +232,44 @@ $titre = 'Blog';
 
     function nextPage() {
         if (currentPage < pages.length - 2) {
-            pages[currentPage + 1].style.transition = 'transform 0.6s ease-in-out';
-            pages[currentPage + 1].style.transform = 'rotateY(-180deg)';
-            setTimeout(() => {
-                currentPage += 2;
-                updateBook();
-                pages[currentPage + 1].style.transition = 'none';
-                pages[currentPage + 1].style.transform = 'rotateY(0deg)';
-            }, 600);
+            const nextPage = pages[currentPage + 1];
+            if (nextPage) {
+                nextPage.style.transition = 'transform 0.6s ease-in-out';
+                nextPage.style.transform = 'rotateY(-180deg)';
+                setTimeout(() => {
+                    currentPage += 2;
+                    updateBook();
+                    const nextNextPage = pages[currentPage + 1];
+                    if (nextNextPage) {
+                        nextNextPage.style.transition = 'none';
+                        nextNextPage.style.transform = 'rotateY(0deg)';
+                    }
+                }, 600);
+            }
         }
     }
 
     function prevPage() {
         if (currentPage > 0) {
-            pages[currentPage - 1].style.transition = 'transform 0.6s ease-in-out';
-            pages[currentPage - 1].style.transform = 'rotateY(0deg)';
-            setTimeout(() => {
-                currentPage -= 2;
-                updateBook();
-                pages[currentPage - 1].style.transition = 'none';
-                pages[currentPage - 1].style.transform = 'rotateY(-180deg)';
-            }, 600);
+            const prevPage = pages[currentPage - 1];
+            if (prevPage) {
+                prevPage.style.transition = 'transform 0.6s ease-in-out';
+                prevPage.style.transform = 'rotateY(0deg)';
+                setTimeout(() => {
+                    currentPage -= 2;
+                    updateBook();
+                    const prevPrevPage = pages[currentPage - 1];
+                    if (prevPrevPage) {
+                        prevPrevPage.style.transition = 'none';
+                        prevPrevPage.style.transform = 'rotateY(-180deg)';
+                    }
+                }, 600);
+            }
         }
     }
 
     updateBook();
+
 </script>
 
 <!-- Bouton Retour haut -->

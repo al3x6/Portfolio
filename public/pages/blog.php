@@ -44,6 +44,7 @@ $titre = 'Blog';
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
             overflow: hidden;
+            background: #f0e6e6; /* Couleur de fond pour le livre */
         }
 
         .book {
@@ -57,24 +58,24 @@ $titre = 'Blog';
         }
 
         .page {
-            width: 50%;
-            height: 100%;
+            width: 48%; /* Réduire la largeur pour simuler les pages qui dépassent */
+            height: 95%; /* Réduire la hauteur pour simuler les pages qui dépassent */
             background: white;
             position: absolute;
             backface-visibility: hidden;
             transition: transform 0.6s ease-in-out;
             transform-style: preserve-3d;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            border-radius: 5px;
         }
 
         .left-page {
-            left: 0;
+            left: 2%; /* Décaler vers la gauche pour simuler les pages qui dépassent */
             transform-origin: right;
         }
 
         .right-page {
-            right: 0;
+            right: 2%; /* Décaler vers la droite pour simuler les pages qui dépassent */
             transform-origin: left;
         }
 
@@ -112,7 +113,6 @@ $titre = 'Blog';
             justify-content: space-between;
             width: 100%;
             margin-top: 20px;
-            z-index: 10; /* Assurez-vous que les boutons sont au-dessus du livre */
         }
 
         .nav-btn {
@@ -128,7 +128,7 @@ $titre = 'Blog';
         .nav-btn:hover {
             background: #5b3187;
         }
-
+        
     </style>
 </head>
 

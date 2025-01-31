@@ -35,11 +35,11 @@ $titre = 'Blog';
         }
 
         .book-container {
-            width: 80%;
-            max-width: 800px;
-            height: 400px;
+            width: 60%; /* Augmenter la largeur */
+            max-width: 1000px; /* Augmenter la largeur maximale */
+            height: 500px; /* Augmenter la hauteur */
             perspective: 1500px;
-            margin: 2rem auto;
+            margin: 2rem 2rem 1rem 2rem;
             position: relative;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
@@ -67,24 +67,45 @@ $titre = 'Blog';
             transform-style: preserve-3d;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
+            border: 1px solid #ddd; /* Ajouter une bordure pour délimiter les pages */
         }
 
         .left-page {
             left: 2%; /* Décaler vers la gauche pour simuler les pages qui dépassent */
             transform-origin: right;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Ajouter une ombre à gauche */
         }
 
         .right-page {
             right: 2%; /* Décaler vers la droite pour simuler les pages qui dépassent */
             transform-origin: left;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Ajouter une ombre à droite */
         }
 
         .page-content {
             padding: 1.5rem;
-            font-size: 0.9rem;
+            font-size: 1rem; /* Augmenter la taille de la police */
             color: #333;
             line-height: 1.5;
             backface-visibility: hidden;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            margin: 20px 0;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
         }
 
         .page:nth-child(odd) {
@@ -103,7 +124,7 @@ $titre = 'Blog';
             position: absolute;
             bottom: 10px;
             right: 10px;
-            font-size: 0.8rem;
+            font-size: 1rem; /* Augmenter la taille de la police */
             color: #777;
             font-weight: bold;
         }
@@ -111,12 +132,11 @@ $titre = 'Blog';
         .navigation {
             display: flex;
             justify-content: space-between;
-            width: 100%;
-            margin-top: 20px;
+            width: 70%;
         }
 
         .nav-btn {
-            background: #764ba2;
+            background: #333;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -128,8 +148,8 @@ $titre = 'Blog';
         .nav-btn:hover {
             background: #5b3187;
         }
-        
     </style>
+
 </head>
 
 <!-- Contenu de la page -->
@@ -143,10 +163,11 @@ $titre = 'Blog';
     <?php include("../../includes/titre.php"); ?>
     <h2>En développement .....</h2>
 
+    <!--
     <section class="youtube-short">
         <h2>Mon Short YouTube</h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/K1j5Yut8jjM" frameborder="0" allowfullscreen></iframe>
-    </section>
+    </section>-->
 
 
     <section class="book-section">
@@ -154,16 +175,20 @@ $titre = 'Blog';
             <div class="book">
                 <div class="page left-page" id="page1">
                     <div class="page-content">
-                        <h2>Bienvenue sur mon Blog</h2>
+                        <h2>Pourquoi me choisir</h2>
+                        <div class="video-container">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/K1j5Yut8jjM" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <!--<h2>Bienvenue sur mon Blog</h2>
                         <p>Explorez des articles inspirants sur divers thèmes tels que les voyages, la productivité, et la cuisine.</p>
-                        <p>Tournez les pages pour en découvrir davantage !</p>
+                        <p>Tournez les pages pour en découvrir davantage !</p>-->
                     </div>
                     <div class="page-number">1</div>
                 </div>
                 <div class="page right-page" id="page2">
                     <div class="page-content">
-                        <h2>Voyage au bout du monde</h2>
-                        <p>Partez à la découverte des paysages magnifiques et des cultures enrichissantes...</p>
+                        <h2>La Cybersécurité pour Tous</h2>
+                        <p>Dans un monde de plus en plus connecté, la cybersécurité est devenue une préoccupation majeure pour les individus et les entreprises. Protéger vos données personnelles et professionnelles est essentiel pour éviter les cyberattaques et les violations de données.</p>
                     </div>
                     <div class="page-number">2</div>
                 </div>

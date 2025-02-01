@@ -67,23 +67,23 @@ $titre = 'Blog';
             transform-style: preserve-3d;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
-            border: 1px solid #ddd; /* Ajouter une bordure pour délimiter les pages */
+            border: 1px solid #ddd; /* Ajout d'une bordure pour délimiter les pages */
         }
 
         .left-page {
-            left: 2%; /* Décaler vers la gauche pour simuler les pages qui dépassent */
+            left: 2%; /* Décalage vers la gauche pour simuler les pages qui dépassent */
             transform-origin: right;
-            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Ajouter une ombre à gauche */
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Ajout une ombre à gauche */
         }
 
         .right-page {
-            right: 2%; /* Décaler vers la droite pour simuler les pages qui dépassent */
+            right: 2%; /* Décalage vers la droite pour simuler les pages qui dépassent */
             transform-origin: left;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Ajouter une ombre à droite */
         }
 
         .page-content {
-            padding: 1.5rem;
+            padding: 10px;
             font-size: 1rem; /* Augmenter la taille de la police */
             color: #333;
             line-height: 1.5;
@@ -93,7 +93,7 @@ $titre = 'Blog';
         .video-container {
             position: relative;
             width: 100%;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-bottom: 56.25%; /* ratio : 16:9  */
             margin: 20px 0;
             overflow: hidden;
             border-radius: 5px;
@@ -148,6 +148,32 @@ $titre = 'Blog';
         .nav-btn:hover {
             background: #555;
         }
+
+        /* Styles pour les écrans mobiles */
+        @media (max-width: 940px) {
+            .book-container {
+                width: 90%;
+                max-width: 600px;
+                height: 400px;
+            }
+
+            .page {
+                width: 90%;
+                height: 90%;
+                left: 5%;
+                right: auto;
+            }
+
+            .left-page, .right-page {
+                left: 5%;
+                right: auto;
+                box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Ombre à droite pour les pages mobiles */
+            }
+
+            .navigation {
+                width: 90%;
+            }
+        }
     </style>
 
 </head>
@@ -168,7 +194,7 @@ $titre = 'Blog';
             <div class="book">
                 <div class="page left-page" id="page1">
                     <div class="page-content">
-                        <h2>Chap 1 : Pourquoi me choisir ?</h2>
+                        <h2>Chapitre 1 : Pourquoi me choisir ?</h2>
                         <div class="video-container">
                             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/K1j5Yut8jjM" frameborder="0" allowfullscreen></iframe>
                         </div>
@@ -179,7 +205,7 @@ $titre = 'Blog';
                 </div>
                 <div class="page right-page" id="page2">
                     <div class="page-content">
-                        <h2>Chap 2 : La Cybersécurité pour Tous</h2>
+                        <h2>Chapitre 2 : La Cybersécurité pour Tous</h2>
                         <p>Dans un monde de plus en plus connecté, la cybersécurité est devenue une préoccupation majeure pour les individus et les entreprises. Protéger vos données personnelles et professionnelles est essentiel pour éviter les cyberattaques et les violations de données.</p>
                     </div>
                     <div class="page-number">2</div>
@@ -194,7 +220,7 @@ $titre = 'Blog';
                 </div>
                 <div class="page right-page" id="page4">
                     <div class="page-content">
-                        <h2>La Cybersécurité</h2>
+                        <h2>Chapitre 4 : La Cybersécurité</h2>
                         <p>La cybersécurité est un domaine en constante évolution. Restez informé et adoptez les meilleures pratiques pour protéger vos données et vos appareils.</p>
                         <p>Pour en savoir plus, visitez :</p>
                         <ul>
@@ -238,57 +264,95 @@ $titre = 'Blog';
 
     function updateBook() {
         pages.forEach((page, index) => {
-            if (index === currentPage || index === currentPage + 1) {
-                page.style.transform = 'rotateY(0deg)';
-            } else if (index < currentPage) {
-                page.style.transform = 'rotateY(-180deg)';
+            if (window.innerWidth >= 941) {
+                if (index === currentPage || index === currentPage + 1) {
+                    page.style.transform = 'rotateY(0deg)';
+                } else if (index < currentPage) {
+                    page.style.transform = 'rotateY(-180deg)';
+                } else {
+                    page.style.transform = 'rotateY(180deg)';
+                }
             } else {
-                page.style.transform = 'rotateY(180deg)';
+                if (index === currentPage) {
+                    page.style.transform = 'rotateY(0deg)';
+                } else if (index < currentPage) {
+                    page.style.transform = 'rotateY(-180deg)';
+                } else {
+                    page.style.transform = 'rotateY(180deg)';
+                }
             }
         });
     }
 
     function nextPage() {
-        if (currentPage < pages.length - 2) {
-            const nextPage = pages[currentPage + 1];
-            if (nextPage) {
-                nextPage.style.transition = 'transform 0.6s ease-in-out';
-                nextPage.style.transform = 'rotateY(-180deg)';
-                setTimeout(() => {
-                    currentPage += 2;
-                    updateBook();
-                    const nextNextPage = pages[currentPage + 1];
-                    if (nextNextPage) {
-                        nextNextPage.style.transition = 'none';
-                        nextNextPage.style.transform = 'rotateY(0deg)';
-                    }
-                }, 600);
+        if (window.innerWidth >= 941) {
+            if (currentPage < pages.length - 2) {
+                const nextPage = pages[currentPage + 1];
+                if (nextPage) {
+                    nextPage.style.transition = 'transform 0.6s ease-in-out';
+                    nextPage.style.transform = 'rotateY(-180deg)';
+                    setTimeout(() => {
+                        currentPage += 2;
+                        updateBook();
+                        const nextNextPage = pages[currentPage + 1];
+                        if (nextNextPage) {
+                            nextNextPage.style.transition = 'none';
+                            nextNextPage.style.transform = 'rotateY(0deg)';
+                        }
+                    }, 600);
+                }
+            }
+        } else {
+            if (currentPage < pages.length - 1) {
+                const nextPage = pages[currentPage + 1];
+                if (nextPage) {
+                    nextPage.style.transition = 'transform 0.6s ease-in-out';
+                    nextPage.style.transform = 'rotateY(-180deg)';
+                    setTimeout(() => {
+                        currentPage += 1;
+                        updateBook();
+                    }, 600);
+                }
             }
         }
     }
 
     function prevPage() {
-        if (currentPage > 0) {
-            const prevPage = pages[currentPage - 1];
-            if (prevPage) {
-                prevPage.style.transition = 'transform 0.6s ease-in-out';
-                prevPage.style.transform = 'rotateY(0deg)';
-                setTimeout(() => {
-                    currentPage -= 2;
-                    updateBook();
-                    const prevPrevPage = pages[currentPage - 1];
-                    if (prevPrevPage) {
-                        prevPrevPage.style.transition = 'none';
-                        prevPrevPage.style.transform = 'rotateY(-180deg)';
-                    }
-                }, 600);
+        if (window.innerWidth >= 941) {
+            if (currentPage > 0) {
+                const prevPage = pages[currentPage - 1];
+                if (prevPage) {
+                    prevPage.style.transition = 'transform 0.6s ease-in-out';
+                    prevPage.style.transform = 'rotateY(0deg)';
+                    setTimeout(() => {
+                        currentPage -= 2;
+                        updateBook();
+                        const prevPrevPage = pages[currentPage - 1];
+                        if (prevPrevPage) {
+                            prevPrevPage.style.transition = 'none';
+                            prevPrevPage.style.transform = 'rotateY(-180deg)';
+                        }
+                    }, 600);
+                }
+            }
+        } else {
+            if (currentPage > 0) {
+                const prevPage = pages[currentPage - 1];
+                if (prevPage) {
+                    prevPage.style.transition = 'transform 0.6s ease-in-out';
+                    prevPage.style.transform = 'rotateY(0deg)';
+                    setTimeout(() => {
+                        currentPage -= 1;
+                        updateBook();
+                    }, 600);
+                }
             }
         }
     }
 
     updateBook();
-
 </script>
+
 
 </body>
 </html>

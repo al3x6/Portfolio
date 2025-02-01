@@ -16,7 +16,7 @@
             <a href="/public/pages/projets.php">Projets</a>
             <a href="/public/pages/services.php">Services</a>
             <a href="/public/pages/contact.php">Contact</a>
-            <a href="/public/pages/blog.php">Blog</a>
+            <!--<a href="/public/pages/blog.php">Blog</a>-->
             <a href="#">Paramètres</a>
         </div>
         <div class="burger">

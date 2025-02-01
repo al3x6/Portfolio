@@ -22,10 +22,10 @@ $titre='Accueil';
 
     <!-- Emoticone -->
     <script rel="preconnect" src="https://kit.fontawesome.com/c6abb0645d.js" crossorigin="anonymous"></script>
-    <!-- API -->
+    <!-- API Sphere-->
     <script rel="preconnect" src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
-    <!-- Sphere -->
-    <script rel="preconnect" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!-- Swiper -->
+    <!-- API swipper -->
+    <script rel="preconnect" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <!-- Contenu de la page -->

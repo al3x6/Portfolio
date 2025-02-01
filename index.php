@@ -20,12 +20,15 @@ $titre='Accueil';
     <link rel="stylesheet" href="/public/css/styles_css.css" media="only screen and (min-width: 941px)">
     <link rel="stylesheet" href="/public/css/styles_mobile.css" media="only screen and (max-width: 940px)">
 
+    <!-- Inclure des scripts javascript -->
+    <script src="/public/javascript/javascript.js" defer></script>
+
     <!-- Emoticone -->
-    <script rel="preconnect" src="https://kit.fontawesome.com/c6abb0645d.js" crossorigin="anonymous"></script>
+    <script rel="preconnect" src="https://kit.fontawesome.com/c6abb0645d.js" crossorigin="anonymous" defer></script>
     <!-- API Sphere-->
     <script rel="preconnect" src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
     <!-- API swipper -->
-    <script rel="preconnect" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script rel="preconnect" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 </head>
 
 <!-- Contenu de la page -->
@@ -345,48 +348,6 @@ Grâce à cette polyvalence, je suis capable d'anticiper et de résoudre des dé
         // Ouvrir la fenêtre pop-up avec les paramètres spécifiés
         window.open(imageURL, windowName, `width=${width},height=${height},left=${left},top=${top}`);
     }
-</script>
-
-<!-- Bouton Retour haut -->
-<script>
-    window.addEventListener('scroll', function () {
-        let retour_haut_btn = document.getElementById("retour_haut_btn");
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            retour_haut_btn.style.display = "block";
-        } else {
-            retour_haut_btn.style.display = "none";
-        }
-    });
-
-    // Scroll to the top of the page
-    function RetourHaut() {
-        //document.body.scrollTop = 0; // For Safari
-        //document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth' //transition douce
-        })
-    }
-</script>
-
-<!-- Menu Burgers -->
-<script>
-    // Menu Burgers
-    document.addEventListener('DOMContentLoaded', function() {
-        const burgerMenu = document.querySelector('.burger');
-        const navLinks = document.querySelector('.navbar-links');
-
-        burgerMenu.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-            if (navLinks.classList.contains('active')) {
-                setTimeout(() => {
-                    navLinks.classList.add('show');
-                }, 10); // Add a slight delay to ensure the active class is applied first
-            } else {
-                navLinks.classList.remove('show');
-            }
-        });
-    });
 </script>
 
 </body>

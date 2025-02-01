@@ -25,9 +25,6 @@ $titre = 'Blog';
     <!-- Emeticones -->
     <script rel="preconnect" src="https://kit.fontawesome.com/c6abb0645d.js" crossorigin="anonymous" defer></script>
 
-    <!-- PARTIE INSTA
-    <script async src="//www.instagram.com/embed.js"></script>-->
-
     <style>
         .book-section {
             padding: 2rem;
@@ -149,7 +146,7 @@ $titre = 'Blog';
         }
 
         .nav-btn:hover {
-            background: #5b3187;
+            background: #555;
         }
     </style>
 
@@ -166,46 +163,45 @@ $titre = 'Blog';
     <?php include("../../includes/titre.php"); ?>
     <h2>En développement .....</h2>
 
-    <!--
-    <section class="youtube-short">
-        <h2>Mon Short YouTube</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/K1j5Yut8jjM" frameborder="0" allowfullscreen></iframe>
-    </section>-->
-
-
     <section class="book-section">
         <div class="book-container">
             <div class="book">
                 <div class="page left-page" id="page1">
                     <div class="page-content">
-                        <h2>Pourquoi me choisir</h2>
+                        <h2>Chap 1 : Pourquoi me choisir ?</h2>
                         <div class="video-container">
                             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/K1j5Yut8jjM" frameborder="0" allowfullscreen></iframe>
                         </div>
-                        <!--<h2>Bienvenue sur mon Blog</h2>
-                        <p>Explorez des articles inspirants sur divers thèmes tels que les voyages, la productivité, et la cuisine.</p>
-                        <p>Tournez les pages pour en découvrir davantage !</p>-->
+                        <p>Avec mon parcours, je peux, ou pourrais, travailler dans 6 des 10 métiers qui seront les plus recherchés d'ici 2030.</p>
+                        <p></p>
                     </div>
                     <div class="page-number">1</div>
                 </div>
                 <div class="page right-page" id="page2">
                     <div class="page-content">
-                        <h2>La Cybersécurité pour Tous</h2>
+                        <h2>Chap 2 : La Cybersécurité pour Tous</h2>
                         <p>Dans un monde de plus en plus connecté, la cybersécurité est devenue une préoccupation majeure pour les individus et les entreprises. Protéger vos données personnelles et professionnelles est essentiel pour éviter les cyberattaques et les violations de données.</p>
                     </div>
                     <div class="page-number">2</div>
                 </div>
                 <div class="page left-page" id="page3">
                     <div class="page-content">
-                        <h2>Les secrets de la productivité</h2>
-                        <p>Apprenez comment rester concentré et motivé dans un monde plein de distractions.</p>
+                        <h2>Chapitre 3 : Sécuriser vos Appareils</h2>
+                        <p>De votre ordinateur à votre smartphone, chaque appareil connecté à Internet doit être sécurisé. Découvrez les meilleures pratiques pour protéger vos appareils.</p>
+                        <a href="https://cyber.gouv.fr/bonnes-pratiques-protegez-vous">ICI</a>
                     </div>
                     <div class="page-number">3</div>
                 </div>
                 <div class="page right-page" id="page4">
                     <div class="page-content">
-                        <h2>Cuisine : Recettes favorites</h2>
-                        <p>Découvrez des recettes simples et savoureuses que j’aime préparer.</p>
+                        <h2>La Cybersécurité</h2>
+                        <p>La cybersécurité est un domaine en constante évolution. Restez informé et adoptez les meilleures pratiques pour protéger vos données et vos appareils.</p>
+                        <p>Pour en savoir plus, visitez :</p>
+                        <ul>
+                            <li><a href="https://www.cyber.gouv.fr">Cyber.gouv.fr</a></li>
+                            <li><a href="https://www.cnil.fr">CNIL</a></li>
+                            <li><a href="https://www.anssi.fr">ANSSI</a></li>
+                        </ul>
                     </div>
                     <div class="page-number">4</div>
                 </div>
@@ -216,12 +212,6 @@ $titre = 'Blog';
             <button class="nav-btn" onclick="nextPage()">Page Suivante</button>
         </div>
     </section>
-
-
-    <!-- PARTIE INSTAGRAM -->
-    <!--<section class="hero">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DFa9QALClwL/?igsh=MTFrY2QxcDN1ODM0" data-instgrm-version="14" style="max-width: 20px; width: 100%;"></blockquote>
-    </section>-->
 
     <section class="contact">
         <h2>Contactez-moi</h2>

@@ -1,2 +1,12 @@
 RewriteEngine On
+
+# Vérifie que ce n'est ni un fichier ni un dossier existant
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirections personnalisées
 RewriteRule ^cv$ /public/pages/cv.php [L]
+RewriteRule ^projets$ /public/pages/projets.php [L]
+RewriteRule ^services$ /public/pages/services.php [L]
+RewriteRule ^contact$ /public/pages/contact.php [L]
+RewriteRule ^blog$ /public/pages/blog.php [L]

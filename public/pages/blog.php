@@ -58,8 +58,8 @@ $titre = 'Blog';
         }
 
         .page {
-            width: 48%; /* Réduire la largeur pour simuler les pages qui dépassent */
-            height: 95%; /* Réduire la hauteur pour simuler les pages qui dépassent */
+            width: 48%; /* Réduction de la largeur pour simuler les pages qui dépassent */
+            height: 95%; /* Réduction de la hauteur pour simuler les pages qui dépassent */
             background: white;
             position: absolute;
             backface-visibility: hidden;
@@ -131,7 +131,7 @@ $titre = 'Blog';
 
         .navigation {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             width: 70%;
         }
 
@@ -154,12 +154,12 @@ $titre = 'Blog';
             .book-container {
                 width: 90%;
                 max-width: 600px;
-                height: 400px;
+                height: 450px;
             }
 
             .page {
                 width: 90%;
-                height: 90%;
+                /*height: 90%;*/
                 left: 5%;
                 right: auto;
             }
@@ -352,7 +352,6 @@ $titre = 'Blog';
 
     updateBook();
 </script>
-
 
 </body>
 </html>

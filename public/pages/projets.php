@@ -27,6 +27,7 @@ $titre = 'Projets';
     <script rel="preconnect" src="https://kit.fontawesome.com/c6abb0645d.js" crossorigin="anonymous" defer></script>
 
     <style>
+        /* Styles de la section d'accueil */
         .projet-section {
             min-height: 90vh;
             display: flex;
@@ -45,44 +46,27 @@ $titre = 'Projets';
             left: 0;
             width: 100%;
             height: 100%;
-            /*background: rgb(2, 0, 66);*/
-            /*background: rgb(6, 2, 110);*/
             background: #004080;
         }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
         .projet-section .projet-content {
             position: relative;
             text-align: center;
             text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
             z-index: 10;
         }
-
         .text-6xl {
             font-size: 4rem;
             font-weight: 800;
         }
-
         .text-xl {
             font-size: 1.25rem;
         }
-
         .mb-4 {
             margin-bottom: 1rem;
         }
-
         .mb-8 {
             margin-bottom: 2rem;
         }
-
         .magic-button {
             background: linear-gradient(90deg, #3b82f6, #9333ea);
             padding: 12px 24px;
@@ -95,10 +79,44 @@ $titre = 'Projets';
             text-transform: uppercase;
             font-weight: bold;
         }
-
         .magic-button:hover {
             transform: scale(1.1);
             box-shadow: 0px 4px 20px rgba(147, 51, 234, 0.5);
+        }
+
+        /* Animation de disparition de la section d'accueil */
+        .projet-section.animate-out {
+            animation: fadeOutUp 1s forwards;
+        }
+        @keyframes fadeOutUp {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+        }
+
+        /* Section projets cachée au départ */
+        .projects-content {
+            text-align: center;
+            padding: 2rem;
+        }
+        /* Animation d'apparition du contenu projets */
+        .projects-content.animate-in {
+            animation: fadeIn 1s forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .timeline {
@@ -184,6 +202,29 @@ $titre = 'Projets';
     <!--<? //php include("../../includes/titre.php"); ?>
     <h2>En développement .....</h2>-->
 
+    <!-- Section des projets (initialement cachée) -->
+    <section class="projects-content" id="projectsContent" style="display: none; opacity: 0;">
+        <h2>Mes Projets</h2>
+        <!-- Exemple de contenu projets -->
+        <div class="timeline">
+            <div class="timeline-event">
+                <div class="timeline-badge"></div>
+                <div class="timeline-content">
+                    <h3>Projet 1</h3>
+                    <p>Description de mon projet 1.</p>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-badge"></div>
+                <div class="timeline-content">
+                    <h3>Projet 2</h3>
+                    <p>Description de mon projet 2.</p>
+                </div>
+            </div>
+            <!-- Ajoutez d'autres projets ici -->
+        </div>
+    </section>
+
 
     <section class="contact">
         <h2>Contactez-moi</h2>
@@ -204,76 +245,110 @@ $titre = 'Projets';
 <?php include("../../includes/footer.php"); ?>
 
 <script>
-    // Effet de neige
-    const snowCanvas = document.createElement('canvas');
-    snowCanvas.id = 'snowCanvas';
-    snowCanvas.style.position = 'fixed';
-    snowCanvas.style.top = '0';
-    snowCanvas.style.left = '0';
-    snowCanvas.style.width = '100%';
-    snowCanvas.style.height = '100%';
-    snowCanvas.style.pointerEvents = 'none';
-    snowCanvas.style.zIndex = '9999';
-    document.body.appendChild(snowCanvas);
+    document.addEventListener("DOMContentLoaded", function() {
+        // Sélectionner la section projet
+        const projectSection = document.querySelector('.projet-section');
 
-    const snowCtx = snowCanvas.getContext('2d');
-    snowCanvas.width = window.innerWidth;
-    snowCanvas.height = window.innerHeight;
+        // Créer le canvas pour la neige
+        const snowCanvas = document.createElement('canvas');
+        snowCanvas.id = 'snowCanvas';
 
-    let snowflakes = [];
+        // Positionner le canvas en absolu à l'intérieur de la section
+        snowCanvas.style.position = 'absolute';
+        snowCanvas.style.top = '0';
+        snowCanvas.style.left = '0';
+        snowCanvas.style.width = '100%';
+        snowCanvas.style.height = '100%';
+        snowCanvas.style.pointerEvents = 'none';
+        // Ajustez le z-index si nécessaire (en fonction de vos autres éléments)
+        snowCanvas.style.zIndex = '9999';
 
-    function createSnowflake() {
-        return {
-            x: Math.random() * snowCanvas.width,
-            y: Math.random() * snowCanvas.height,
-            radius: Math.random() * 3 + 1,
-            speedX: Math.random() * 2 - 1,
-            speedY: Math.random() * 2 + 1
-        };
-    }
+        // Ajouter le canvas à la section projet
+        projectSection.appendChild(snowCanvas);
 
-    for (let i = 0; i < 100; i++) {
-        snowflakes.push(createSnowflake());
-    }
+        const snowCtx = snowCanvas.getContext('2d');
 
-    function drawSnowflakes() {
-        snowCtx.clearRect(0, 0, snowCanvas.width, snowCanvas.height);
-        snowCtx.fillStyle = 'white';
-        snowflakes.forEach(flake => {
-            snowCtx.beginPath();
-            snowCtx.arc(flake.x, flake.y, flake.radius, 0, Math.PI * 2);
-            snowCtx.fill();
+        // Fonction pour redimensionner le canvas en fonction de la section
+        function resizeCanvas() {
+            snowCanvas.width = projectSection.clientWidth;
+            snowCanvas.height = projectSection.clientHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        // Création et animation des flocons de neige
+        let snowflakes = [];
+
+        function createSnowflake() {
+            return {
+                x: Math.random() * snowCanvas.width,
+                y: Math.random() * snowCanvas.height,
+                radius: Math.random() * 3 + 1,
+                speedX: Math.random() * 2 - 1,
+                speedY: Math.random() * 2 + 1
+            };
+        }
+
+        // Initialisation de 100 flocons
+        for (let i = 0; i < 100; i++) {
+            snowflakes.push(createSnowflake());
+        }
+
+        function drawSnowflakes() {
+            snowCtx.clearRect(0, 0, snowCanvas.width, snowCanvas.height);
+            snowCtx.fillStyle = 'white';
+            snowflakes.forEach(flake => {
+                snowCtx.beginPath();
+                snowCtx.arc(flake.x, flake.y, flake.radius, 0, Math.PI * 2);
+                snowCtx.fill();
+            });
+        }
+
+        function updateSnowflakes() {
+            snowflakes.forEach(flake => {
+                flake.x += flake.speedX;
+                flake.y += flake.speedY;
+                if (flake.y > snowCanvas.height) {
+                    flake.y = 0;
+                    flake.x = Math.random() * snowCanvas.width;
+                }
+                if (flake.x > snowCanvas.width || flake.x < 0) {
+                    flake.x = Math.random() * snowCanvas.width;
+                }
+            });
+        }
+
+        function animateSnow() {
+            drawSnowflakes();
+            updateSnowflakes();
+            requestAnimationFrame(animateSnow);
+        }
+
+        animateSnow();
+    });
+</script>
+
+<!-- Script pour déclencher l'animation au clic sur "Découvrir" -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const discoverButton = document.querySelector('.magic-button');
+        const projetSection = document.querySelector('.projet-section');
+        const projectsContent = document.getElementById('projectsContent');
+
+        discoverButton.addEventListener('click', function() {
+            // Lancer l'animation de disparition de la section d'accueil
+            projetSection.classList.add('animate-out');
+
+            // Une fois l'animation terminée, masquer la section d'accueil et afficher le contenu projets
+            setTimeout(function() {
+                projetSection.style.display = 'none';
+                projectsContent.style.display = 'block';
+                // Forcer le recalcul pour l'animation (si nécessaire)
+                projectsContent.offsetWidth;
+                projectsContent.classList.add('animate-in');
+            }, 1000); // délai en ms = durée de l'animation de fadeOutUp
         });
-    }
-
-    function updateSnowflakes() {
-        snowflakes.forEach(flake => {
-            flake.x += flake.speedX;
-            flake.y += flake.speedY;
-            if (flake.y > snowCanvas.height) {
-                flake.y = 0;
-                flake.x = Math.random() * snowCanvas.width;
-            }
-            if (flake.x > snowCanvas.width || flake.x < 0) {
-                flake.x = Math.random() * snowCanvas.width;
-            }
-        });
-    }
-
-    function animateSnow() {
-        drawSnowflakes();
-        updateSnowflakes();
-        requestAnimationFrame(animateSnow);
-    }
-
-    function resizeCanvas() {
-        snowCanvas.width = window.innerWidth;
-        snowCanvas.height = window.innerHeight;
-    }
-
-    window.addEventListener('resize', resizeCanvas);
-
-    animateSnow();
+    });
 </script>
 
 </body>

@@ -41,21 +41,31 @@ $titre = 'Projets';
         .projet-section::after {
             content: "";
             position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             /*background: rgb(2, 0, 66);*/
-            background: rgb(6, 2, 110);
+            /*background: rgb(6, 2, 110);*/
+            background: #004080;
         }
+
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
+
         .projet-section .projet-content {
             position: relative;
             text-align: center;
             text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
             z-index: 10;
         }
+
         .text-6xl {
             font-size: 4rem;
             font-weight: 800;
@@ -78,25 +88,26 @@ $titre = 'Projets';
             padding: 12px 24px;
             font-size: 18px;
             color: white;
-            border: none; /* Suppression de la bordure noire */
+            border: none;
             border-radius: 30px;
             cursor: pointer;
             transition: transform 0.3s ease, box-shadow 0.3s;
             text-transform: uppercase;
             font-weight: bold;
-
         }
 
         .magic-button:hover {
             transform: scale(1.1);
             box-shadow: 0px 4px 20px rgba(147, 51, 234, 0.5);
         }
+
         .timeline {
             position: relative;
             padding: 2rem 0;
             max-width: 900px;
             margin: 0 auto;
         }
+
         .timeline::before {
             content: '';
             position: absolute;
@@ -106,6 +117,7 @@ $titre = 'Projets';
             background: white;
             transform: translateX(-50%);
         }
+
         .timeline-event {
             position: relative;
             margin-bottom: 3rem;
@@ -113,9 +125,11 @@ $titre = 'Projets';
             justify-content: flex-start;
             align-items: center;
         }
+
         .timeline-event:nth-child(even) {
             justify-content: flex-end;
         }
+
         .timeline-badge {
             background: #9333ea;
             width: 20px;
@@ -125,6 +139,7 @@ $titre = 'Projets';
             left: 50%;
             transform: translate(-50%, 0);
         }
+
         .timeline-content {
             background: rgba(31, 41, 55, 0.9);
             padding: 1.5rem;
@@ -133,6 +148,7 @@ $titre = 'Projets';
             color: white;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
         }
+
         .timeline-content:hover {
             background: #1f2937;
             transition: background 0.3s;
@@ -165,7 +181,7 @@ $titre = 'Projets';
             <button class="magic-button">Découvrir</button>
         </div>
     </section>
-    <!--<?//php include("../../includes/titre.php"); ?>
+    <!--<? //php include("../../includes/titre.php"); ?>
     <h2>En développement .....</h2>-->
 
 
@@ -184,77 +200,81 @@ $titre = 'Projets';
 
 </main>
 
-
 <!-- Footer -->
 <?php include("../../includes/footer.php"); ?>
 
 <script>
-        // Effet de neige
-        const snowCanvas = document.createElement('canvas');
-        snowCanvas.id = 'snowCanvas';
-        snowCanvas.style.position = 'fixed';
-        snowCanvas.style.top = '0';
-        snowCanvas.style.left = '0';
-        snowCanvas.style.width = '100%';
-        snowCanvas.style.height = '100%';
-        snowCanvas.style.pointerEvents = 'none';
-        snowCanvas.style.zIndex = '9999';
-        document.body.appendChild(snowCanvas);
+    // Effet de neige
+    const snowCanvas = document.createElement('canvas');
+    snowCanvas.id = 'snowCanvas';
+    snowCanvas.style.position = 'fixed';
+    snowCanvas.style.top = '0';
+    snowCanvas.style.left = '0';
+    snowCanvas.style.width = '100%';
+    snowCanvas.style.height = '100%';
+    snowCanvas.style.pointerEvents = 'none';
+    snowCanvas.style.zIndex = '9999';
+    document.body.appendChild(snowCanvas);
 
-        const snowCtx = snowCanvas.getContext('2d');
-        snowCanvas.width = window.innerWidth;
-        snowCanvas.height = window.innerHeight;
+    const snowCtx = snowCanvas.getContext('2d');
+    snowCanvas.width = window.innerWidth;
+    snowCanvas.height = window.innerHeight;
 
-        let snowflakes = [];
+    let snowflakes = [];
 
-        function createSnowflake() {
+    function createSnowflake() {
         return {
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        radius: Math.random() * 3 + 1,
-        speedX: Math.random() * 2 - 1,
-        speedY: Math.random() * 2 + 1
-    };
+            x: Math.random() * snowCanvas.width,
+            y: Math.random() * snowCanvas.height,
+            radius: Math.random() * 3 + 1,
+            speedX: Math.random() * 2 - 1,
+            speedY: Math.random() * 2 + 1
+        };
     }
 
-        for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 100; i++) {
         snowflakes.push(createSnowflake());
     }
 
-        function drawSnowflakes() {
+    function drawSnowflakes() {
         snowCtx.clearRect(0, 0, snowCanvas.width, snowCanvas.height);
         snowCtx.fillStyle = 'white';
         snowflakes.forEach(flake => {
-        snowCtx.beginPath();
-        snowCtx.arc(flake.x, flake.y, flake.radius, 0, Math.PI * 2);
-        snowCtx.fill();
-    });
+            snowCtx.beginPath();
+            snowCtx.arc(flake.x, flake.y, flake.radius, 0, Math.PI * 2);
+            snowCtx.fill();
+        });
     }
 
-        function updateSnowflakes() {
+    function updateSnowflakes() {
         snowflakes.forEach(flake => {
             flake.x += flake.speedX;
             flake.y += flake.speedY;
-            if (flake.y > canvas.height) {
+            if (flake.y > snowCanvas.height) {
                 flake.y = 0;
-                flake.x = Math.random() * canvas.width;
+                flake.x = Math.random() * snowCanvas.width;
             }
-            if (flake.x > canvas.width || flake.x < 0) {
-                flake.x = Math.random() * canvas.width;
+            if (flake.x > snowCanvas.width || flake.x < 0) {
+                flake.x = Math.random() * snowCanvas.width;
             }
         });
     }
 
-        function animateSnow() {
+    function animateSnow() {
         drawSnowflakes();
         updateSnowflakes();
         requestAnimationFrame(animateSnow);
     }
 
-        animateSnow();
+    function resizeCanvas() {
+        snowCanvas.width = window.innerWidth;
+        snowCanvas.height = window.innerHeight;
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+
+    animateSnow();
 </script>
 
-
-</script>
 </body>
 </html>

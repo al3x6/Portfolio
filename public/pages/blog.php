@@ -10,6 +10,7 @@ $titre = 'Blog';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6, user-scalable=0">-->
     <meta name="description" content="Sur cette page j'ai créé un petit Blog sur moi même.">
+    <meta name="author" content="Alexis Araujo">
     <title><?= $titre ?></title>
 
     <link rel="icon" href="/public/image/icone/favicon-48x48.webp" type="image/x-icon">
@@ -26,7 +27,7 @@ $titre = 'Blog';
     <script rel="preconnect" src="https://kit.fontawesome.com/c6abb0645d.js" crossorigin="anonymous" defer></script>
 
     <style>
-        .book-section {
+        .section_book {
             padding: 2rem;
             display: flex;
             justify-content: center;
@@ -34,7 +35,7 @@ $titre = 'Blog';
             align-items: center;
         }
 
-        .book-container {
+        .book_container {
             width: 60%; /* Augmenter la largeur */
             max-width: 1000px; /* Augmenter la largeur maximale */
             height: 500px; /* Augmenter la hauteur */
@@ -70,19 +71,19 @@ $titre = 'Blog';
             border: 1px solid #ddd; /* Ajout d'une bordure pour délimiter les pages */
         }
 
-        .left-page {
+        .left_page {
             left: 2%; /* Décalage vers la gauche pour simuler les pages qui dépassent */
             transform-origin: right;
             box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Ajout une ombre à gauche */
         }
 
-        .right-page {
+        .right_page {
             right: 2%; /* Décalage vers la droite pour simuler les pages qui dépassent */
             transform-origin: left;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Ajouter une ombre à droite */
         }
 
-        .page-content {
+        .page_content {
             padding: 10px;
             font-size: 1rem; /* Augmenter la taille de la police */
             color: #333;
@@ -90,7 +91,7 @@ $titre = 'Blog';
             backface-visibility: hidden;
         }
 
-        .video-container {
+        .video_container {
             position: relative;
             width: 100%;
             padding-bottom: 56.25%; /* ratio : 16:9  */
@@ -99,7 +100,7 @@ $titre = 'Blog';
             border-radius: 5px;
         }
 
-        .video-container iframe {
+        .video_container iframe {
             position: absolute;
             top: 0;
             left: 0;
@@ -120,7 +121,7 @@ $titre = 'Blog';
             z-index: 2;
         }
 
-        .page-number {
+        .page_number {
             position: absolute;
             bottom: 10px;
             right: 10px;
@@ -135,7 +136,7 @@ $titre = 'Blog';
             width: 70%;
         }
 
-        .nav-btn {
+        .nav_btn {
             background: #333;
             color: white;
             padding: 10px 20px;
@@ -145,13 +146,13 @@ $titre = 'Blog';
             font-size: 1rem;
         }
 
-        .nav-btn:hover {
+        .nav_btn:hover {
             background: #555;
         }
 
         /* Styles pour les écrans mobiles */
         @media (max-width: 940px) {
-            .book-container {
+            .book_container {
                 width: 90%;
                 max-width: 600px;
                 height: 450px;
@@ -164,7 +165,7 @@ $titre = 'Blog';
                 right: auto;
             }
 
-            .left-page, .right-page {
+            .left_page, .right_page {
                 left: 5%;
                 right: auto;
                 box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Ombre à droite pour les pages mobiles */
@@ -189,37 +190,37 @@ $titre = 'Blog';
     <?php include("../../includes/titre.php"); ?>
     <h2>En développement .....</h2>
 
-    <section class="book-section">
-        <div class="book-container">
+    <section class="section_book">
+        <div class="book_container">
             <div class="book">
-                <div class="page left-page" id="page1">
-                    <div class="page-content">
+                <div class="page left_page" id="page1">
+                    <div class="page_content">
                         <h2>Chapitre 1 : Pourquoi me choisir ?</h2>
-                        <div class="video-container">
+                        <div class="video_container">
                             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/K1j5Yut8jjM" frameborder="0" allowfullscreen></iframe>
                         </div>
                         <p>Avec mon parcours, je peux, ou pourrais, travailler dans 6 des 10 métiers qui seront les plus recherchés d'ici 2030.</p>
                         <p></p>
                     </div>
-                    <div class="page-number">1</div>
+                    <div class="page_number">1</div>
                 </div>
-                <div class="page right-page" id="page2">
-                    <div class="page-content">
+                <div class="page right_page" id="page2">
+                    <div class="page_content">
                         <h2>Chapitre 2 : La Cybersécurité pour Tous</h2>
                         <p>Dans un monde de plus en plus connecté, la cybersécurité est devenue une préoccupation majeure pour les individus et les entreprises. Protéger vos données personnelles et professionnelles est essentiel pour éviter les cyberattaques et les violations de données.</p>
                     </div>
-                    <div class="page-number">2</div>
+                    <div class="page_number">2</div>
                 </div>
-                <div class="page left-page" id="page3">
-                    <div class="page-content">
+                <div class="page left_page" id="page3">
+                    <div class="page_content">
                         <h2>Chapitre 3 : Sécuriser vos Appareils</h2>
                         <p>De votre ordinateur à votre smartphone, chaque appareil connecté à Internet doit être sécurisé. Découvrez les meilleures pratiques pour protéger vos appareils.</p>
                         <a href="https://cyber.gouv.fr/bonnes-pratiques-protegez-vous">ICI</a>
                     </div>
-                    <div class="page-number">3</div>
+                    <div class="page_number">3</div>
                 </div>
-                <div class="page right-page" id="page4">
-                    <div class="page-content">
+                <div class="page right_page" id="page4">
+                    <div class="page_content">
                         <h2>Chapitre 4 : La Cybersécurité</h2>
                         <p>La cybersécurité est un domaine en constante évolution. Restez informé et adoptez les meilleures pratiques pour protéger vos données et vos appareils.</p>
                         <p>Pour en savoir plus, visitez :</p>
@@ -229,13 +230,13 @@ $titre = 'Blog';
                             <li><a href="https://www.anssi.fr">ANSSI</a></li>
                         </ul>
                     </div>
-                    <div class="page-number">4</div>
+                    <div class="page_number">4</div>
                 </div>
             </div>
         </div>
         <div class="navigation">
-            <button class="nav-btn" onclick="prevPage()">Page Précédente</button>
-            <button class="nav-btn" onclick="nextPage()">Page Suivante</button>
+            <button class="nav_btn" onclick="prevPage()">Page Précédente</button>
+            <button class="nav_btn" onclick="nextPage()">Page Suivante</button>
         </div>
     </section>
 

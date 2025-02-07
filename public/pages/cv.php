@@ -10,6 +10,7 @@ $titre = 'CV';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6, user-scalable=0">-->
     <meta name="description" content="Je présente sur cette page mon Cv au complet. Il est possible d'être téléchargé">
+    <meta name="author" content="Alexis Araujo">
     <title><?= $titre ?></title>
 
     <link rel="icon" href="/public/image/icone/favicon-48x48.webp" type="image/x-icon">

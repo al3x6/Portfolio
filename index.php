@@ -9,8 +9,9 @@ $titre='Accueil';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6, user-scalable=0">-->
-    <meta name="description"
-          content="Bienvenue sur mon portfolio ! Je suis Alexis Araujo, étudiant passionné en informatique. Avec une expertise diversifiée dans plusieurs domaines, notamment le développement web, la conception graphique et la configuration de serveurs, je suis prêt à relever de nouveaux défis avec créativité et détermination. Explorez mes réalisations concrètes et découvrez comment je peux contribuer à des projets innovants en tant que développeur web passionné.">
+    <meta name="description" content="Bienvenue sur mon portfolio ! Je suis Alexis Araujo, étudiant passionné en informatique. Avec une expertise diversifiée dans plusieurs domaines, notamment le développement web, la conception graphique et la configuration de serveurs, je suis prêt à relever de nouveaux défis avec créativité et détermination. Explorez mes réalisations concrètes et découvrez comment je peux contribuer à des projets innovants en tant que développeur web passionné.">
+    <meta name="author" content="Alexis Araujo">
+
     <title><?=$titre?></title>
 
     <link rel="icon" href="/public/image/icone/favicon-48x48.webp" type="image/x-icon">
@@ -105,8 +106,8 @@ $titre='Accueil';
 
     <section class="portfolio section-hidden">
         <h2>Projets</h2>
-        <div class="swiper carrousel-container">
-            <div class="swiper-wrapper carrousel-wrapper">
+        <div class="swiper carrousel_container">
+            <div class="swiper-wrapper carrousel_wrapper">
                 <div class="swiper-slide projet">
                     <a href="#"
                        onclick="openPopup('public/image/Projet/p1/portfolio_acceuil.webp', 'Projet Portfolio', 1000, 880); return false;">
@@ -170,9 +171,9 @@ $titre='Accueil';
                 </div>
                 <!-- Ajoutez plus de projets ici au besoin -->
             </div>
-            <button class="swiper-button-prev prec-btn" aria-label="Précédent"><i class="fas fa-chevron-left"></i>
+            <button class="swiper-button-prev prec_btn" aria-label="Précédent"><i class="fas fa-chevron-left"></i>
             </button>
-            <button class="swiper-button-next next-btn" aria-label="Suivant"><i class="fas fa-chevron-right"></i>
+            <button class="swiper-button-next next_btn" aria-label="Suivant"><i class="fas fa-chevron-right"></i>
             </button>
         </div>
     </section>
@@ -276,12 +277,12 @@ Grâce à cette polyvalence, je suis capable d'anticiper et de résoudre des dé
     document.addEventListener('DOMContentLoaded', function () {
 
         // Initialise Swiper
-        var mySwiper = new Swiper('.carrousel-container', {
+        var mySwiper = new Swiper('.carrousel_container', {
             // Paramètres optionnels
             loop: true, // Activer le mode boucle
             navigation: {
-                nextEl: '.next-btn', // Sélecteur du bouton suivant
-                prevEl: '.prec-btn', // Sélecteur du bouton précédent
+                nextEl: '.next_btn', // Sélecteur du bouton suivant
+                prevEl: '.prec_btn', // Sélecteur du bouton précédent
             },
             autoplay: {
                 delay: 1000, // Délai entre chaque diapositive en millisecondes
@@ -294,9 +295,9 @@ Grâce à cette polyvalence, je suis capable d'anticiper et de résoudre des dé
 
     // Sans API Swiper
     /*document.addEventListener('DOMContentLoaded', function () {
-        const precBtn = document.querySelector('.prec-btn');
-        const nextBtn = document.querySelector('.next-btn');
-        const wrapper = document.querySelector('.carrousel-wrapper');
+        const precBtn = document.querySelector('.prec_btn');
+        const nextBtn = document.querySelector('.next_btn');
+        const wrapper = document.querySelector('.carrousel_wrapper');
         const projets = document.querySelectorAll('.projet');
         const totalProjets = projets.length;
         console.log(projets[0].offsetWidth);
@@ -309,7 +310,7 @@ Grâce à cette polyvalence, je suis capable d'anticiper et de résoudre des dé
         precBtn.addEventListener('click', function () {
             if (index_actu > 0) {
                 index_actu--;
-                wrapper.classList.add('slide-animation');
+                wrapper.classList.add('slide_animation');
                 wrapper.style.transform = `translateX(-${index_actu * projetWidth}px)`;
             }
         });
@@ -317,7 +318,7 @@ Grâce à cette polyvalence, je suis capable d'anticiper et de résoudre des dé
         nextBtn.addEventListener('click', function () {
             if (index_actu < totalProjets - 4) {
                 index_actu++;
-                wrapper.classList.add('slide-animation');
+                wrapper.classList.add('slide_animation');
                 wrapper.style.transform = `translateX(-${index_actu * projetWidth}px)`;
             } else {
                 index_actu = 0; // Retourner au premier projet
@@ -326,13 +327,13 @@ Grâce à cette polyvalence, je suis capable d'anticiper et de résoudre des dé
         });
 
         function updateCarrousel() {
-            wrapper.classList.add('slide-animation');
+            wrapper.classList.add('slide_animation');
             wrapper.style.transform = `translateX(-${index_actu * projetWidth}px)`;
         }
 
         // Ajoutez un événement de transition pour supprimer la classe d'animation après la fin de la transition
         wrapper.addEventListener('transitionend', function () {
-            wrapper.classList.remove('slide-animation');
+            wrapper.classList.remove('slide_animation');
         });
     });*/
 </script>

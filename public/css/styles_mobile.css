@@ -170,7 +170,7 @@ main {
 }
 
 /* carrousel */
-.portfolio .carrousel-container {
+.portfolio .carrousel_container {
     /*
     max-width: 100%;
     min-width: 0;
@@ -182,7 +182,7 @@ main {
 }
 
 /* bouton */
-.portfolio .carrousel-container .prec-btn, .next-btn {
+.portfolio .carrousel_container .prec_btn, .next_btn {
     font-size: 16px;
     border-radius: 4px;
     position: absolute;
@@ -194,22 +194,22 @@ main {
     cursor: pointer;
     /*opacity: 0.7;*/
 }
-.portfolio .carrousel-container .prec-btn {
+.portfolio .carrousel_container .prec_btn {
     left: 10px;
 }
-.portfolio .carrousel-container .next-btn {
+.portfolio .carrousel_container .next_btn {
     right: 10px;
 }
 
 /* wrapper */
-.portfolio .carrousel-container .carrousel-wrapper {
+.portfolio .carrousel_container .carrousel_wrapper {
     display: flex;
     padding: 20px;
 }
-.portfolio .carrousel-container .carrousel-wrapper.slide-animation {
+.portfolio .carrousel_container .carrousel_wrapper.slide-animation {
     transition: transform 0.5s ease-in-out; /* Durée et type de transition */
 }
-.portfolio .carrousel-container .carrousel-wrapper .projet {
+.portfolio .carrousel_container .carrousel_wrapper .projet {
     flex: 0 0 200px;
     /*margin-right: 80px;*/ /* Espacement entre les projets */
     padding: 40px; /* Espace à l'intérieur de chaque projet */
@@ -220,27 +220,26 @@ main {
 
     transition: transform 0.3s ease; /* Effet de transition pour un agrandissement fluide */
 }
-.portfolio .carrousel-container .carrousel-wrapper .projet:hover {
+.portfolio .carrousel_container .carrousel_wrapper .projet:hover {
     /* Agrandit l'image lorsqu'elle est survolée */
     transform: scale(1.1);
     box-shadow: none;
 }
 
 /* conteneur projet */
-.portfolio .carrousel-container .carrousel-wrapper .projet a img {
+.portfolio .carrousel_container .carrousel_wrapper .projet a img {
     width: 100%; /* Remplir l'espace disponible */
     height: auto;
     border-radius: 8px; /* Coins arrondis pour l'image */
 }
-.portfolio .carrousel-container .carrousel-wrapper .projet h3 {
+.portfolio .carrousel_container .carrousel_wrapper .projet h3 {
     margin-top: 10px; /* Marge en haut du titre */
     font-size: 1.2em; /* Taille du titre */
 }
-.portfolio .carrousel-container .carrousel-wrapper .projet p {
+.portfolio .carrousel_container .carrousel_wrapper .projet p {
     margin-top: 5px; /* Marge en haut du paragraphe */
     font-size: 1em; /* Taille du texte */
 }
-
 
 /* ///////////////////////////// Section mini_menu ///////////////////////////// */
 .mini_menu {

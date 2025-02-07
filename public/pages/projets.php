@@ -10,6 +10,7 @@ $titre = 'Projets';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6, user-scalable=0">-->
     <meta name="description" content="Je présente sur cette page mon Cv au complet. Il est possible d'être téléchargé">
+    <meta name="author" content="Alexis Araujo">
     <title><?= $titre ?></title>
 
     <link rel="icon" href="/public/image/icone/favicon-48x48.webp" type="image/x-icon">
@@ -24,6 +25,128 @@ $titre = 'Projets';
 
     <!-- Emeticones -->
     <script rel="preconnect" src="https://kit.fontawesome.com/c6abb0645d.js" crossorigin="anonymous" defer></script>
+
+    <style>
+        .projet-section {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://source.unsplash.com/1600x900/?universe,space') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            text-align: center;
+            animation: fadeIn 3s ease-in-out;
+        }
+        .projet-section::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            /*background: rgb(2, 0, 66);*/
+            background: rgb(6, 2, 110);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .projet-section .projet-content {
+            position: relative;
+            text-align: center;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+            z-index: 10;
+        }
+        .text-6xl {
+            font-size: 4rem;
+            font-weight: 800;
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+        }
+
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+
+        .mb-8 {
+            margin-bottom: 2rem;
+        }
+
+        .magic-button {
+            background: linear-gradient(90deg, #3b82f6, #9333ea);
+            padding: 12px 24px;
+            font-size: 18px;
+            color: white;
+            border: none; /* Suppression de la bordure noire */
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s;
+            text-transform: uppercase;
+            font-weight: bold;
+
+        }
+
+        .magic-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 20px rgba(147, 51, 234, 0.5);
+        }
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 4px;
+            height: 100%;
+            background: white;
+            transform: translateX(-50%);
+        }
+        .timeline-event {
+            position: relative;
+            margin-bottom: 3rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .timeline-event:nth-child(even) {
+            justify-content: flex-end;
+        }
+        .timeline-badge {
+            background: #9333ea;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+        .timeline-content {
+            background: rgba(31, 41, 55, 0.9);
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            width: 45%;
+            color: white;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        .timeline-content:hover {
+            background: #1f2937;
+            transition: background 0.3s;
+        }
+
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+    </style>
 </head>
 
 <!-- Contenu de la page -->
@@ -33,45 +156,18 @@ $titre = 'Projets';
 <?php include("../../includes/header.php"); ?>
 
 <main>
-    <!-- titre -->
-    <?php include("../../includes/titre.php"); ?>
-    <h2>En développement .....</h2>
 
-    <!--<section class="hero">
-        <div class="hero_left">
-            <div>
-                <h2>CV</h2>
-                <p>Vous pouvez Télécharger ci-dessous mon CV</p>
-                <p>Vous pouvez également parcourir cette page qui transmet des informations plus précises</p>
-            </div>
-            <div class="div_button">
-                <a href="#" class="button">Voir mon travail</a>
-                <a href="mon_travail.pdf" class="button" download>Télécharger mon travail</a>
-            </div>
-        </div>
-        <div class="hero_right">
-            <img src="../image/me.webp" width="612" height="408" alt="Photo de profil">
-            <?php /*__DIR__*/ ?>
-        </div>
-    </section>-->
-
-
-    <!--<section class="services">
-        <h2></h2>
-        <div class="services_left">
-
-        </div>
-
-        <div class="services_right">
+    <section class="projet-section">
+        <canvas class="particles" id="particleCanvas"></canvas>
+        <div class="projet-content">
+            <h1 class="text-6xl font-bold mb-4">Bienvenue sur ma page de projets</h1>
+            <p class="text-xl mb-8">Explorez mes créations et innovations !</p>
+            <button class="magic-button">Découvrir</button>
         </div>
     </section>
+    <!--<?//php include("../../includes/titre.php"); ?>
+    <h2>En développement .....</h2>-->
 
-
-    <section class="portfolio">
-        <h2></h2>
-
-        </div>
-    </section>-->
 
     <section class="contact">
         <h2>Contactez-moi</h2>
@@ -81,7 +177,7 @@ $titre = 'Projets';
                                                                  placeholder="Votre adresse email">
             <label for="message" aria-label="message"></label><textarea name="message" id="message"
                                                                         placeholder="Votre message"></textarea>
-            <button class="contact_valide" type="submit">Envoyer</button>
+            <button class="contact_valide" type="submit"><i class="fas fa-check"></i> Envoyer</button>
         </form>
         <button onclick="RetourHaut()" id="retour_haut_btn" title="Retour en haut de la page">↑</button>
     </section>
@@ -92,5 +188,73 @@ $titre = 'Projets';
 <!-- Footer -->
 <?php include("../../includes/footer.php"); ?>
 
+<script>
+        // Effet de neige
+        const snowCanvas = document.createElement('canvas');
+        snowCanvas.id = 'snowCanvas';
+        snowCanvas.style.position = 'fixed';
+        snowCanvas.style.top = '0';
+        snowCanvas.style.left = '0';
+        snowCanvas.style.width = '100%';
+        snowCanvas.style.height = '100%';
+        snowCanvas.style.pointerEvents = 'none';
+        snowCanvas.style.zIndex = '9999';
+        document.body.appendChild(snowCanvas);
+
+        const snowCtx = snowCanvas.getContext('2d');
+        snowCanvas.width = window.innerWidth;
+        snowCanvas.height = window.innerHeight;
+
+        let snowflakes = [];
+
+        function createSnowflake() {
+        return {
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: Math.random() * 3 + 1,
+        speedX: Math.random() * 2 - 1,
+        speedY: Math.random() * 2 + 1
+    };
+    }
+
+        for (let i = 0; i < 100; i++) {
+        snowflakes.push(createSnowflake());
+    }
+
+        function drawSnowflakes() {
+        snowCtx.clearRect(0, 0, snowCanvas.width, snowCanvas.height);
+        snowCtx.fillStyle = 'white';
+        snowflakes.forEach(flake => {
+        snowCtx.beginPath();
+        snowCtx.arc(flake.x, flake.y, flake.radius, 0, Math.PI * 2);
+        snowCtx.fill();
+    });
+    }
+
+        function updateSnowflakes() {
+        snowflakes.forEach(flake => {
+            flake.x += flake.speedX;
+            flake.y += flake.speedY;
+            if (flake.y > canvas.height) {
+                flake.y = 0;
+                flake.x = Math.random() * canvas.width;
+            }
+            if (flake.x > canvas.width || flake.x < 0) {
+                flake.x = Math.random() * canvas.width;
+            }
+        });
+    }
+
+        function animateSnow() {
+        drawSnowflakes();
+        updateSnowflakes();
+        requestAnimationFrame(animateSnow);
+    }
+
+        animateSnow();
+</script>
+
+
+</script>
 </body>
 </html>

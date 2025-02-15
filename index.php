@@ -63,7 +63,7 @@ $titre='Accueil';
         </div>
     </section>
 
-    <section class="services section-hidden">
+    <section id="services" class="services section-hidden">
         <div class="services_left">
             <!-- Sans API Sphere -->
             <!--<div>
@@ -147,12 +147,12 @@ $titre='Accueil';
                 <div class="swiper-slide projet">
                     <img src="dns_acceuil.jpg" alt="Projet DNS">
                     <h3>Projet DNS</h3>
-                    <p>Description du projet DNS</p>
+                    <p>Création de site Web sur un serveur Apache et Nginx sur machine virtuelle et en intégrant un serveur de DNS.</p>
                 </div>
                 <div class="swiper-slide projet">
                     <img src="reseau_acceuil.jpg" alt="Projet Réseau">
                     <h3>Projet Réseau</h3>
-                    <p>Description du projet Réseau</p>
+                    <p>Création d'un réseau d'entreprise.</p>
                 </div>
                 <div class="swiper-slide projet">
                     <img src="image7.jpg" alt="Projet 7">
@@ -250,7 +250,7 @@ Grâce à cette polyvalence, je suis capable d'anticiper et de résoudre des dé
 
 <!-- API Sphère de compétences -->
 <script>
-    const myTags = ['Administration Réseaux', 'Administration bas niveau', 'Architecture Réseaux', 'Virtualisation', 'PHP', 'Laravel', 'HTML', 'CSS', 'Bootstrap', 'JavaScript', 'TypeScript', 'MySQL', 'SQL', 'PL/SQL', 'Oracle Database', 'Phpmyadmin', 'JSON', 'XML', 'FIGMA', 'WordPress', 'Node.js', 'Express.js', 'Machine Learning', 'Python', 'C', 'Java', 'Jakarta EE', 'GIT', 'GitHub', 'GitLab', 'IntelliJ', 'ANGULAR', 'REACT', 'Apache', 'Bash', 'Droit informatique', 'Gestion de projet'];
+    const myTags = ['Administration Réseaux', 'Architecture Réseaux', 'Virtualisation', 'PHP', 'Laravel', 'HTML', 'CSS', 'Bootstrap', 'JavaScript', 'TypeScript', 'MySQL', 'SQL', 'PL/SQL', 'Oracle Database', 'Phpmyadmin', 'JSON', 'XML', 'FIGMA', 'Cybersécurité', 'Administration bas niveau', 'Node.js', 'Express.js', 'Machine Learning', 'Python', 'C', 'Java', 'Jakarta EE', 'GIT', 'GitHub', 'GitLab', 'IntelliJ', 'ANGULAR', 'REACT', 'Apache', 'Bash', 'Droit informatique', 'Gestion de projet'];
 
     // Définition du rayon en fonction du type d'appareil
     let radius = isMobileDevice() ? 160 : 300;
@@ -279,6 +279,10 @@ Grâce à cette polyvalence, je suis capable d'anticiper et de résoudre des dé
         // Initialise Swiper
         var mySwiper = new Swiper('.carrousel_container', {
             // Paramètres optionnels
+            slidesPerView: 'auto', // Nombre de diapositives à afficher
+            slidesPerGroup: 1,
+            centeredSlides: true,
+            spaceBetween: 80, // Espacement entre les diapositives en pixels
             loop: true, // Activer le mode boucle
             navigation: {
                 nextEl: '.next_btn', // Sélecteur du bouton suivant
@@ -288,8 +292,11 @@ Grâce à cette polyvalence, je suis capable d'anticiper et de résoudre des dé
                 delay: 1000, // Délai entre chaque diapositive en millisecondes
                 disableOnInteraction: true, // ne pas désactiver l'autoplay lorsque l'utilisateur interagit avec le diaporama
             },
-            slidesPerView: 'auto', // Nombre de diapositives à afficher
-            spaceBetween: 80, // Espacement entre les diapositives en pixels
+            breakpoints: {
+                1800: {
+                    centeredSlides: false,
+                }
+            }
         });
     });
 

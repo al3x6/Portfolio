@@ -1,0 +1,85 @@
+///// Flocon pour projet
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Sélectionner la section projet
+        const projectSection = document.querySelector('.projet-section');
+
+        // Créer le canvas pour la neige
+        const snowCanvas = document.createElement('canvas');
+        snowCanvas.id = 'snowCanvas';
+
+        // Positionner le canvas en absolu à l'intérieur de la section
+        snowCanvas.style.position = 'absolute';
+        snowCanvas.style.top = '0';
+        snowCanvas.style.left = '0';
+        snowCanvas.style.width = '100%';
+        snowCanvas.style.height = '100%';
+        snowCanvas.style.pointerEvents = 'none';
+        // Ajustez le z-index si nécessaire (en fonction de vos autres éléments)
+        snowCanvas.style.zIndex = '9999';
+
+        // Ajouter le canvas à la section projet
+        projectSection.appendChild(snowCanvas);
+
+        const snowCtx = snowCanvas.getContext('2d');
+
+        // Fonction pour redimensionner le canvas en fonction de la section
+        function resizeCanvas() {
+            snowCanvas.width = projectSection.clientWidth;
+            snowCanvas.height = projectSection.clientHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        // Création et animation des flocons de neige
+        let snowflakes = [];
+
+        function createSnowflake() {
+            return {
+                x: Math.random() * snowCanvas.width,
+                y: Math.random() * snowCanvas.height,
+                radius: Math.random() * 3 + 1,
+                speedX: Math.random() * 2 - 1,
+                speedY: Math.random() * 2 + 1
+            };
+        }
+
+        // Initialisation de 100 flocons
+        for (let i = 0; i < 100; i++) {
+            snowflakes.push(createSnowflake());
+        }
+
+        function drawSnowflakes() {
+            snowCtx.clearRect(0, 0, snowCanvas.width, snowCanvas.height);
+            snowCtx.fillStyle = 'white';
+            snowflakes.forEach(flake => {
+                snowCtx.beginPath();
+                snowCtx.arc(flake.x, flake.y, flake.radius, 0, Math.PI * 2);
+                snowCtx.fill();
+            });
+        }
+
+        function updateSnowflakes() {
+            snowflakes.forEach(flake => {
+                flake.x += flake.speedX;
+                flake.y += flake.speedY;
+                if (flake.y > snowCanvas.height) {
+                    flake.y = 0;
+                    flake.x = Math.random() * snowCanvas.width;
+                }
+                if (flake.x > snowCanvas.width || flake.x < 0) {
+                    flake.x = Math.random() * snowCanvas.width;
+                }
+            });
+        }
+
+        function animateSnow() {
+            drawSnowflakes();
+            updateSnowflakes();
+            requestAnimationFrame(animateSnow);
+        }
+
+        animateSnow();
+    });
+</script>

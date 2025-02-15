@@ -52,7 +52,7 @@ $titre = 'Projets';
             position: relative;
             text-align: center;
             text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
-            z-index: 10;
+            z-index: 2;
         }
         .text-6xl {
             font-size: 4rem;
@@ -98,12 +98,26 @@ $titre = 'Projets';
                 transform: translateY(-50px);
             }
         }
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        /*//////////////////////////////////////////////// */
 
         /* Section projets cachée au départ */
         .projects-content {
-            text-align: center;
             padding: 2rem;
         }
+        .projects-content h2 {
+            text-align: center;
+            font-size: 50px;
+        }
+
         /* Animation d'apparition du contenu projets */
         .projects-content.animate-in {
             animation: fadeIn 1s forwards;
@@ -111,7 +125,7 @@ $titre = 'Projets';
         @keyframes fadeIn {
             from {
                 opacity: 0;
-                transform: translateY(50px);
+                transform: translateY(0);
             }
             to {
                 opacity: 1;
@@ -119,36 +133,50 @@ $titre = 'Projets';
             }
         }
 
-        .timeline {
+        .projects-content .timeline {
             position: relative;
             padding: 2rem 0;
-            max-width: 900px;
             margin: 0 auto;
         }
 
-        .timeline::before {
+        /* Animation d'apparition du contenu timeline */
+        .projects-content  .timeline.animate-in {
+            animation: fadetimeline 1s forwards;
+        }
+        @keyframes fadetimeline {
+            from {
+                opacity: 0;
+                transform: translateY(0);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(-50px);
+            }
+        }
+
+        .projects-content .timeline::before {
             content: '';
             position: absolute;
             left: 50%;
             width: 4px;
-            height: 100%;
-            background: white;
+            height: 90%;
+            background: #1f2937;
             transform: translateX(-50%);
         }
 
-        .timeline-event {
+        .projects-content .timeline .timeline-event {
             position: relative;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
             display: flex;
             justify-content: flex-start;
             align-items: center;
         }
 
-        .timeline-event:nth-child(even) {
+        .projects-content .timeline .timeline-event:nth-child(even) {
             justify-content: flex-end;
         }
 
-        .timeline-badge {
+        .projects-content .timeline .timeline-event .timeline-badge {
             background: #9333ea;
             width: 20px;
             height: 20px;
@@ -158,28 +186,91 @@ $titre = 'Projets';
             transform: translate(-50%, 0);
         }
 
-        .timeline-content {
+        /*//////////////////////////////////////////////// */
+
+        .projects-content .timeline .timeline-event .timeline-content {
             background: rgba(31, 41, 55, 0.9);
-            padding: 1.5rem;
-            border-radius: 0.75rem;
+            padding: 1rem;
+            border-radius: 1rem;
             width: 45%;
             color: white;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
         }
 
-        .timeline-content:hover {
+        .projects-content .timeline .timeline-event .timeline-content:hover {
             background: #1f2937;
             transition: background 0.3s;
         }
 
-        .particles {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
+        .projects-content .timeline .timeline-event .timeline-content .project-header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
         }
+
+        .projects-content .timeline .timeline-event .timeline-content .project-header h3 {
+            font-size: 1.5rem;
+            color: #ffffff;
+        }
+
+        .projects-content .timeline .timeline-event .timeline-content .project-header .project-date {
+            font-size: 0.9rem;
+            color: #e3dede;
+        }
+
+        .projects-content .timeline .timeline-event .timeline-content .project-description {
+            font-size: 1.3rem;
+            color: #f1f1f1;
+            margin-top: 0;
+            margin-left: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* project info*/
+        .projects-content .timeline .timeline-event .timeline-content .project-info {
+            margin-top : 1rem;
+            display: flex;
+            align-items: center;
+        }
+        .projects-content .timeline .timeline-event .timeline-content .project-info .img-left{
+            width: 40%;
+            display: flex;
+            justify-content: center;
+        }
+        .projects-content .timeline .timeline-event .timeline-content .project-info .img-left img{
+            max-width: 100%;
+            height: auto;
+        }
+        .projects-content .timeline .timeline-event .timeline-content .project-info .info-right{
+            width: 60%;
+            padding : 1rem;
+        }
+        .projects-content .timeline .timeline-event .timeline-content .project-info .info-right .info-right-top {
+            text-align : center;
+        }
+        .projects-content .timeline .timeline-event .timeline-content .project-info .info-right .info-right-top p{
+            font-size : 1.1rem;
+        }
+        .projects-content .timeline .timeline-event .timeline-content .project-info .info-right .info-right-bottom {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        .projects-content .timeline .timeline-event .timeline-content .project-info .info-right .info-right-bottom p, .projects-content .timeline .timeline-event .timeline-content .project-info .info-right .info-right-bottom div {
+            padding: 0.5rem;
+            flex: 1;
+        }
+        .projects-content .timeline .timeline-event .timeline-content .project-info .info-right .info-right-bottom ul {
+            padding-left: 1rem;
+            margin: 0;
+        }
+
+        .projects-content .timeline .timeline-event .timeline-content .project-info .info-right .info-right-bottom ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* *** */
     </style>
 </head>
 
@@ -205,23 +296,122 @@ $titre = 'Projets';
     <!-- Section des projets (initialement cachée) -->
     <section class="projects-content" id="projectsContent" style="display: none; opacity: 0;">
         <h2>Mes Projets</h2>
+        <p>Page en développement</p>
+
         <!-- Exemple de contenu projets -->
         <div class="timeline">
             <div class="timeline-event">
                 <div class="timeline-badge"></div>
                 <div class="timeline-content">
-                    <h3>Projet 1</h3>
-                    <p>Description de mon projet 1.</p>
+                    <div class="project-header">
+                        <h3>Projet Portfolio</h3>
+                        <p class="project-date">Janvier 2023</p>
+                    </div>
+                    <div>
+                        <p class="project-description">
+                            Le voici !!! Un Portfolio créé de A à Z par moi où je me présente.
+                        </p>
+                    </div>
+                    <div class="project-info">
+                        <div class="img-left">
+                            <img src="../image/Projet/p1/portfolio_acceuil.webp" alt="Projet Portfolio" title="Projet Portfolio">
+                        </div>
+                        <div class="info-right">
+                            <div class="info-right-top">
+                                <h4>Introduction</h4>
+                                <p> Dans le cadre d'un projet personnelle, j'ai voulu mettre en avant mes compétences sur un site web réalisé par moi de A à Z.</p>
+                            </div>
+                            <div class="info-right-bottom">
+                                <p><strong>Équipe :</strong><br> 1 personne</p>
+                                <div><p><strong>Environnement :</strong></p>
+                                    <ul>
+                                        <li>Développement dans mon local</li>
+                                        <li>Transfert de fichier</li>
+                                        <li>Utilisation de Xampp (Apache)</li>
+                                    </ul>
+                                </div>
+                                <p><strong>Délai :</strong><br> 2 ans</p>
+                                <!--<p><strong>Technologies :</strong><br> HTML, CSS, JavaScript</p>-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-details">
+                        <h4>Tâches réalisées</h4>
+                        <ul>
+                            <li>Gestion de projet</li>
+                            <li>Développement du site Web</li>
+                            <li>Mise en place du serveur LAMP</li>
+                            <li>Rédaction de rapport</li>
+                        </ul>
+                        <h4>Modules intégrés</h4>
+                        <ul>
+                            <li>Calcul des “n” nombres premiers</li>
+                            <li>Calcul d’amortissement</li>
+                            <li>Calcul probabilité</li>
+                            <li>Chiffrement (Crypto)</li>
+                        </ul>
+                        <h4>Événements notables</h4>
+                        <ul>
+                            <li>Départ d’un développeur</li>
+                            <li>Ajout de modules supplémentaires</li>
+                        </ul>
+                        <h4>Compte Rendu</h4>
+                        <ul>
+                            <li>Retour positif du client</li>
+                            <li>Rendu des livrables et du projet dans les temps</li>
+                            <li>Amélioration possible : Développeur plus de module de calculs</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="timeline-event">
                 <div class="timeline-badge"></div>
                 <div class="timeline-content">
-                    <h3>Projet 2</h3>
-                    <p>Description de mon projet 2.</p>
+                    <h3>Projet NIDS</h3>
+                    <p>Création d'un système de détection d'intrusion réseau pour analyser le trafic et détecter des activités suspectes.</p>
                 </div>
             </div>
-            <!-- Ajoutez d'autres projets ici -->
+            <div class="timeline-event">
+                <div class="timeline-badge"></div>
+                <div class="timeline-content">
+                    <h3>Projet NIDS</h3>
+                    <p>Création d'un système de détection d'intrusion réseau pour analyser le trafic et détecter des activités suspectes.</p>
+                </div>
+            </div>
+
+            <div class="timeline-event">
+                <div class="timeline-badge"></div>
+                <div class="timeline-content">
+                    <h3>Projet SIMFAST</h3>
+                    <p>Création d'un site web hebergé sur Raspberry Pi avec des modules de calcul (Probabilité, chiffrement RC4).</p>
+                </div>
+            </div>
+
+            <div class="timeline-event">
+                <div class="timeline-badge"></div>
+                <div class="timeline-content">
+                    <h3>Projet Arduino Badgeuse</h3>
+                    <p>Création d'un système de contrôle d'accès basé sur Arduino, permettant de gérer l'accès à d'un bâtiment via des badges RFID.</p>
+                </div>
+            </div>
+
+            <div class="timeline-event">
+                <div class="timeline-badge"></div>
+                <div class="timeline-content">
+                    <h3>Projet DNS</h3>
+                    <p>Création de site Web sur un serveur Apache et Nginx sur machine virtuelle et en intégrant un serveur de DNS.</p>
+                </div>
+            </div>
+
+            <div class="timeline-event">
+                <div class="timeline-badge"></div>
+                <div class="timeline-content">
+                    <h3>Projet Réseau</h3>
+                    <p>Création d'un réseau d'entreprise.</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -245,62 +435,56 @@ $titre = 'Projets';
 <?php include("../../includes/footer.php"); ?>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // Sélectionner la section projet
+    document.addEventListener("DOMContentLoaded", function () {
         const projectSection = document.querySelector('.projet-section');
+        const projetContent = document.querySelector('.projet-content');
 
-        // Créer le canvas pour la neige
+        // Créez le canvas et configurez ses styles
         const snowCanvas = document.createElement('canvas');
         snowCanvas.id = 'snowCanvas';
-
-        // Positionner le canvas en absolu à l'intérieur de la section
         snowCanvas.style.position = 'absolute';
         snowCanvas.style.top = '0';
         snowCanvas.style.left = '0';
         snowCanvas.style.width = '100%';
         snowCanvas.style.height = '100%';
         snowCanvas.style.pointerEvents = 'none';
-        // Ajustez le z-index si nécessaire (en fonction de vos autres éléments)
-        snowCanvas.style.zIndex = '9999';
-
-        // Ajouter le canvas à la section projet
+        snowCanvas.style.zIndex = '1'; // Devant le background bleu
         projectSection.appendChild(snowCanvas);
 
         const snowCtx = snowCanvas.getContext('2d');
 
-        // Fonction pour redimensionner le canvas en fonction de la section
         function resizeCanvas() {
             snowCanvas.width = projectSection.clientWidth;
             snowCanvas.height = projectSection.clientHeight;
         }
+
         resizeCanvas();
         window.addEventListener('resize', resizeCanvas);
 
-        // Création et animation des flocons de neige
+        const words = ["Portfolio", "Réseaux", "Cyber", "IA", "Système", 'Web', 'Logiciel', 'Développement', 'BD'];
         let snowflakes = [];
 
         function createSnowflake() {
             return {
                 x: Math.random() * snowCanvas.width,
                 y: Math.random() * snowCanvas.height,
-                radius: Math.random() * 3 + 1,
+                text: words[Math.floor(Math.random() * words.length)],
                 speedX: Math.random() * 2 - 1,
-                speedY: Math.random() * 2 + 1
+                speedY: Math.random() * 2 + 1,
+                fontSize: Math.random() * 12 + 18
             };
         }
 
-        // Initialisation de 100 flocons
-        for (let i = 0; i < 100; i++) {
+        for (let i = 0; i < 40; i++) {
             snowflakes.push(createSnowflake());
         }
 
         function drawSnowflakes() {
             snowCtx.clearRect(0, 0, snowCanvas.width, snowCanvas.height);
-            snowCtx.fillStyle = 'white';
             snowflakes.forEach(flake => {
-                snowCtx.beginPath();
-                snowCtx.arc(flake.x, flake.y, flake.radius, 0, Math.PI * 2);
-                snowCtx.fill();
+                snowCtx.font = `${flake.fontSize}px Arial`;
+                snowCtx.fillStyle = "white";
+                snowCtx.fillText(flake.text, flake.x, flake.y);
             });
         }
 

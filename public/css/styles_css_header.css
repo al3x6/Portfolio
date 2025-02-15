@@ -10,6 +10,7 @@ header .navbar {
 
     padding: 0;
     position: relative;
+    z-index: 9999;
 }
 
 header .navbar .navbar-logo, header .navbar .navbar-links {

@@ -712,11 +712,11 @@ $titre = 'CV';
                 </div>
                 <p>hehealex</p>
             </a>
-            <a href="https://tryhackme.com/r/p/alexisar" target="_blank" class="suivi_container_logo">
+            <a href="https://tryhackme.com/r/p/hehealex" target="_blank" class="suivi_container_logo">
                 <div class="suivi_logo">
                     <img src="../image/cv/tryhackme_logo.webp" alt="Logo TryHackMe" title="Logo TryHackMe">
                 </div>
-                <p>alexisar</p>
+                <p>hehealex</p>
             </a>
             <a href="https://www.linkedin.com/in/alexis-araujo-b7333822a/" target="_blank" class="suivi_container_logo">
                 <div class="suivi_logo">

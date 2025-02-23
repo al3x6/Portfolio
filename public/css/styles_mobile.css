@@ -604,6 +604,11 @@ main {
     font-size: 22px;
     font-weight: bold;
     color: #333;
+    margin-bottom: 0;
+}
+.suivi .suivi_container .suivi_container_logo .classement{
+    font-size : 13px;
+    color: #333;
 }
 
 /* ///////////////////////////// Section langues ///////////////////////////// */

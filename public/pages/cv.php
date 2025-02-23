@@ -711,12 +711,16 @@ $titre = 'CV';
                     <img src="../image/cv/rootme_logo.webp" alt="Logo RootMe" title="Logo RootMe">
                 </div>
                 <p>hehealex</p>
+                <div class="classement">Point : 555</div>
+                <div class="classement">Top : 28 172</div>
             </a>
             <a href="https://tryhackme.com/r/p/hehealex" target="_blank" class="suivi_container_logo">
                 <div class="suivi_logo">
                     <img src="../image/cv/tryhackme_logo.webp" alt="Logo TryHackMe" title="Logo TryHackMe">
                 </div>
                 <p>hehealex</p>
+                <div class="classement">Room completed : 4</div>
+                <div class="classement">Top : 1 386 025</div>
             </a>
             <a href="https://www.linkedin.com/in/alexis-araujo-b7333822a/" target="_blank" class="suivi_container_logo">
                 <div class="suivi_logo">

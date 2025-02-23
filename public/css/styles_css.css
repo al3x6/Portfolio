@@ -744,6 +744,11 @@ main {
     font-size: 30px;
     font-weight: bold;
     color: #333;
+    margin-bottom: 3px;
+}
+.suivi .suivi_container .suivi_container_logo .classement{
+    font-size : 18px;
+    color: #333;
 }
 
 /* ///////////////////////////// Section langues ///////////////////////////// */

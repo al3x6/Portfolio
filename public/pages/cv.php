@@ -44,11 +44,11 @@ $titre = 'CV';
                 <p>Vous pouvez Télécharger ci-dessous mon CV.<br>Vous pouvez également parcourir cette page qui transmet des informations plus précises.</p>
             </div>
             <div class="div_button">
-                <a href="/public/image/cv/CV_Alexis_ARAUJO01.pdf" class="button_fonce" download><i class="fas fa-download"></i> Télécharger mon CV</a>
+                <a href="/public/image/cv/CV_Alexis_ARAUJO.pdf" class="button_fonce" download><i class="fas fa-download"></i> Télécharger mon CV</a>
             </div>
         </div>
         <div class="hero_right">
-            <img src="/public/image/cv/CV_Alexis_ARAUJO1.webp" width="700" height="990" alt="Photo de mon CV">
+            <img src="/public/image/cv/CV_Alexis_ARAUJO.webp" width="700" height="990" alt="Photo de mon CV">
             <?php /*__DIR__*/ ?>
         </div>
     </section>

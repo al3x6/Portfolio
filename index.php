@@ -141,18 +141,18 @@ $titre='Accueil';
                         <img src="public/image/Projet/p4/arduino_accueil.webp" alt="Projet Arduino Badgeuse">
                     </a>
                     <h3>Projet Arduino Badgeuse</h3>
-                    <p>Création d'un système de contrôle d'accès basé sur Arduino, permettant de gérer l'accès à d'un bâtiment via des badges RFID.</p>
+                    <p>Création d'un système de contrôle d'accès basé sur Arduino, permettant de gérer l'accès à un bâtiment via des badges RFID.</p>
                 </div>
 
                 <div class="swiper-slide projet">
                     <img src="dns_acceuil.jpg" alt="Projet DNS">
                     <h3>Projet DNS</h3>
-                    <p>Création de site Web sur un serveur Apache et Nginx sur machine virtuelle et en intégrant un serveur de DNS.</p>
+                    <p>Configuration d'un serveur Apache et Nginx sur des machines virtuelles en intégrant un service DNS sur une machine virtuelle pour héberger des sites Web.</p>
                 </div>
                 <div class="swiper-slide projet">
                     <img src="reseau_acceuil.jpg" alt="Projet Réseau">
                     <h3>Projet Réseau</h3>
-                    <p>Création d'un réseau d'entreprise.</p>
+                    <p>Création d'un réseau d'entreprise de haute disponibilité.</p>
                 </div>
                 <div class="swiper-slide projet">
                     <img src="image7.jpg" alt="Projet 7">
@@ -169,7 +169,7 @@ $titre='Accueil';
                     <h3>Projet 9</h3>
                     <p>Description du projet 9</p>
                 </div>
-                <!-- Ajoutez plus de projets ici au besoin -->
+                <!-- Ajout de plus de projets -->
             </div>
             <button class="swiper-button-prev prec_btn" aria-label="Précédent"><i class="fas fa-chevron-left"></i>
             </button>

@@ -85,3 +85,8 @@ Paramètres :
 
 Dans le footer :
  - Page Confidentialité
+
+
+
+Sécurité
+- Regarder la sécurisation avec attribut des boutons

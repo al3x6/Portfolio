@@ -47,9 +47,9 @@ $titre='Accueil';
             <div>
                 <h2>Alexis Araujo</h2>
                 <p id="intro_presentation">Je suis un jeune étudiant en 3ème année à Oteria Cyber School après avoir eu mon BUT Informatique (Niveau Licence).
-                    <br>Je suis passionné par l'informatique et surtout la Cybersécurité.
+                    <br>Je suis passionné par l'informatique et surtout la <b>Cybersécurité</b>.
                     <br>Je me caractérise comme une personne très polyvalente qui à des connaissances dans tous les domaines de l'informatique et non informatique.
-                    <br>Grâce à cette polyvalence, je suis capable d'anticiper et de résoudre des défis complexes en cybersécurité en ayant une vision globale des systèmes et en comprenant les interactions entre chaque composant, qu'il s'agisse de réseaux, d'applications web et mobile, de base de données, de systèmes d'exploitation, de cryptographie ou encore d'intelligence artificielle (Machine Learning).
+                    <br>Grâce à cette polyvalence, je suis capable d'anticiper et de résoudre des défis complexes en cybersécurité en ayant une vision globale des systèmes et en comprenant les interactions entre chaque composant, qu'il s'agisse de <b>réseaux</b>, d'<b>applications web</b> et <b>mobile</b>, de <b>base de données</b>, de <b>systèmes d'exploitation</b>, de <b>cryptographie</b> ou encore d'<b>intelligence artificielle (Machine Learning)</b>.
                 </p>
             </div>
             <div class="div_button">
@@ -108,6 +108,7 @@ $titre='Accueil';
         <h2>Projets</h2>
         <div class="swiper carrousel_container">
             <div class="swiper-wrapper carrousel_wrapper">
+
                 <div class="swiper-slide projet">
                     <a href="#"
                        onclick="openPopup('public/image/Projet/p1/portfolio_acceuil.webp', 'Projet Portfolio', 1000, 880); return false;">
@@ -115,6 +116,12 @@ $titre='Accueil';
                     </a>
                     <h3>Projet Portfolio</h3>
                     <p>Le voici !!! Le projet Portfolio constitue à la création d'un site web de A à Z où je me présente.</p>
+                </div>
+
+                <div class="swiper-slide projet">
+                    <img src="" alt="Projet C2">
+                    <h3>Projet Command And Control</h3>
+                    <p>Dans le cadre d'un projet éducatif, mon groupe et moi avons développé un système de commande et de contrôle (C&C) pour piloter des machines infectées par nos propres malwares.</p>
                 </div>
 
                 <div class="swiper-slide projet">
@@ -126,7 +133,7 @@ $titre='Accueil';
                     <p>Création d'un système de détection d'intrusion réseau pour analyser le trafic et détecter des activités suspectes.</p>
                 </div>
 
-                <div onclick="window.location.href='test.php';" class="swiper-slide projet">
+                <div class="swiper-slide projet" onclick="window.location.href='test.php';">
                     <a href="#"
                        onclick="openPopup('public/image/Projet/p3/simfast_accueil.webp', 'Projet Simfast', 1000, 880); return false;">
                         <img src="public/image/Projet/p3/simfast_accueil.webp" alt="Projet SimFast">
@@ -145,31 +152,34 @@ $titre='Accueil';
                 </div>
 
                 <div class="swiper-slide projet">
+                    <img src="" alt="Projet Infrastructure Web Ticketing">
+                    <h3>Projet Infrastructure Web Ticketing</h3>
+                    <p>Mise en œuvre d'une infrastructure sécurisée pour un système de ticketing avec Flask. Utilisation de Nginx comme reverse proxy pour la répartition de charge et la sécurité via TLS. Des serveurs et bases de données redondants assurent la haute disponibilité, et un WAF protège contre les attaques par injection.</p>
+                </div>
+
+                <div class="swiper-slide projet">
                     <img src="dns_acceuil.jpg" alt="Projet DNS">
                     <h3>Projet DNS</h3>
-                    <p>Configuration d'un serveur Apache et Nginx sur des machines virtuelles en intégrant un service DNS sur une machine virtuelle pour héberger des sites Web.</p>
+                    <p>Configuration d'un serveur Apache et Nginx sur des machines virtuelles en intégrant un service DNS pour héberger des sites Web.</p>
                 </div>
                 <div class="swiper-slide projet">
                     <img src="reseau_acceuil.jpg" alt="Projet Réseau">
                     <h3>Projet Réseau</h3>
                     <p>Création d'un réseau d'entreprise de haute disponibilité.</p>
                 </div>
+
                 <div class="swiper-slide projet">
-                    <img src="image7.jpg" alt="Projet 7">
-                    <h3>Projet 7</h3>
-                    <p>Description du projet 7</p>
-                </div>
-                <div class="swiper-slide projet">
-                    <img src="image8.jpg" alt="Projet 8">
-                    <h3>Projet 8</h3>
-                    <p>Description du projet 8</p>
-                </div>
-                <div class="swiper-slide projet">
-                    <img src="image9.jpg" alt="Projet 9">
+                    <img src="" alt="Projet 9">
                     <h3>Projet 9</h3>
                     <p>Description du projet 9</p>
                 </div>
-                <!-- Ajout de plus de projets -->
+
+                <div class="swiper-slide projet">
+                    <img src="" alt="Projet 10">
+                    <h3>Projet 10</h3>
+                    <p>Description du projet 10</p>
+                </div>
+
             </div>
             <button class="swiper-button-prev prec_btn" aria-label="Précédent"><i class="fas fa-chevron-left"></i>
             </button>

@@ -1,6 +1,38 @@
 <?php
 $page = 'Mon Curriculum Vitae';
 $titre = 'CV';
+
+////////////////////  SECURITE
+/////////// IMAGE
+
+
+/////////// TELECHARGEMENT
+// Vérifier si l'utilisateur a demandé à télécharger le fichier
+if (isset($_GET['download']) && $_GET['download'] === 'cv') {
+    // Définir le chemin du fichier
+    $filePath = '../image/cv/CV_Alexis_ARAUJO.pdf';
+
+    // Vérifier que le fichier existe
+    if (file_exists($filePath)) {
+        // Définir les en-têtes pour le téléchargement du fichier
+        header('Content-Description: File Transfer');
+        header('Content-Type: application/pdf');
+        header('Content-Disposition: attachment; filename="' . basename($filePath) . '"');
+        header('Expires: 0');
+        header('Cache-Control: must-revalidate');
+        header('Pragma: public');
+        header('Content-Length: ' . filesize($filePath));
+
+        // Lire et envoyer le fichier
+        readfile($filePath);
+        exit;
+    } else {
+        // Si le fichier n'existe pas
+        echo "Le fichier demandé n'existe pas.";
+        exit;
+    }
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -44,7 +76,8 @@ $titre = 'CV';
                 <p>Vous pouvez Télécharger ci-dessous mon CV.<br>Vous pouvez également parcourir cette page qui transmet des informations plus précises.</p>
             </div>
             <div class="div_button">
-                <a href="/public/image/cv/CV_Alexis_ARAUJO.pdf" class="button_fonce" download><i class="fas fa-download"></i> Télécharger mon CV</a>
+                <!--<a href="/public/image/cv/CV_Alexis_ARAUJO.pdf" class="button_fonce" download><i class="fas fa-download"></i> Télécharger mon CV</a>-->
+                <a href="?download=cv" class="button_fonce"><i class="fas fa-download"></i> Télécharger mon CV</a>
             </div>
         </div>
         <div class="hero_right">
@@ -640,10 +673,15 @@ $titre = 'CV';
                     <p>J'ai récemment intégré l'équipe de l'Université de Vélizy, où je participe activement à la sécurisation, à la gestion et à la maintenance du parc informatique de l'établissement avec ses différents départements.</p>
                     <p>Mes principales missions incluent :</p>
                     <ul>
-                        <li>Installation, configuration et maintenance des équipements informatiques et réseaux.</li>
-                        <li>Supervision de la sécurité des systèmes, incluant la mise en oeuvre de politiques de protection des données sensibles.</li>
-                        <li>Assistance technique auprès des utilisateurs pour résoudre les problèmes matériels et logiciels.</li>
-                        <li>Participation à des projets d'amélioration des infrastructures réseau pour garantir leur fiabilité et performance.</li>
+                        <li>Installation, gestion, configuration et maintenance d'un parc informatique et de ses équipements (serveurs, postes de travail, périphériques) pour plusieurs départements.</li>
+                        <li>Assistance technique auprès des utilisateurs pour résoudre les problèmes matériels, logiciels et réseau.</li>
+                        <li>Installation, supervision et configuration des infrastructures réseau du parc.</li>
+                        <li>Participation à des projets d'amélioration des infrastructures réseau pour garantir leur fiabilité, performance et sécurité.</li>
+                        <li>Paramétrage et administration des switchs et routeurs réseau : configuration VLAN, sécurisation des ports, et optimisation du trafic réseau.</li>
+                        <li>Administration, installation et maintenance de serveurs Proxmox et ESXI.</li>
+                        <li>Déploiement et gestion d'images systèmes pour postes de travail et serveurs, intégrant les mises à jour, configurations spécifiques et correctifs de sécurité.</li>
+                        <li>Supervision de la sécurité des systèmes, incluant la mise en œuvre de politiques de protection des données sensibles, la gestion des utilisateurs et la surveillance des accès.</li>
+                        <li>Documentation technique : Rédaction et maintenance de la documentation technique pour les systèmes et réseaux.</li>
                     </ul>
                     <!--<p>Cette alternance me permet de développer des compétences techniques approfondies dans l'administration des systèmes et réseaux, tout en renforçant mes capacités d'analyse et de résolution de problèmes en contexte réel. Elle constitue également une excellente opportunité pour mettre en pratique mes apprentissages académiques au sein d'un environnement professionnel stimulant.</p>-->
                 </td>

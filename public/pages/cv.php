@@ -749,9 +749,9 @@ if (isset($_GET['download']) && $_GET['download'] === 'cv') {
                     <img src="../image/cv/rootme_logo.webp" alt="Logo RootMe" title="Logo RootMe">
                 </div>
                 <p>hehealex</p>
-                <div class="classement">Points : 555</div>
-                <div class="classement">Challenges : 44</div>
-                <div class="classement">Top : 28 172</div>
+                <div class="classement">Points : 715</div>
+                <div class="classement">Challenges : 58</div>
+                <div class="classement">Top : 21 575</div>
             </a>
             <a href="https://tryhackme.com/r/p/hehealex" target="_blank" class="suivi_container_logo">
                 <div class="suivi_logo">
@@ -760,18 +760,18 @@ if (isset($_GET['download']) && $_GET['download'] === 'cv') {
                 <!--<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3265975" style='border:none; width:100%'></iframe>-->
                 <!--<img src="https://tryhackme-badges.s3.amazonaws.com/hehealex.png" alt="Votre badge d'image" />-->
                 <p>hehealex</p>
-                <div class="classement">Points : 672</div>
-                <div class="classement">Rooms Completed : 12</div>
-                <div class="classement">Top : 630 533</div>
+                <div class="classement">Points : 1 624</div>
+                <div class="classement">Rooms Completed : 15</div>
+                <div class="classement">Top : 388 859</div>
             </a>
             <a href="https://cattheflag.org/page_membre.php?id=1041" target="_blank" class="suivi_container_logo">
                 <div class="suivi_logo">
                     <img src="../image/cv/cattheflag_logo.webp" alt="Logo CatTheFlag" title="Logo CatTheFlag">
                 </div>
                 <p>hehealex</p>
-                <div class="classement">Points : 47</div>
-                <div class="classement">Challenges : 10</div>
-                <div class="classement">Top : 247</div>
+                <div class="classement">Points : 89</div>
+                <div class="classement">Challenges : 15</div>
+                <div class="classement">Top : 160</div>
             </a>
             <a href="https://www.linkedin.com/in/alexis-araujo-b7333822a/" target="_blank" class="suivi_container_logo">
                 <div class="suivi_logo">

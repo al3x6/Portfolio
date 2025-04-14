@@ -179,6 +179,7 @@ main {
     */
     position: relative;
     overflow: hidden;
+    padding-bottom : 10px;
 }
 
 /* bouton */

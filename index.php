@@ -119,7 +119,10 @@ $titre='Accueil';
                 </div>
 
                 <div class="swiper-slide projet">
-                    <img src="" alt="Projet C2">
+                    <a href="#"
+                       onclick="openPopup('public/image/Projet/p2/c2_accueil.webp', 'Projet C2', 1000, 665); return false;">
+                        <img src="public/image/Projet/p2/c2_accueil.webp" alt="Projet C2">
+                    </a>
                     <h3>Projet Command And Control</h3>
                     <p>Dans le cadre d'un projet éducatif, mon groupe et moi avons développé un système de commande et de contrôle (C&C) pour piloter des machines infectées par nos propres malwares.</p>
                 </div>
@@ -127,7 +130,7 @@ $titre='Accueil';
                 <div class="swiper-slide projet">
                     <a href="#"
                        onclick="openPopup('public/image/Projet/p2/nids_acceuil.webp', 'Projet NIDS', 1000, 880); return false;">
-                        <img src="public/image/Projet/p2/nids_acceuil.webp" alt="Projet NIDS">
+                        <img src="public/image/Projet/p3/nids_acceuil.webp" alt="Projet NIDS">
                     </a>
                     <h3>Projet NIDS</h3>
                     <p>Création d'un système de détection d'intrusion réseau pour analyser le trafic et détecter des activités suspectes.</p>
@@ -136,7 +139,7 @@ $titre='Accueil';
                 <div class="swiper-slide projet">
                     <a href="#"
                        onclick="openPopup('public/image/Projet/p3/simfast_accueil.webp', 'Projet Simfast', 1000, 880); return false;">
-                        <img src="public/image/Projet/p3/simfast_accueil.webp" alt="Projet SimFast">
+                        <img src="public/image/Projet/p4/simfast_accueil.webp" alt="Projet SimFast">
                     </a>
                     <h3>Projet SimFast</h3>
                     <p>Création d'un site web hebergé sur Raspberry Pi avec des modules de calcul (Probabilité, chiffrement RC4)</p>
@@ -145,7 +148,7 @@ $titre='Accueil';
                 <div class="swiper-slide projet">
                     <a href="#"
                        onclick="openPopup('public/image/Projet/p4/arduino_accueil.webp', 'Projet Arduino Badgeuse', 1000, 880); return false;">
-                        <img src="public/image/Projet/p4/arduino_accueil.webp" alt="Projet Arduino Badgeuse">
+                        <img src="public/image/Projet/p5/arduino_accueil.webp" alt="Projet Arduino Badgeuse">
                     </a>
                     <h3>Projet Arduino Badgeuse</h3>
                     <p>Création d'un système de contrôle d'accès basé sur Arduino, permettant de gérer l'accès à un bâtiment via des badges RFID.</p>
@@ -153,8 +156,8 @@ $titre='Accueil';
 
                 <div class="swiper-slide projet">
                     <a href="#"
-                       onclick="openPopup('public/image/Projet/p4/arduino_accueil.webp', 'Projet Infrastructure Web Ticketing', 1000, 880); return false;">
-                        <img src="public/image/Projet/p4/arduino_accueil.webp" alt="Projet Infrastructure Web Ticketing">
+                       onclick="openPopup('public/image/Projet/p5/ticketing_accueil.webp', 'Projet Infrastructure Web Ticketing', 1000, 539); return false;">
+                        <img src="public/image/Projet/p6/ticketing_accueil.webp" alt="Projet Infrastructure Web Ticketing">
                     </a>
                     <h3 class="infra_petit_h">Projet Infrastructure Web Ticketing</h3>
                     <p class="infra_petit_p">

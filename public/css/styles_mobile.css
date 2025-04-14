@@ -234,11 +234,21 @@ main {
 }
 .portfolio .carrousel_container .carrousel_wrapper .projet h3 {
     margin-top: 10px; /* Marge en haut du titre */
-    font-size: 1.2em; /* Taille du titre */
+    font-size: 1.1em; /* Taille du titre */
 }
 .portfolio .carrousel_container .carrousel_wrapper .projet p {
     margin-top: 5px; /* Marge en haut du paragraphe */
-    font-size: 1em; /* Taille du texte */
+    font-size: 0.9em; /* Taille du texte */
+}
+.portfolio .carrousel_container .carrousel_wrapper .projet .infra_petit_h> {
+    margin-top: 5px;
+    font-size: 0.9em; /* Taille du titre */
+    margin-bottom: 1px;
+}
+.portfolio .carrousel_container .carrousel_wrapper .projet .infra_petit_p{
+    margin-top : 0;
+    font-size: 0.7em;
+    margin-bottom: 0;
 }
 
 /* ///////////////////////////// Section mini_menu ///////////////////////////// */

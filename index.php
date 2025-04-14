@@ -109,7 +109,7 @@ $titre='Accueil';
         <div class="swiper carrousel_container">
             <div class="swiper-wrapper carrousel_wrapper">
 
-                <div class="swiper-slide projet">
+                <div class="swiper-slide projet" onclick="window.location.href='index.php">
                     <a href="#"
                        onclick="openPopup('public/image/Projet/p1/portfolio_acceuil.webp', 'Projet Portfolio', 1000, 880); return false;">
                         <img src="public/image/Projet/p1/portfolio_acceuil.webp" alt="Projet Portfolio">
@@ -133,7 +133,7 @@ $titre='Accueil';
                     <p>Création d'un système de détection d'intrusion réseau pour analyser le trafic et détecter des activités suspectes.</p>
                 </div>
 
-                <div class="swiper-slide projet" onclick="window.location.href='test.php';">
+                <div class="swiper-slide projet">
                     <a href="#"
                        onclick="openPopup('public/image/Projet/p3/simfast_accueil.webp', 'Projet Simfast', 1000, 880); return false;">
                         <img src="public/image/Projet/p3/simfast_accueil.webp" alt="Projet SimFast">
@@ -152,9 +152,17 @@ $titre='Accueil';
                 </div>
 
                 <div class="swiper-slide projet">
-                    <img src="" alt="Projet Infrastructure Web Ticketing">
-                    <h3>Projet Infrastructure Web Ticketing</h3>
-                    <p>Mise en œuvre d'une infrastructure sécurisée pour un système de ticketing avec Flask. Utilisation de Nginx comme reverse proxy pour la répartition de charge et la sécurité via TLS. Des serveurs et bases de données redondants assurent la haute disponibilité, et un WAF protège contre les attaques par injection.</p>
+                    <a href="#"
+                       onclick="openPopup('public/image/Projet/p4/arduino_accueil.webp', 'Projet Infrastructure Web Ticketing', 1000, 880); return false;">
+                        <img src="public/image/Projet/p4/arduino_accueil.webp" alt="Projet Infrastructure Web Ticketing">
+                    </a>
+                    <h3 class="infra_petit_h">Projet Infrastructure Web Ticketing</h3>
+                    <p class="infra_petit_p">
+                        Mise en œuvre d'une infrastructure sécurisée pour un système de ticketing avec Flask.
+                        <br>Utilisation de Nginx comme reverse proxy pour la répartition de charge et la sécurité via TLS.
+                        <br>Des serveurs (DNS, Nginx) et bases de données redondants assurent la haute disponibilité avec load balancing.
+                        <br>Un WAF protège contre les attaques par injection.
+                    </p>
                 </div>
 
                 <div class="swiper-slide projet">

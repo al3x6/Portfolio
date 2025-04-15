@@ -156,7 +156,7 @@ $titre='Accueil';
 
                 <div class="swiper-slide projet">
                     <a href="#"
-                       onclick="openPopup('public/image/Projet/p5/ticketing_accueil.webp', 'Projet Infrastructure Web Ticketing', 1000, 539); return false;">
+                       onclick="openPopup('public/image/Projet/p6/ticketing_accueil.webp', 'Projet Infrastructure Web Ticketing', 1000, 539); return false;">
                         <img src="public/image/Projet/p6/ticketing_accueil.webp" alt="Projet Infrastructure Web Ticketing">
                     </a>
                     <h3 class="infra_petit_h">Projet Infrastructure Web Ticketing</h3>
@@ -169,12 +169,12 @@ $titre='Accueil';
                 </div>
 
                 <div class="swiper-slide projet">
-                    <img src="dns_acceuil.jpg" alt="Projet DNS">
+                    <img src="" alt="Projet DNS">
                     <h3>Projet DNS</h3>
                     <p>Configuration d'un serveur Apache et Nginx sur des machines virtuelles en intégrant un service DNS pour héberger des sites Web.</p>
                 </div>
                 <div class="swiper-slide projet">
-                    <img src="reseau_acceuil.jpg" alt="Projet Réseau">
+                    <img src="" alt="Projet Réseau">
                     <h3>Projet Réseau</h3>
                     <p>Création d'un réseau d'entreprise de haute disponibilité.</p>
                 </div>

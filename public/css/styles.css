@@ -319,11 +319,12 @@ main {
 .portfolio .carrousel_container .carrousel_wrapper .projet p {
     margin-top: 5px; /* Marge en haut du paragraphe */
     font-size: 1em; /* Taille du texte */
+    margin-bottom: 2px;
 }
-.portfolio .carrousel_container .carrousel_wrapper .projet .infra_petit_h> {
+.portfolio .carrousel_container .carrousel_wrapper .projet .infra_petit_h {
     margin-top: 8px;
     font-size: 1.1em;
-    margin-bottom: 4px;
+    margin-bottom: 7px;
 }
 .portfolio .carrousel_container .carrousel_wrapper .projet .infra_petit_p{
     margin-top: 0;

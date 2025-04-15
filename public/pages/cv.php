@@ -49,7 +49,7 @@ if (isset($_GET['download']) && $_GET['download'] === 'cv') {
 
     <!-- Inclure des feuilles de style CSS ici -->
     <link rel="stylesheet" href="/public/css/styles_css_header.css">
-    <link rel="stylesheet" href="../css/styles_css.css" media="only screen and (min-width: 941px)">
+    <link rel="stylesheet" href="../css/styles.css" media="only screen and (min-width: 941px)">
     <link rel="stylesheet" href="../css/styles_mobile.css" media="only screen and (max-width: 940px)">
 
     <!-- Inclure des scripts javascript -->

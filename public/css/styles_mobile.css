@@ -240,15 +240,16 @@ main {
 .portfolio .carrousel_container .carrousel_wrapper .projet p {
     margin-top: 5px; /* Marge en haut du paragraphe */
     font-size: 0.9em; /* Taille du texte */
+    margin-bottom: 2px;
 }
-.portfolio .carrousel_container .carrousel_wrapper .projet .infra_petit_h> {
+.portfolio .carrousel_container .carrousel_wrapper .projet .infra_petit_h {
     margin-top: 5px;
     font-size: 0.9em; /* Taille du titre */
-    margin-bottom: 1px;
+    margin-bottom: 4px;
 }
 .portfolio .carrousel_container .carrousel_wrapper .projet .infra_petit_p{
     margin-top : 0;
-    font-size: 0.7em;
+    font-size: 0.75em;
     margin-bottom: 0;
 }
 

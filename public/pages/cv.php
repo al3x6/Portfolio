@@ -196,8 +196,8 @@ if (isset($_GET['download']) && $_GET['download'] === 'cv') {
             <h3 id="systèmes-et-réseaux"><i class="fas fa-network-wired"></i> Systèmes et Réseaux</h3>
             <p>Depuis plus de 3 ans, je travaille dans les systèmes et réseaux, ce qui m'a permis d'acquérir une expérience solide pour mener à bien des projets de grande envergure. Le réseau est essentiel pour la cybersécurité, et je suis passionné par l'optimisation des systèmes pour assurer leur sécurité et leur performance.</p>
             <div class="sous_competences_container">
-                <h4>Langages Réseaux</h4>
-                <p>Je connais une variété de langage pour le réseaux</p>
+                <h4>Langages et Scripts Système/Réseau</h4>
+                <p>Je connais une variété de langage pour le système et réseau</p>
 
                 <div class="languages">
                     <img src="../image/cv/python_logo.webp" alt="Python" title="Python logo">
@@ -217,6 +217,7 @@ if (isset($_GET['download']) && $_GET['download'] === 'cv') {
                 </ul>
 
                 <div class="languages">
+                    <img src="../image/cv/windows_logo.webp" alt="Windows" title="Windows logo">
                     <img src="../image/cv/linux_logo.webp" alt="Linux" title="Linux logo">
                     <img src="../image/cv/centos_logo.webp" alt="CentOS" title="CentOS logo">
                     <img src="../image/cv/debian_logo.webp" alt="Debian" title="Debian logo">

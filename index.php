@@ -174,7 +174,10 @@ $titre='Accueil';
                     <p>Configuration d'un serveur Apache et Nginx sur des machines virtuelles en intégrant un service DNS pour héberger des sites Web.</p>
                 </div>
                 <div class="swiper-slide projet">
-                    <img src="" alt="Projet Réseau">
+                    <a href="#"
+                       onclick="openPopup('public/image/Projet/p8/reseau_accueil.webp', 'Projet Réseau', 700, 462); return false;">
+                        <img src="public/image/Projet/p8/reseau_accueil.webp" alt="Projet Réseau">
+                    </a>
                     <h3>Projet Réseau</h3>
                     <p>Création d'un réseau d'entreprise de haute disponibilité.</p>
                 </div>

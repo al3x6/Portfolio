@@ -180,9 +180,13 @@ $titre='Accueil';
                 </div>
 
                 <div class="swiper-slide projet">
-                    <img src="" alt="Projet 9">
-                    <h3>Projet 9</h3>
-                    <p>Description du projet 9</p>
+                    <a href="#"
+                       onclick="openPopup('public/image/Projet/p9/ml_accueil.webp', 'Projet Neuro Reconnaissance', 1000, 707); return false;">
+                        <img src="public/image/Projet/p9/ml_accueil.webp" alt="Projet Neuro Reconnaissance">
+                    </a>
+                    <h3>Projet Neuro Reconnaissance</h3>
+                    <p class="infra_petit_p">Développement d'un réseau neuronal pour la classification d'images.<br>
+                        Entraînement du modèle avec des algorithmes mathématiques et un jeu de données.</p>
                 </div>
 
                 <div class="swiper-slide projet">
